@@ -9,8 +9,8 @@
 </head>
 <body>
     <main>
-        <section id="dial">  
         <form>
+        <section id="dial">  
             <button>Begin!</button>
         </section>
         <section class="choice-button">
@@ -22,8 +22,8 @@
         <section id="screenframe">
             <section id="screen">
                 <section>
-                  
-                    <input type="text" name="name" placeholder="What's your name?">
+                    <p>Enter Your Name:</p>
+                    <input type="text" name="name">
                     <p>Choose your avatar:</p>
                     <div>
                         <label>
@@ -40,7 +40,7 @@
                         </label>
                     </div>
                     <div id="gender">
-                        <span>Choose your gender:</span>
+                        <p>Choose your gender:</p>
                         <label>
                             <input type="radio" name="gender" value="male" >
                             <img src="../assets/male.png" class="gender">
@@ -54,10 +54,10 @@
                             <img src="../assets/female.png" class="gender">
                         </label>
                     </div>
-                    </form>
                 </section>
             </section>
         </section>
+        </form>
     </main>
     <script type="module" src="./character-creation.js"></script>
 </body>
