@@ -45,11 +45,11 @@ body {
 }
 
 main {
-    margin: 30px;
+    margin: 15px;
     height: 650px;
     width: 910px;
     background-color: #303030;
-    border: ridge 10px saddlebrown;
+    border: ridge 20px saddlebrown;
 }
 
 #screenframe {

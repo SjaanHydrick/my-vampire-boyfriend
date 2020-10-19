@@ -5,87 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../style/character-creater.css">
+    <link rel="stylesheet" href="../style/character-creator.css">
     <link rel="stylesheet" href="../style/landing.css">
-    <title>Document</title>
+    <title>My Vampire Boyfriend</title>
 </head>
-
 <body>
-    <header>
-        
-  
-    </header>
     <main>
         <section id="dial"> 
-            <button>Start</button>
+            <button>Begin!</button>
         </section>
         <section class="choice-button">
-            <button class="small-buttons"></button>
-            <button class="small-buttons"></button>
-            <button class="small-buttons"></button>
-        </section>
-        <section class="number-spacing">
-            <span class="numbers">3</span>
-            <span class="numbers">2</span>
-            <span class="numbers">1</span>
+            <button class="small-buttons">1</button>
+            <button class="small-buttons">2</button>
+            <button class="small-buttons">3</button>
         </section>
             <section id="vent"> </section>
         <section id="screenframe">
             <section id="screen">
                 <section>
-                <input type="text" name="name" placeholder="What's your name?">
-                    Choose your avatar:
-                    <div>
-            <label>
-            <input type="radio" name="avatar" value="Enby_Protag_.png">
-            <img src="../assets/Enby_Protag_.png" class="avatar">
-            </label>
-            <label>
-            <input type="radio" name="avatar" value="Girl_Protagonist.png">
-            <img src="../assets/Girl_Protagonist.png" class="avatar">
-            </label>
-            <label>
-            <input type="radio" name="avatar" value="Himbo_Protag_.png">
-            <img src="../assets/Himbo_Protag_.png" class="avatar">
-            </label>
-            </div>
-            </section>
-            <section>
-                Choose your gender:
-            <label>
-            <input type="radio" name="gender" value="male" >
-            <img src="../assets/male.png" class="gender">
-            </label>
-            <label>
-            <input type="radio" name="gender" value="non-binary" >
-            <img src="../assets/non-binary.png" class="gender">
-            </label>
-            <label>
-            <input type="radio" name="gender" value="female">
-            <img src="../assets/female.png" class="gender">
-            </label>
-            </section>
-         
-            </form>
+                    <form>
+                        <input type="text" name="name" placeholder="What's your name?">
+                        <span>Choose your avatar:</span>
+                        <div id="avatar-creator">
+                            <label>
+                                <input type="radio" name="avatar" value="Enby_Protag_.png">
+                                <img src="../assets/Enby_Protag_.png" class="avatar">
+                            </label>
+                            <label>
+                                <input type="radio" name="avatar" value="Girl_Protagonist.png">
+                                <img src="../assets/Girl_Protagonist.png" class="avatar">
+                            </label>
+                            <label>
+                                <input type="radio" name="avatar" value="Himbo_Protag_.png">
+                                <img src="../assets/Himbo_Protag_.png" class="avatar">
+                            </label>
+                        </div>
                     </section>
-                <span class="hearts">&hearts;</span>
-                <span class="hearts">&hearts;</span>
-                <span class="hearts">&hearts;</span>
-                <span class="hearts">&hearts;</span>
-                <span class="hearts">&hearts;</span>
+                        <div id="gender">
+                            <span>Choose your gender:</span>
+                                <label>
+                                    <input type="radio" name="gender" value="male" >
+                                    <img src="../assets/male.png" class="gender">
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="non-binary" >
+                                    <img src="../assets/non-binary.png" class="gender">
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="female">
+                                    <img src="../assets/female.png" class="gender">
+                                </label>
+                        </div>
+                    </form>
+                </section>
             </section>
         </section>
-        <section class="main-section">
-            <form>
             
-          
-
     </main>
-    <footer>
-       
-    </footer>
-
     <script type="module" src="./character-creation.js"></script>
 </body>
 
