@@ -1,0 +1,41 @@
+#main {
+    display: flex;
+}
+
+#sidebar{
+    display: flex;
+    border: 1px solid black;
+    background-color: turquoise;
+    height: 850px;
+    width: 250px;
+    background-image: url("../assets/rough-tv-right.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#avatar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#avatar-image{
+    width: 200px;
+}
+
+#screen{
+    display: flex;
+    height: 850px;
+    width: 930px;
+    background-color: blue;
+    background-image: url("../assets/rough-tv-left.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+#screen-frame{
+    height: 850px;
+    width: 930px;
+}
+
