@@ -15,10 +15,11 @@ const cafeteria = {
             intDialogueOne: `I'll give him a little bite...`,
             results: {
                 id: 'meatSick',
-                intDialogueOne: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`
-                },
+                intDialogueOne: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`,
+                results: ''
             },
-            {
+        },
+        {
             id: 'pushAway',
             intDialogueOne: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             results: ''
@@ -26,7 +27,7 @@ const cafeteria = {
     },
     {
         id: 'salad',
-        intDialogueOne: ``,
+        intDialogueOne: `I'll go with `,
         stepChoices: [{
 
         }]
@@ -39,4 +40,4 @@ const cafeteria = {
         }]
     }
     ]
-},
+};
