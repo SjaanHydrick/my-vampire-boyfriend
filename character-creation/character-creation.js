@@ -26,6 +26,8 @@ form.addEventListener('submit', (e) => {
     const data = new FormData(form);
     const player = makePlayer(data);
     saveUser(player);
+    window.location.href('../main/index/html?id=cafeteria');
+    
 
 });
 
