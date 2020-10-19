@@ -41,22 +41,33 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #202020;
+    background-color: #696969;
 }
 
 main {
+    margin: 30px;
     height: 650px;
-    width: 800px;
-    background-color: dimgray;
-    border: solid 5px saddlebrown;
+    width: 910px;
+    background-color: #303030;
+    border: ridge 5px saddlebrown;
+}
+
+#screenframe {
+    margin-top: 32.5px;
+    margin-left: 32.5px;
+    background-image: linear-gradient(to bottom right, #101010, #202020);
+    height: 575px;
+    width: 675px;
+    border: ridge 5px black;
 }
 
 #screen {
     margin: 20px;
-    height: 600px;
-    width: 600px;
+    height: 525px;
+    width: 625px;
     background-color: #202020;
-    border: solid 5px silver;
+    border: double 5px gray;
+    border-radius: 40px;
     text-align: center;
 }
 
@@ -94,8 +105,8 @@ main {
     height: 150px;
     width: 150px;
     margin-top: 20px;
-    margin-right: 10px;
-    background-color: #303030;
+    margin-right: 20px;
+    background-color: #101010;
     border-radius: 100px;
 }
 
@@ -113,11 +124,23 @@ button {
     border-radius: 100px;
 }
 
-#buttons {
+.choice-button {
     float: right;
-    height: 30px;
-    width: 30px;
+    margin-top: 180px;
+    margin-right: -180px;
+}
+
+.small-buttons {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
     background-color: silver;
+}
+
+.numbers {
+    float: right;
+    margin-top: 60px;
+    line-height: 20pt;
 }
 
 #vent {
