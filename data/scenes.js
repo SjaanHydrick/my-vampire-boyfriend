@@ -7,7 +7,7 @@ export const cafeteria = {
     What should I have for lunch?`,
     choices: [{
         id: 'meat',
-        responseOne: `A steak, rare please!`,
+        response: `A steak, rare please!`,
         dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
         stepChoices: [{
             id: 'feed',
@@ -26,7 +26,7 @@ export const cafeteria = {
     },
     {
         id: 'salad',
-        responseTwo: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
+        response: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
         dialogueBox: `Omg he's leaning closer to my neck`,
         stepChoices: [{
             id: 'letHim',
@@ -45,7 +45,7 @@ export const cafeteria = {
     }, 
     {
         id: 'tofu',
-        responseThree: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
+        response: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
         dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
         vbfDie: true
     }
