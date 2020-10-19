@@ -1,0 +1,21 @@
+img{
+    height: 200px;
+    width: 200px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+:checked + img {
+    border: solid 10px rgb(218, 45, 23);
+}   
+.gender{
+    height: 100px;
+    width: 100px;
+}
