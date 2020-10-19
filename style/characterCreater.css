@@ -13,7 +13,7 @@ input[type="radio"]{
 }
 
 :checked + img {
-    border: solid 10px rgb(218, 45, 23);
+    border: solid 5px rgb(218, 45, 23);
 }   
 .gender{
     height: 100px;
