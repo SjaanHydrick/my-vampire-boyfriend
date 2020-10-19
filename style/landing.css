@@ -49,7 +49,7 @@ main {
     height: 650px;
     width: 910px;
     background-color: #303030;
-    border: ridge 5px saddlebrown;
+    border: ridge 10px saddlebrown;
 }
 
 #screenframe {
@@ -74,30 +74,33 @@ main {
 
 #my {
     float: left;
-    margin-top: 185px;
-    margin-left: 175px;
-    color: pink;
+    margin-top: 105px;
+    margin-left: 115px;
+    text-shadow: 0px 0px 15px pink;
+    color: white;
     font-family: Beauty and the Beast;
-    font-size: 20pt;
+    font-size: 40pt;
 }
 
 #vampire {
     float: left;
-    margin-top: 220px;
-    margin-left: -95px;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-shadow: 0px 0px 15px black;
     letter-spacing: 2pt;
     color: maroon;
     font-family: DoubleFeature;
-    font-size: 60pt;
+    font-size: 100pt;
 }
 
 #boyfriend {
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 200px;
-    color: pink;
+    text-shadow: 0px 0px 15px pink;
+    color: white;
     font-family: Beauty and the Beast;
-    font-size: 40pt;
+    font-size: 70pt;
 }
 
 #dial {
@@ -115,43 +118,116 @@ button {
     margin-left: 13px;
     width: 125px;
     height: 125px;
-    font-family: Beauty and the Beast;
-    font-size: 20pt;
+    font-family: Paper Flowers;
+    font-size: 30pt;
     letter-spacing: 2px;
     line-height: 24pt;
     background-color: silver;
-    border: groove 2px dimgray;
+    border: outset 2px dimgray;
     border-radius: 100px;
 }
 
 .choice-button {
     float: right;
-    margin-top: 180px;
-    margin-right: -180px;
+    margin-top: 170px;
+    margin-right: -155px;
 }
 
 .small-buttons {
     height: 35px;
     width: 35px;
+    font-family: Paper Flowers;
+    font-size: 20pt;
     margin-right: 5px;
     background-color: silver;
 }
 
-.numbers {
+.number-spacing {
     float: right;
-    margin-top: 60px;
-    line-height: 20pt;
+    margin-top: 220px;
+    margin-right: -192px;
+}
+
+.numbers {
+    font-size: 20pt;
+    margin-right: 40px;
 }
 
 #vent {
     float: right;
-    margin-top: 240px;
-    margin-right: -150px;
+    margin-top: 250px;
+    margin-right: -165px;
     width: 150px;
-    height: 390px;
-    background-color: #303030;
+    height: 360px;
+    background-color: #101010;
+    border: solid 3pt black;
 }
 
 .hearts {
+    font-size: 40pt;
+    text-shadow: 0px 0px 15px pink;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#one {
+    float: left;
+    margin-top: -370px;
+    margin-left: 75px;
     color: hotpink;
+}
+
+#two {
+    float: left;
+    margin-top: -300px;
+    margin-left: 350px;
+    color: pink;
+
+}
+
+#three {
+    float: left;
+    margin-top: -340px;
+    margin-left: 560px;
+    color: deeppink;
+
+}
+
+#four {
+    float: right;
+    margin-top: 25px;
+    margin-right: 75px;
+    color: mediumvioletred
+
+}
+
+#five {
+    float: right;
+    margin-top: 55px;
+    margin-right: 200px;
+    color: lightpink;
+}
+
+#six {
+    float: right;
+    margin-top: -55px;
+    margin-right: 175px;
+    color: red;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }   
+
+    40% {
+        transform: translateY(-25px);
+    }
+
+    80%,
+
+    100% {
+        transform: translateY(0px);
+    }
 }
