@@ -1,4 +1,4 @@
-const cafeteria = {
+export const cafeteria = {
     id: 'cafeteria',
     image: '',
     dialogueBox: `
@@ -8,33 +8,46 @@ const cafeteria = {
     choices: [{
         id: 'meat',
         responseOne: `A steak, rare please!`,
-        result: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
+        dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
         stepChoices: [{
             id: 'feed',
             responseOne: `I'll give him a little bite...`,
             result: {
                 id: 'meatSick',
-                intDialogueOne: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`,
-                result: ''
+                dialogueBox: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`,
+                nextScene: ''
             },
         },
         {
             id: 'pushAway',
             responseTwo: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
-            result: ''
+            nextScene: ''
         }], 
     },
     {
         id: 'salad',
         responseTwo: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
+        dialogueBox: `Omg he's leaning closer to my neck`,
         stepChoices: [{
-
+            id: 'letHim',
+            responseOne: `I'll let him...`,
+            result: {
+                id: 'youDie',
+                dialogueBox: `Your vampire boyfriend leans in...to bite and kill you. You're dead.`,
+                youDie: true
+            },
+        },
+        {
+            id: 'pushAway',
+            responseTwo: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
+            nextScene: ''
         }]
     }, 
     {
         id: 'tofu',
-        responseThree: `I'm feeling a little vegan today, I'll get the tofu stirfry!`,
-        results: ''
+        responseThree: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
+        dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
+        vbfDie: true
     }
     ]
 };
