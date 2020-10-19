@@ -1,0 +1,134 @@
+@font-face {
+    font-family: A Lolita Scorned;
+    src: url('../fonts/A_Lolita_Scorned.ttf');
+}
+
+@font-face {
+    font-family: Beauty and the Beast;
+    src: url('../fonts/Beauty\ and\ the\ Beast\ Sample.ttf');
+}
+
+@font-face {
+    font-family: BloodLust;
+    src: url('../fonts/BloodLust.ttf');
+}
+
+@font-face {
+    font-family: Night of Terror;
+    src: url('../fonts/CFNightofTerrorPERSONAL-Reg.ttf');
+}
+
+@font-face {
+    font-family: Crafty Beach;
+    src: url('../fonts/Crafty\ Beach.otf');
+}
+
+@font-face {
+    font-family: DoubleFeature;
+    src: url('../fonts/DoubleFeature20.ttf');
+}
+
+@font-face {
+    font-family: Paper Flowers;
+    src: url('../fonts/Paper\ Flowers.ttf');
+}
+
+@font-face {
+    font-family: SweetPurple;
+    src: url('../fonts/sweet\ purple.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+
+main {
+    height: 650px;
+    width: 800px;
+    background-color: dimgray;
+    border: solid 5px saddlebrown;
+}
+
+#screen {
+    margin: 20px;
+    height: 600px;
+    width: 600px;
+    background-color: #202020;
+    border: solid 5px silver;
+    text-align: center;
+}
+
+
+#my {
+    float: left;
+    margin-top: 185px;
+    margin-left: 175px;
+    color: pink;
+    font-family: Beauty and the Beast;
+    font-size: 20pt;
+}
+
+#vampire {
+    float: left;
+    margin-top: 220px;
+    margin-left: -95px;
+    letter-spacing: 2pt;
+    color: maroon;
+    font-family: DoubleFeature;
+    font-size: 60pt;
+}
+
+#boyfriend {
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    color: pink;
+    font-family: Beauty and the Beast;
+    font-size: 40pt;
+}
+
+#dial {
+    float: right;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #303030;
+    border-radius: 100px;
+}
+
+button {
+    margin-top: 13px;
+    margin-left: 13px;
+    width: 125px;
+    height: 125px;
+    font-family: Beauty and the Beast;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    line-height: 24pt;
+    background-color: silver;
+    border: groove 2px dimgray;
+    border-radius: 100px;
+}
+
+#buttons {
+    float: right;
+    height: 30px;
+    width: 30px;
+    background-color: silver;
+}
+
+#vent {
+    float: right;
+    margin-top: 240px;
+    margin-right: -150px;
+    width: 150px;
+    height: 390px;
+    background-color: #303030;
+}
+
+.hearts {
+    color: hotpink;
+}
