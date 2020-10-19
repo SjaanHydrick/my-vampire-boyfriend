@@ -8,7 +8,7 @@ const cafeteria = {
     choicePrompt: `What should you have for lunch?`,
     choices: [{
         id: 'meat',
-        intDialogueOne: `Wow my boyfriend actually seems like he wants to share this steak with me. How romantic!`,
+        intDialogueOne: `Wow my boyfriend actually seems like he wants to share a steak with me. How romantic!`,
         choicePrompt: `What do you do?`,
         stepChoices: [{
             id: 'feed',
@@ -27,17 +27,15 @@ const cafeteria = {
     },
     {
         id: 'salad',
-        intDialogueOne: `I'll go with `,
+        intDialogueOne: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
         stepChoices: [{
 
         }]
     }, 
     {
         id: 'tofu',
-        intDialogueOne: ``,
-        stepChoices: [{
-
-        }]
+        intDialogueOne: `I'm feeling a little vegan today, I'll get the tofu stirfry!`,
+        results: ''
     }
     ]
 };
