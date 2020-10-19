@@ -1,22 +1,37 @@
+@font-face {
+    font-family: Paper Flowers;
+    src: url('../fonts/Paper\ Flowers.ttf');
+}
+
+form {
+    margin: 0;
+}
+
 .avatar{
-    height: 20%;
-    width: 20%;
-
+    width: 190px;
+    filter: grayscale(100%);
 }
 
-.hidden{
-    display: none;
+.avatar:hover {
+    transition-duration: 1.5s;
+    transform: scale(1.4);
+    filter: none;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
 
 :checked + img {
-    border: solid 5px rgb(218, 45, 23);
+    filter: none;
+    transform: scale(1.4);
 }   
-.gender{
+.gender {
     height: 100px;
-    width: 100px;
+}
+
+.gender:hover {
+    transform: scale(1.4);
+    transition-duration: 1.5s;
 }
 

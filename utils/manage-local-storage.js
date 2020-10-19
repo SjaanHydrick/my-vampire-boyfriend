@@ -5,7 +5,7 @@ export function setInLocalStorage(newObject){
     localStorage.setItem(storageKey, JSON.stringify(newObject));
 }
 
-export function getFromLocalStorage(newObject){
+export function getFromLocalStorage(){
     return JSON.parse(localStorage.getItem(storageKey));
 }
 

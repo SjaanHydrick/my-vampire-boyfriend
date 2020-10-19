@@ -1,13 +1,14 @@
 // import { saveUser } from './utils.js';
+import { setInLocalStorage } from '../utils/manage-local-storage.js';
 const form = document.querySelector('form');
 
 const USER = 'USER';
 
-export function saveUser(user) {
-    const stringyUser = JSON.stringify(user);
+// export function saveUser(user) {
+//     const stringyUser = JSON.stringify(user);
 
-    localStorage.setItem(USER, stringyUser);
-}
+//     localStorage.setItem(USER, stringyUser);
+// }
 
 function makePlayer(data) {
     const user = {
@@ -25,10 +26,12 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const player = makePlayer(data);
-    saveUser(player);
-    window.location.href('../main/index/html?id=cafeteria');
+    // saveUser(player);
+    setInLocalStorage(player);
+    window.location.href = '../main/index.html?id=cafeteria';
     
 
 });
 
 
+ 
