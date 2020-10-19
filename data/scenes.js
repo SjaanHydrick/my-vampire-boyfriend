@@ -13,7 +13,9 @@ const cafeteria = {
             intDialogueOne: ``,
             results: [{
                 id: '',
-                intDialogueOne: ``,
+                intDialogueOne: ``},
+            {   id: '',
+                intDialogueOne: ``
             }]
 
         }]
