@@ -1,6 +1,6 @@
-img{
-    height: 200px;
-    width: 200px;
+.avatar{
+    height: 20%;
+    width: 20%;
 
 }
 
@@ -19,3 +19,4 @@ input[type="radio"]{
     height: 100px;
     width: 100px;
 }
+
