@@ -56,10 +56,12 @@ input[type="radio"] {
     height: 75px;
     margin-left: 7.5px;
     margin-right: 7.5px;
+    filter: grayscale(100%);
 }
 
 .gender:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     transition-duration: 1.5s;
+    filter: none;
 }
 

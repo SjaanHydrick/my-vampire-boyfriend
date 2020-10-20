@@ -3,6 +3,8 @@ import { getFromLocalStorage } from './manage-local-storage.js';
 import { cafeteria } from '../data/scenes.js';
 import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
+
+const dialButton = document.getElementById('dial-button');
 const screen = document.querySelector('#screen');
 const dialogueBox = document.createElement('p');
 dialogueBox.id = 'dialogue-box';
@@ -22,6 +24,8 @@ const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 
+dialButton.textContent = 'Next';
+
 button1.addEventListener('click', funcButton1);
 function funcButton1(){
     cafeteria.choices[0].responseFunction();
@@ -33,6 +37,7 @@ function funcButton2(){
 }
 
 screen.style.backgroundImage = `url('../assets/${cafeteria.image}')`;
+screen.style.backgroundSize = '625px 525px';
 
 const responseSection = renderResponses(cafeteria);
 const characterImage = document.createElement('img');
