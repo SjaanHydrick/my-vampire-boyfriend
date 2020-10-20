@@ -5,7 +5,7 @@ import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
 const screen = document.querySelector('#screen');
 const dialogueBox = document.createElement('p');
-dialogueBox.id = "dialogue-box";
+dialogueBox.id = 'dialogue-box';
 screen.appendChild(dialogueBox);
 
 const vent = document.getElementById('vent');
