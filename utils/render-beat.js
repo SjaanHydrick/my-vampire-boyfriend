@@ -1,21 +1,26 @@
 import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
-import { renderButtons } from './render-buttons.js';
+import { renderButtons, resetNavButtons } from './render-buttons.js';
+import { renderDialButton, resetDialButton } from './render-dial-button.js';
 
 
 // renderBeat() renders only the HTML elements that are neccisary within a scene
 // renders the dialogueBox, responses, and wires the buttons to the responses
 export function renderBeat(object){
     const section = document.createElement('section');
-
-    const dialogueBox = renderDialogueBox(object.dialogueBox);
-    const responseSection = renderResponses(object.choices);
-    renderButtons(object);
-
     section.id = "beat-section";
 
+    const dialogueBox = renderDialogueBox(object.dialogueBox);
     section.appendChild(dialogueBox);
-    section.appendChild(responseSection);
+    if (object.buttonChoice === 'dial'){
+        renderDialButton(object);
+        resetNavButtons();
+    } else{
+        const responseSection = renderResponses(object.choices);
+        section.appendChild(responseSection);
+        renderButtons(object);
+        resetDialButton();
+    }
 
     return section;
 }

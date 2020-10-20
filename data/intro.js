@@ -1,28 +1,50 @@
-export const intro = {
+import { updateBeat } from '../utils/render-beat.js';
+import { updateScene } from '../utils/render-scene.js';
+import { S1B1 } from './scene-one.js';
+
+export const I1 = {
     id: 'intro',
-    dialogueBox: [`Omg he's leaning closer to my neck`],
-    buttonChoice: "nav",
-    choices: [
-        {
-            id: 'youDie',
-            response: `I'll let him...`,
-            result: {
-                dead: "player",
-                resultText: 'He bit me and I died' 
-            },
-            responseFunction: function() {
+    image: 'castle.jpg',
+    char: 'Vampire_BF.png',
+    dialogueBox: [
+        `Hi!  My name is Sally, and I have a new boyfriend!`,
+        `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
+    buttonChoice: "dial",
+    responseFunction: function() {
+        updateBeat(I2);
+    },
+};
 
-                gameOverYouDied();
+const I2 = {
+    id: 'intro',
+    dialogueBox: [
+        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank',
+        'I never flirt with men at work, but I made an exception for this cutie!',
+    ],
+    buttonChoice: "dial",
+    responseFunction: function() {
+        updateBeat(I3);
+    },
+};
 
-                gameOver(this.result);
+const I3 = {
+    id: 'intro',
+    dialogueBox: [
+        "Did I mention I'm a nurse?  Because I'm a nurse"
+    ],
+    buttonChoice: "dial",
+    responseFunction: function() {
+        updateBeat(I4);
+    },
+};
 
-            }
-        },
-        {
-            id: 'pushAway',
-            response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
-            responseFunction: function() {
-                updateScene(S2B1);
-            }
-        }]
+const I4 = {
+    id: 'intro',
+    dialogueBox: [
+        "I'm about to meet him for our first date in the cafeteria!"
+    ],
+    buttonChoice: "dial",
+    responseFunction: function() {
+        updateScene(S1B1);
+    },
 };
