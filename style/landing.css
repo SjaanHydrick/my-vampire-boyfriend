@@ -74,11 +74,11 @@ main {
 #my {
     float: left;
     margin-left: 140px;
-    margin-top: 100px;
+    margin-top: 150px;
     text-shadow: 0px 0px 15px pink;
     color: white;
     font-family: Beauty and the Beast;
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 #vampire {
@@ -177,35 +177,47 @@ button:hover {
 
 #one {
     float: left;
+    margin-left: -530px;
+    margin-top: 30px;
     color: hotpink;
 }
 
 #two {
     float: left;
+    margin-left: -250px;
+    margin-top: 200px;
     color: pink;
 
 }
 
 #three {
     float: left;
+    margin-left: 20px;
+    margin-top: 60px;
     color: deeppink;
 
 }
 
 #four {
     float: right;
+    margin-right: 100px;
+    margin-top: -350px;
     color: mediumvioletred
 
 }
 
 #five {
     float: right;
+    margin-right: 550px;
+    margin-top: -450px;
     color: lightpink;
 }
 
 #six {
     float: right;
-    color: red;
+    margin-right: 280px;
+    margin-top: -320px;
+    color: maroon;
 }
 
 @keyframes bounce {
