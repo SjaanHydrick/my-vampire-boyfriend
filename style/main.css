@@ -37,3 +37,8 @@
     display: flex;
     flex-direction: column;
 }
+
+#character-image{
+    height: 200px;
+    position: fixed;
+}

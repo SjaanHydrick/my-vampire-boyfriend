@@ -1,59 +1,46 @@
-//  import { renderAvater } from './render-avatar.js';
+import { renderAvatar, renderUserName } from './render-avatar.js';
 import { getFromLocalStorage } from './manage-local-storage.js';
 import { cafeteria } from '../data/scenes.js';
+import { renderResponses } from './render-responses.js';
+import { renderDialogueBox } from './render-dialogue-box.js';
 const screen = document.querySelector('#screen');
-const internalDialogueBox = document.createElement('p');
-const dialogueBox = document.createElement('p')
-const background = document.createElement('img');
+const dialogueBox = document.createElement('p');
+dialogueBox.id = "dialogue-box";
+screen.appendChild(dialogueBox);
+
 const vent = document.getElementById('vent');
 
 const userData = getFromLocalStorage();
-console.log(userData);
 
-const avatar = document.createElement('img');
-avatar.id = "avatar";
-avatar.src = `../assets/${userData.avatar}`;
+const avatar = renderAvatar();
 vent.appendChild(avatar);
 
-const playerName = document.createElement('p');
-playerName.id = "player-name";
-playerName.textContent = userData.name;
+const playerName = renderUserName();
 vent.appendChild(playerName);
 
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 
-screen.style.backgroundImage = "url('../assets/castle.jpg')";
-
-const responseSection = document.createElement('section');
-for (let choice of cafeteria.choices){
-    const response = document.createElement('p');
-    response.classList.add('response');
-    response.textContent = choice.response;
-    responseSection.appendChild(response);
+button1.addEventListener('click', funcButton1);
+function funcButton1(){
+    cafeteria.choices[0].responseFunction();
 }
 
+button2.addEventListener('click', funcButton2);
+function funcButton2(){
+    cafeteria.choices[1].responseFunction();
+}
 
-// background.classList.add('background');
-// background.src = `../assets/${ cafeteria.image }`;
-// const section = document.createElement('section')
-//  vent.appendChild(renderAvater());
+screen.style.backgroundImage = `url('../assets/${cafeteria.image}')`;
 
-internalDialogueBox.classList.add('hidden');
-dialogueBox.classList.add('hidden');
+const responseSection = renderResponses(cafeteria);
+const characterImage = document.createElement('img');
+characterImage.id = 'character-image';
+characterImage.src = `../assets/${cafeteria.char}`;
 
-dialogueBox.id = 'dialogue-box';
-dialogueBox.textContent = cafeteria.dialogueBox;
-
-
-
-
+renderDialogueBox(cafeteria.dialogueBox);
 
 
-
-// screen.appendChild(section);
-screen.appendChild(dialogueBox);
+screen.appendChild(characterImage);
 screen.appendChild(responseSection);
-// screen.appendChild(background);
-screen.appendChild(internalDialogueBox);

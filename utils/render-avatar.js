@@ -5,20 +5,19 @@ import { getFromLocalStorage } from './manage-local-storage.js';
 export function renderAvatar(){
     const userData = getFromLocalStorage();
 
-    let section = document.createElement('section');
-    let img = document.createElement('img');
-    let span = document.createElement('span');
+    const avatar = document.createElement('img');
+    avatar.id = "avatar";
+    avatar.src = `../assets/${userData.avatar}`;
 
-    section.id = 'avatar';
+    return avatar;
+}
 
-    img.id = 'avatar-image';
-    img.src = `./assets/${userData.gender}`;
+export function renderUserName(){
+    const userData = getFromLocalStorage();
 
-    span.id = 'user-name';
-    span.textContent = user.name;
+    const playerName = document.createElement('p');
+    playerName.id = "player-name";
+    playerName.textContent = userData.name;
 
-    section.appendChild(img);
-    section.appendChild(span);
-
-    return section;
+    return playerName;
 }
