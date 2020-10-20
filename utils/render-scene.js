@@ -27,7 +27,7 @@ export function updateScene(object){
 
     const ventSection = document.getElementById('vent');
     ventSection.innerHTML = '';
-    ventSection.appendChild(renderVent());
+    renderVent();
     // renderVent();
 
   
