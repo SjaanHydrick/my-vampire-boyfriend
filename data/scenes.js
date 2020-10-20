@@ -12,9 +12,10 @@ export const cafeteria = {
         id: 'meat',
         response: `A steak, rare please!`,
         dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
-        responseFunction: function () {
-            renderDialogueBox(this.dialogueBox);
-        },
+        // responseFunction: function () {
+        //     const dialogueBoxdocument.getElementsByClassName('dialogueBox');
+        //     renderDialogueBox(this.dialogueBox);
+        // },
         stepChoices: [{
             id: 'feed',
             responseOne: `I'll give him a little bite...`,

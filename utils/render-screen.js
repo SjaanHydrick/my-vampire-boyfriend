@@ -1,46 +1,36 @@
-import { renderAvatar, renderUserName } from './render-avatar.js';
 import { getFromLocalStorage } from './manage-local-storage.js';
-import { cafeteria } from '../data/scenes.js';
 import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
-const screen = document.querySelector('#screen');
-const dialogueBox = document.createElement('p');
-dialogueBox.id = 'dialogue-box';
-screen.appendChild(dialogueBox);
 
-const vent = document.getElementById('vent');
+export function renderScreen(cafeteria){
+    const screen = document.createElement('section');
+    const characterImage = document.createElement('img');
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const button3 = document.getElementById('button3');
 
-const userData = getFromLocalStorage();
+    const dialogueBox = renderDialogueBox(cafeteria.dialogueBox);
+    const responseSection = renderResponses(cafeteria.choices);
 
-const avatar = renderAvatar();
-vent.appendChild(avatar);
+    screen.id = "screen";
+    screen.style.backgroundImage = `url('../assets/${cafeteria.image}')`;
 
-const playerName = renderUserName();
-vent.appendChild(playerName);
+    characterImage.id = 'character-image';
+    characterImage.src = `../assets/${cafeteria.char}`;
 
-const button1 = document.getElementById('button1');
-const button2 = document.getElementById('button2');
-const button3 = document.getElementById('button3');
+    button1.addEventListener('click', funcButton1);
+    function funcButton1(){
+        cafeteria.choices[0].responseFunction();
+    }
 
-button1.addEventListener('click', funcButton1);
-function funcButton1(){
-    cafeteria.choices[0].responseFunction();
+    button2.addEventListener('click', funcButton2);
+    function funcButton2(){
+        cafeteria.choices[1].responseFunction();
+    }
+
+    screen.appendChild(dialogueBox);
+    screen.appendChild(characterImage);
+    screen.appendChild(responseSection);
+
+    return screen;
 }
-
-button2.addEventListener('click', funcButton2);
-function funcButton2(){
-    cafeteria.choices[1].responseFunction();
-}
-
-screen.style.backgroundImage = `url('../assets/${cafeteria.image}')`;
-
-const responseSection = renderResponses(cafeteria);
-const characterImage = document.createElement('img');
-characterImage.id = 'character-image';
-characterImage.src = `../assets/${cafeteria.char}`;
-
-renderDialogueBox(cafeteria.dialogueBox);
-
-
-screen.appendChild(characterImage);
-screen.appendChild(responseSection);
