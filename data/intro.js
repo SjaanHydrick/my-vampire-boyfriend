@@ -11,8 +11,15 @@ export const I1 = {
     id: 'intro',
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
+<<<<<<< HEAD
     dialogueBox: 
         `He doesn't talk much, but thats ok.  I talk enough for the both of us! I met my boyfriend at the local hospital where he was picking up blood for the bloodbank`,
+=======
+    dialogueBox: returnsUserName(),
+    // [
+    //     `Hi!  My name is Sally, and I have a new boyfriend!`,
+    //     `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
+>>>>>>> da1e218c678ae9903c7d863d8e6431194c1d9c4a
     buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I2);
