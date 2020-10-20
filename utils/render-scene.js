@@ -20,3 +20,13 @@ export function renderScene(object){
 
     return screen;
 }
+
+export function updateScene(object){
+    const screenFrame = document.getElementById('screenframe');
+    screenFrame.innerHTML = '';
+
+    const newScreen = renderScene(object);
+    screenFrame.appendChild(newScreen);
+
+  
+}
