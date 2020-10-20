@@ -7,11 +7,11 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
-    buttonChoice: "nav",
+    buttonChoice: 'nav',
     dialogueBox: [
-        "My boyfriend is volunteering at the hospital blood drive today, so we're going to have a lunch date in the cafeteria!",
-        "He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together!",
-        "What should I have for lunch?"],
+        'My boyfriend is volunteering at the hospital blood drive today, so we\'re going to have a lunch date in the cafeteria!',
+        'He\'s keto or something so normally I\'m the only one who eats. But I really don\'t mind at all, it\'s just nice to spend time together!',
+        'What should I have for lunch?'],
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
@@ -31,8 +31,8 @@ export const S1B1 = {
         id: 'tofu',
         response: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
         result: {
-            dead: "vampire",
-            resultText: "The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies."
+            dead: 'vampire',
+            resultText: 'The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.'
         },
         responseFunction: function() {
 
@@ -47,14 +47,14 @@ export const S1B1 = {
 const S1B2 = {
     id: 'feed',
     dialogueBox: [`Wow he seems like he might want to share this with me, how romantic! What should I do?`],
-    buttonChoice: "nav",
+    buttonChoice: 'nav',
     choices: [
         {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
             result: {
-                dead: "vampire",
-                resultText: "He shriveled up and died!"
+                dead: 'vampire',
+                resultText: 'He shriveled up and died!'
             },
             responseFunction: function() {
 
@@ -75,13 +75,13 @@ const S1B2 = {
 const S1B3 = {
     id: 'letHim',
     dialogueBox: [`Omg he's leaning closer to my neck`],
-    buttonChoice: "nav",
+    buttonChoice: 'nav',
     choices: [
         {
             id: 'youDie',
             response: `I'll let him...`,
             result: {
-                dead: "player",
+                dead: 'player',
                 resultText: 'He bit me and I died' 
             },
             responseFunction: function() {
