@@ -12,7 +12,7 @@ export function renderBeat(object){
     const responseSection = renderResponses(object.choices);
     renderButtons(object);
 
-    section.id = "beat-section";
+    section.id = 'beat-section';
 
     section.appendChild(dialogueBox);
     section.appendChild(responseSection);
