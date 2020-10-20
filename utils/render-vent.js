@@ -1,4 +1,5 @@
 import { renderAvatar, renderUserName } from './render-avatar.js';
+import { renderHeart } from './render-heart.js'
 
 export function renderVent(){
     const vent = document.getElementById('vent');
@@ -9,4 +10,7 @@ export function renderVent(){
     const playerName = renderUserName();
     vent.appendChild(playerName);
 
-}
+    const hearts = renderHeart();
+    vent.appendChild(hearts);
+
+}  

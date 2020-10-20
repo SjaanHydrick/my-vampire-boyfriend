@@ -55,8 +55,10 @@ const S1B2 = {
                 resultText: 'Your boyfriend looks sick and walks out on lunch'
             },
             responseFunction: function() {
-
+            
                 updateScene(S2B1);
+                nextChapter();
+
 
 
             },                
@@ -98,6 +100,8 @@ const S1B3 = {
             responseFunction: function() {
 
                 updateScene(S2B1);
+                nextChapter();
+
             }
         }]
 };

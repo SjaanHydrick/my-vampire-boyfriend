@@ -1,7 +1,7 @@
 
 import { renderBeat } from './render-beat.js';
 import { renderCharacter } from './render-character.js';
-
+import { renderVent } from './render-vent.js';
 export function renderScene(object){
     const screen = document.createElement('section');
 
@@ -13,6 +13,9 @@ export function renderScene(object){
 
     screen.appendChild(beatSection);
     screen.appendChild(characterSection);
+    
+    
+   
 
     return screen;
 }
@@ -23,6 +26,8 @@ export function updateScene(object){
 
     const newScreen = renderScene(object);
     screenFrame.appendChild(newScreen);
+    // renderVent();
+    
 
   
 }

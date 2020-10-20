@@ -10,4 +10,4 @@ const renderedScene = renderScene(I1);
 
 screen.appendChild(renderedScene);
 
-renderVent();
+// renderVent();
