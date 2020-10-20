@@ -1,6 +1,7 @@
 export const cafeteria = {
     id: 'cafeteria',
-    image: '',
+    image: 'castle.jpg',
+    char: 'Vampire_BF.png',
     dialogueBox: `
     My boyfriend is volunteering at the hospital blood drive today so we're going to have a lunch date in the cafeteria.
     He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together.
