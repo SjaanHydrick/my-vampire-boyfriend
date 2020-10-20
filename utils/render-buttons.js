@@ -20,3 +20,14 @@ export function renderButtons(object){
     }
 
 }
+
+export function resetNavButtons(object){
+    const buttons = document.getElementsByClassName('small-buttons');
+    console.log(typeof buttons);
+    for (let button of buttons){
+        button.onclick = '';
+        button.classList.toggle('active');
+        button.style.color = 'black';
+
+    }
+}
