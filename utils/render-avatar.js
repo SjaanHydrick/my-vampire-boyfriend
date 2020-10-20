@@ -3,6 +3,7 @@ import { getFromLocalStorage } from './manage-local-storage.js';
 
 // pulls userData from Local Storage, creates an image elemnt, returns it
 export function renderAvatar(){
+
     const userData = getFromLocalStorage();
 
     const avatar = document.createElement('img');

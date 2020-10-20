@@ -1,22 +1,19 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
 import { renderBeat } from './render-beat.js';
+import { renderCharacter } from './render-character.js';
 
 export function renderScene(object){
     const screen = document.createElement('section');
-    const characterImage = document.createElement('img');
 
+    const characterSection = renderCharacter(object.char);
     const beatSection = renderBeat(object);
 
     screen.id = "screen";
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
-    characterImage.id = 'character-image';
-    characterImage.src = `../assets/${object.char}`;
-
     screen.appendChild(beatSection);
-    screen.appendChild(characterImage);
-    // screen.appendChild(responseSection);
+    screen.appendChild(characterSection);
 
     return screen;
 }
