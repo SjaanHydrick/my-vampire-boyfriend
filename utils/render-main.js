@@ -1,6 +1,6 @@
 import { renderScene } from "./render-scene.js";
 import { renderVent } from "./render-vent.js";
-import { S1B1 } from "../data/scenes.js";
+import { S1B1 } from "../data/scene-one.js";
 
 
 const screen = document.querySelector("#screenframe");
