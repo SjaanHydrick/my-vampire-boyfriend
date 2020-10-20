@@ -74,7 +74,7 @@ const S1B2 = {
                 
 const S1B3 = {
     id: 'letHim',
-    dialogueBox: [`Omg he's leaning closer to my neck`],
+    dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
         {

@@ -6,10 +6,7 @@ export const S2B1 = {
     id: 'coffee-shop',
     image: 'coffee-shop.jpg',
     char: 'Vampire_BF.png',
-    dialogueBox: [
-        'I invited my boyfriend to the cutest little coffee shop for a date.',
-        'It\'s open late, which is perfect because I think he\'s allergic to the sun or something.',
-        'What kind of drink should I order?'],
+    dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
         id: 'coffee',
         response: `Coffee, black.`,
@@ -41,14 +38,14 @@ export const S2B1 = {
 
 const S2B2 = {
     id: 'uninterested',
-    dialogueBox: 'OMG he thinks I\'m a total loser, he\'s acting really cold and hobbling away.',
+    dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
         {
             id: 'pout',
-            response: 'Pout until he notices you\'re upset',
+            response: `Pout until he notices you're upset`,
             result: {
-                resultText: ['Well this date wasn\'t the best idea.', 'But I know our connection is SO strong', 'He\'s just SOoOo dreamy!']
+                resultText: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`
             },
             responseFunction: function() {
                 updateScene(S3B1);
