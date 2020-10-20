@@ -17,3 +17,34 @@ p{
 #user-name{
     color: white;
 }
+
+#logo {
+    float: left;
+    margin-left: 55px;
+    margin-top: 613px;
+    height: 30px;
+    opacity: .5;
+}
+
+.m {
+    float: left;
+    margin-top: -10px;
+    font-family: Beauty and the Beast;
+    color: white;
+}
+
+.v {
+    margin-top: -12px;
+    margin-left: 1px;
+    font-family: DoubleFeature;
+    color: maroon;
+    font-size: 20pt;
+}
+
+.b {
+    float: right;
+    margin-left: 1px;
+    margin-top: 15px;
+    font-family: Beauty and the Beast;
+    color: white;
+}

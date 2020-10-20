@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, tofu } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, tofu, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -54,12 +54,11 @@ const S1B2 = {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
             result: {
-                dead: 'vampire',
-                resultText: 'He shriveled up and died!'
+                resultText: 'Your boyfriend looks sick and walks out on lunch'
             },
             responseFunction: function() {
 
-                gameOverVampireDied();
+                updateScene(S2B1);
 
 
             },                
@@ -69,6 +68,7 @@ const S1B2 = {
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
                 updateScene(S2B1);
+                nextChapter();
             },                
         }
     ]
@@ -98,6 +98,7 @@ const S1B3 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
+
                 updateScene(S2B1);
             }
         }]
