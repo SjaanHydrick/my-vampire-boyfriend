@@ -9,7 +9,7 @@ export const S1B1 = {
     char: 'Vampire_BF.png',
     buttonChoice: 'nav',
     dialogueBox: 
-        `My boyfriend is working the hospital blood drive today, we're going to have a lunch date in the cafeteria! He's keto or something so normally I'm the only one who eats. What should I have for lunch?`,
+        `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
