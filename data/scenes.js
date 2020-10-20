@@ -5,14 +5,14 @@ export const cafeteria = {
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
     dialogueBox: `
-    My boyfriend is volunteering at the hospital blood drive today so we're going to have a lunch date in the cafeteria.
-    He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together.
+    My boyfriend is volunteering at the hospital blood drive today, so we're going to have a lunch date in the cafeteria!
+    He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together!
     What should I have for lunch?`,
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
         dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
-        responseFunction: function () {
+        responseFunction: function() {
             renderDialogueBox(this.dialogueBox);
         },
         stepChoices: [{
@@ -26,15 +26,15 @@ export const cafeteria = {
         },
         {
             id: 'pushAway',
-            responseTwo: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
+            responseTwo: `I get overwhelmed when he pays this much attention to me, I'll just push him away!`,
             nextScene: ''
         }], 
     },
     {
         id: 'salad',
-        response: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
-        dialogueBox: `Omg he's leaning closer to my neck`,
-        responseFunction: function () {
+        response: `I'll go with salad, my boyfriend prefers vegetarians.`,
+        dialogueBox: `OMG he's leaning closer to my neck!`,
+        responseFunction: function() {
             renderDialogueBox(this.dialogueBox);
         },
         stepChoices: [{

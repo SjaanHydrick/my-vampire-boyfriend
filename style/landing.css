@@ -125,6 +125,12 @@ button {
     background-color: silver;
     border: outset 2px dimgray;
     border-radius: 100px;
+    transition: transform 2s;
+}
+
+button:hover {
+    transform: rotate(45deg);
+    
 }
 
 .choice-button {
@@ -225,7 +231,8 @@ button {
         transform: translateY(-25px);
     }
 
-    80%,
+    80% {
+    }
 
     100% {
         transform: translateY(0px);
