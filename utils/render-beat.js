@@ -1,6 +1,6 @@
 import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
-import { renderButtons, resetNavButtons } from './render-buttons.js';
+import { renderNavButtons, resetNavButtons } from './render-nav-buttons.js';
 import { renderDialButton, resetDialButton } from './render-dial-button.js';
 
 
@@ -18,7 +18,7 @@ export function renderBeat(object){
     } else{
         const responseSection = renderResponses(object.choices);
         section.appendChild(responseSection);
-        renderButtons(object);
+        renderNavButtons(object);
         resetDialButton();
     }
 
