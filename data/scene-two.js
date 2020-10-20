@@ -1,3 +1,6 @@
+import { gameOverYouDied } from '../utils/game-over';
+import { updateBeat } from '../utils/render-beat.js';
+
 export const S2B1 = {
     id: 'coffee-shop',
     image: 'coffee-shop.jpg',
@@ -24,10 +27,13 @@ export const S2B1 = {
     {
         id: 'greenTea',
         response: `I'm really more of a tea person, a pot of green tea please!`,
-        responseFunction: function() {
-            console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`')
+        result: {
+            dead: 'player',
+            resultText: 'While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.' 
         },
-        dead: 'player',
+        responseFunction: function() {
+            gameOverYouDied();
+        },
     }
     ]
 };
