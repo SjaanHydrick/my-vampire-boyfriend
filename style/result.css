@@ -1,0 +1,19 @@
+p{
+    color: white;
+}
+
+#avatar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#avatar-image{
+    width: 100%;
+
+}
+
+#user-name{
+    color: white;
+}
