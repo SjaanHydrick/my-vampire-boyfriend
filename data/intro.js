@@ -6,11 +6,13 @@ import { returnAvatar } from '../utils/return-avatar.js';
 
 export const I1 = {
     id: 'intro',
+
     image: 'castle.jpg',
     char: returnAvatar(),
     dialogueBox: 
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
     buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I2);
     },
@@ -21,6 +23,7 @@ const I2 = {
     dialogueBox: 
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
     buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I3);
     },
@@ -31,6 +34,7 @@ const I3 = {
     dialogueBox: 
         "I never flirt with men at work, but I made an exception for this cutie!",
     buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I4);
     },
@@ -52,7 +56,7 @@ const I5 = {
     id: 'intro',
     dialogueBox: 
         "I'm about to meet him for our first date in the cafeteria!",
-    buttonChoice: "dial",
+    buttonChoice: 'dial',
     responseFunction: function() {
         updateScene(S1B1);
     },

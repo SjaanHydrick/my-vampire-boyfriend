@@ -5,11 +5,11 @@ import { S2B1 } from './scene-two.js';
 
 export const S1B1 = {
     id: 'cafeteria',
-    image: 'castle.jpg',
+    image: 'cafeteria.jpg',
     char: 'Vampire_BF.png',
     buttonChoice: 'nav',
     dialogueBox: 
-        `My boyfriend is volunteering at the hospital blood drive today, so we're going to have a lunch date in the cafeteria! He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together! What should I have for lunch?`,
+        `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
@@ -74,7 +74,7 @@ const S1B2 = {
                 
 const S1B3 = {
     id: 'letHim',
-    dialogueBox: [`Omg he's leaning closer to my neck`],
+    dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
         {
