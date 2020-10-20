@@ -1,4 +1,3 @@
-import { getFromLocalStorage } from './manage-local-storage.js';
 
 import { renderBeat } from './render-beat.js';
 import { renderCharacter } from './render-character.js';
