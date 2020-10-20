@@ -29,11 +29,13 @@ export const S1B1 = {
     {
         id: 'tofu',
         response: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
-        responseFunction: function() {
-            gameOver();
-            console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
+        result: {
+            dead: "vampire",
+            resultText: "The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies."
         },
-        vbfDie: true
+        responseFunction: function() {
+            gameOver(this.result);
+        },
     }
     ]
 };
@@ -45,8 +47,12 @@ const S1B2 = {
         {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
+            result: {
+                dead: "vampire",
+                resultText: "He shriveled up and died!"
+            },
             responseFunction: function() {
-                console.log('Here! 4');
+                gameOver(this.result);
             },                
         },
         {
@@ -66,8 +72,12 @@ const S1B3 = {
         {
             id: 'youDie',
             response: `I'll let him...`,
+            result: {
+                dead: "player",
+                resultText: 'He bit me and I died' 
+            },
             responseFunction: function() {
-                gameOver();
+                gameOver(this.result);
             }
         },
         {

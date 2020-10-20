@@ -2,7 +2,7 @@ export const S2B1 = {
     id: 'coffee-shop',
     image: 'coffee-shop.jpg',
     char: 'Vampire_BF.png',
-    dialogueBox: `Love at the coffee shop!`,
+    dialogueBox: [`Love at the coffee shop!`],
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
