@@ -39,43 +39,42 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #696969;
 }
 
 main {
     margin: 15px;
-    height: 650px;
-    width: 910px;
+    height: 790px;
+    width: 1200px;
     background-color: #303030;
     border: ridge 20px saddlebrown;
 }
 
 #screenframe {
-    margin-top: 32.5px;
-    margin-left: 32.5px;
+    margin-top: 40px;
+    margin-left: 40px;
     background-image: linear-gradient(to bottom right, #101010, #202020);
-    height: 575px;
-    width: 675px;
+    height: 700px;
+    width: 850px;
     border: ridge 5px black;
 }
 
 #screen {
-    margin: 20px;
-    height: 525px;
-    width: 625px;
+    margin: 35px;
+    height: 620px;
+    width: 770px;
     background-color: #202020;
     border: double 5px gray;
     border-radius: 40px;
     text-align: center;
+    box-shadow: 0px 0px 100px #404040;
 }
 
 
 #my {
     float: left;
-    margin-top: 105px;
-    margin-left: 115px;
+    margin-left: 140px;
+    margin-top: 100px;
     text-shadow: 0px 0px 15px pink;
     color: white;
     font-family: Beauty and the Beast;
@@ -84,8 +83,7 @@ main {
 
 #vampire {
     float: left;
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 80px;
     text-shadow: 0px 0px 15px black;
     letter-spacing: 2pt;
     color: maroon;
@@ -105,26 +103,26 @@ main {
 
 #dial {
     float: right;
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    margin-top: 40px;
     margin-right: 20px;
     background-color: #101010;
-    border-radius: 100px;
+    border-radius: 150px;
 }
 
 button {
     margin-top: 13px;
     margin-left: 13px;
-    width: 125px;
-    height: 125px;
+    width: 225px;
+    height: 225px;
     font-family: Paper Flowers;
-    font-size: 30pt;
+    font-size: 50pt;
     letter-spacing: 2px;
     line-height: 24pt;
     background-color: silver;
     border: outset 2px dimgray;
-    border-radius: 100px;
+    border-radius: 150px;
     transition: transform 2s;
 }
 
@@ -135,13 +133,13 @@ button:hover {
 
 .choice-button {
     float: right;
-    margin-top: 170px;
-    margin-right: -155px;
+    margin-top: 295px;
+    margin-right: -220px;
 }
 
 .small-buttons {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     font-family: Paper Flowers;
     font-size: 20pt;
     margin-right: 5px;
@@ -161,10 +159,10 @@ button:hover {
 
 #vent {
     float: right;
-    margin-top: 250px;
-    margin-right: -165px;
-    width: 150px;
-    height: 360px;
+    margin-top: 367px;
+    margin-right: -250px;
+    width: 250px;
+    height: 375px;
     background-color: #101010;
     border: solid 3pt black;
 }
@@ -179,46 +177,34 @@ button:hover {
 
 #one {
     float: left;
-    margin-top: -370px;
-    margin-left: 75px;
     color: hotpink;
 }
 
 #two {
     float: left;
-    margin-top: -300px;
-    margin-left: 350px;
     color: pink;
 
 }
 
 #three {
     float: left;
-    margin-top: -340px;
-    margin-left: 560px;
     color: deeppink;
 
 }
 
 #four {
     float: right;
-    margin-top: 25px;
-    margin-right: 75px;
     color: mediumvioletred
 
 }
 
 #five {
     float: right;
-    margin-top: 55px;
-    margin-right: 200px;
     color: lightpink;
 }
 
 #six {
     float: right;
-    margin-top: -55px;
-    margin-right: 175px;
     color: red;
 }
 
