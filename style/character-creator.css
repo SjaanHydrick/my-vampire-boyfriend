@@ -3,18 +3,44 @@
     src: url('../fonts/Paper\ Flowers.ttf');
 }
 
-form {
-    margin: 0;
+#dial {
+    margin-top: -13px;
+}
+
+.choice-button {
+    margin-top: 137px;
+}
+
+#vent {
+    margin-top: 217px;
+}
+
+p {
+    margin: 20px;
+    font-family: Paper Flowers;
+    font-size: 20pt;
+    color: white;
+}
+
+.name {
+    text-align: center;
+    height: 35px;
+    font-size: 25pt;
+    font-family: Paper Flowers;
+    background-color: gainsboro;
+    border: solid 2px gray;
+    border-radius: 5px;
 }
 
 .avatar{
     width: 190px;
+    margin-top: 0px;
     filter: grayscale(100%);
 }
 
 .avatar:hover {
     transition-duration: 1.5s;
-    transform: scale(1.4);
+    transform: scale(1.2);
     filter: none;
 }
 
@@ -24,10 +50,12 @@ input[type="radio"] {
 
 :checked + img {
     filter: none;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }   
 .gender {
-    height: 100px;
+    height: 75px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }
 
 .gender:hover {
