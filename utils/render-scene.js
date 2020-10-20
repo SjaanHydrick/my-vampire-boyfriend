@@ -9,7 +9,7 @@ export function renderScene(object){
     const characterSection = renderCharacter(object.char);
     const beatSection = renderBeat(object);
 
-    screen.id = "screen";
+    screen.id = 'screen';
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
     screen.appendChild(beatSection);

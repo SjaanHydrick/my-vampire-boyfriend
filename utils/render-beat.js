@@ -8,7 +8,12 @@ import { renderDialButton, resetDialButton } from './render-dial-button.js';
 // renders the dialogueBox, responses, and wires the buttons to the responses
 export function renderBeat(object){
     const section = document.createElement('section');
-    section.id = "beat-section";
+
+    const dialogueBox = renderDialogueBox(object.dialogueBox);
+    const responseSection = renderResponses(object.choices);
+    renderButtons(object);
+
+    section.id = 'beat-section';
 
     const dialogueBox = renderDialogueBox(object.dialogueBox);
     section.appendChild(dialogueBox);

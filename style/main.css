@@ -3,30 +3,49 @@
     src: url('../fonts/Paper\ Flowers.ttf');
 }
 
+@font-face {
+    font-family: Luna;
+    src: url('../fonts/Luna.ttf');
+}
+
+@font-face {
+    font-family: InternetFriends;
+    src: url('../fonts/Internet\ Friends.ttf');
+}
+
 #avatar{
     margin-top: 20px;
-    width: 150px;
+    margin-bottom: 0;
+    width: 250px;
 }
 
 #player-name{
+    margin-top: 5px;
     text-align: center;
     font-family: Paper Flowers;
     font-size: 25pt;
     color: white;
 }
 
-#dialogue-box{
+#dialogue-div{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    height: 100px;
     padding: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 500px;
-    font-family: Paper Flowers;
-    font-size: 17pt;
-    color: white;
-    background-color: maroon;
-    border: solid 2px silver;
+    background-color: #e6addd;
+    border: solid 2px white;
     border-radius: 10px;
 }
+
+#dialogue-box{
+    font-family: Luna;
+    letter-spacing: .7pt;
+    font-size: 10pt;
+    color: white;
+}
+
 
 .response{
     float: left;
@@ -52,6 +71,37 @@
     animation-iteration-count: infinite;
 }
 
+#logo {
+    float: left;
+    margin-left: 15px;
+    margin-top: -20px;
+    height: 30px;
+    opacity: .5;
+}
+
+.m {
+    float: left;
+    margin-top: -10px;
+    font-family: Beauty and the Beast;
+    color: white;
+}
+
+.v {
+    margin-top: -12px;
+    margin-left: 1px;
+    font-family: DoubleFeature;
+    color: maroon;
+    font-size: 20pt;
+}
+
+.b {
+    float: right;
+    margin-left: 1px;
+    margin-top: 15px;
+    font-family: Beauty and the Beast;
+    color: white;
+}
+
 @keyframes vampire {
     0% {
         transform: translateX(0px)
@@ -65,5 +115,10 @@
     100% {
         transform: translateX(0px)
     }
+}
+
+@keyframes typing {
+    from { width: 100% }
+    to { width: 0 }
 }
 
