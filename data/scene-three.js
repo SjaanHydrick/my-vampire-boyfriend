@@ -1,7 +1,7 @@
 import { gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
-import { S4B1 } from './scene-four.js';
+// import { S4B1 } from './scene-four.js';
 
 export const S3B1 = {
     id: 'riverwalk',
