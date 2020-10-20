@@ -4,9 +4,9 @@ export function renderButtons(object){
 
     for (let i = 0; i < buttons.length; i++){
         if (object.choices[i]){
-            buttons[i].onclick = function () {
+            buttons[i].onclick = function() {
                 object.choices[i].responseFunction();
-            }
+            };
             buttons[i].style.color = 'maroon';
         }
         else {
