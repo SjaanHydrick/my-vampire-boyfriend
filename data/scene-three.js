@@ -11,7 +11,6 @@ export const S3B1 = {
     choices: [{
         id: 'crowded-path',
         response: `Stay on crowded path`,
-        result: {},
         responseFunction: function() {
             updateBeat(S3B2);
         },
