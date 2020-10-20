@@ -1,17 +1,28 @@
 // pulls dialgoue information from passed object, creates 'p' element
 // returns it
-export function renderDialogueBox(textArray){
+export function renderDialogueBox(text){
     const div = document.createElement("div");
+    let i = 0;
 
-    for (let text of textArray){
-        const dialogueString = document.createElement("p");
-        dialogueString.id = "dialogue-box";
-        dialogueString.textContent = text;
-        div.appendChild(dialogueString);
-    }
+
+    const dialogueString = document.createElement("p");
+    dialogueString.id = "dialogue-box";
+    div.appendChild(dialogueString);
+    typeWriter(dialogueString, text, i);
 
     div.id = "dialogue-div"
     
     return div;
 }
 
+
+export function typeWriter(dialogueString, text, i){
+    let speed = 50;
+    if (i < text.length){
+        dialogueString.textContent += text.charAt(i);
+        i++;
+        setTimeout(function () {
+            typeWriter(dialogueString, text, i)
+        }, speed);
+    }
+}

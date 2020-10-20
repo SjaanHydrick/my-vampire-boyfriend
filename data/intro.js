@@ -11,10 +11,8 @@ export const I1 = {
     id: 'intro',
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
-    dialogueBox: returnsUserName(),
-    [
-        `Hi!  My name is Sally, and I have a new boyfriend!`,
-        `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
+    dialogueBox: 
+        `He doesn't talk much, but thats ok.  I talk enough for the both of us! I met my boyfriend at the local hospital where he was picking up blood for the bloodbank`,
     buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I2);
@@ -23,10 +21,8 @@ export const I1 = {
 
 const I2 = {
     id: 'intro',
-    dialogueBox: [
-        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank',
-        'I never flirt with men at work, but I made an exception for this cutie!',
-    ],
+    dialogueBox: 
+        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank. I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I3);
@@ -35,9 +31,8 @@ const I2 = {
 
 const I3 = {
     id: 'intro',
-    dialogueBox: [
-        "Did I mention I'm a nurse?  Because I'm a nurse."
-    ],
+    dialogueBox: 
+        "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I4);
@@ -46,9 +41,8 @@ const I3 = {
 
 const I4 = {
     id: 'intro',
-    dialogueBox: [
-        "I'm about to meet him for our first date in the cafeteria!"
-    ],
+    dialogueBox: 
+        "I'm about to meet him for our first date in the cafeteria!",
     buttonChoice: "dial",
     responseFunction: function() {
         updateScene(S1B1);
