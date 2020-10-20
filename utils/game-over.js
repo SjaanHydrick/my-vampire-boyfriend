@@ -39,3 +39,5 @@ export function nextChapter() {
     player.chapters++;
     setInLocalStorage(player);
 }
+
+export function gameOverMothMan(){}
