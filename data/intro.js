@@ -1,19 +1,18 @@
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S1B1 } from './scene-one.js';
-import { getFromLocalStorage } from '../utils/manage-local-storage.js';
-
-function returnsUserName(){
-    return [getFromLocalStorage().name];
-}
+import { returnUsername } from '../utils/return-username.js';
+import { returnAvatar } from '../utils/return-avatar.js';
 
 export const I1 = {
     id: 'intro',
-    image: 'intro.jpg',
-    char: 'Vampire_BF.png',
+
+    image: 'castle.jpg',
+    char: returnAvatar(),
     dialogueBox: 
-        `He doesn't talk much, but thats ok.  I talk enough for the both of us! I met my boyfriend at the local hospital where he was picking up blood for the bloodbank`,
-    buttonChoice: 'dial',
+        `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
+    buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I2);
     },
@@ -22,8 +21,9 @@ export const I1 = {
 const I2 = {
     id: 'intro',
     dialogueBox: 
-        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank. I never flirt with men at work, but I made an exception for this cutie!',
-    buttonChoice: 'dial',
+        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
+    buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I3);
     },
@@ -32,14 +32,27 @@ const I2 = {
 const I3 = {
     id: 'intro',
     dialogueBox: 
-        "Did I mention I'm a nurse?  Because I'm a nurse.",
-    buttonChoice: 'dial',
+        "I never flirt with men at work, but I made an exception for this cutie!",
+    buttonChoice: "dial",
+
     responseFunction: function() {
         updateBeat(I4);
     },
 };
 
 const I4 = {
+    id: 'intro',
+    dialogueBox: 
+        "Did I mention I'm a nurse?  Because I'm a nurse.",
+    buttonChoice: "dial",
+    responseFunction: function() {
+        updateScene(S1B1);
+    },
+};
+
+
+
+const I5 = {
     id: 'intro',
     dialogueBox: 
         "I'm about to meet him for our first date in the cafeteria!",
