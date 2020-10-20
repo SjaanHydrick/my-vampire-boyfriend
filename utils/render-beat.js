@@ -10,12 +10,10 @@ export function renderBeat(object){
     const section = document.createElement('section');
 
     const dialogueBox = renderDialogueBox(object.dialogueBox);
-    const responseSection = renderResponses(object.choices);
-    renderButtons(object);
+    // const responseSection = renderResponses(object.choices);
 
     section.id = 'beat-section';
 
-    const dialogueBox = renderDialogueBox(object.dialogueBox);
     section.appendChild(dialogueBox);
     if (object.buttonChoice === 'dial'){
         renderDialButton(object);

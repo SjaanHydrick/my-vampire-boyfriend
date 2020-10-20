@@ -26,6 +26,5 @@ export function resetNavButtons(object){
         button.onclick = '';
         button.classList.toggle('active');
         button.style.color = 'black';
-
     }
 }
