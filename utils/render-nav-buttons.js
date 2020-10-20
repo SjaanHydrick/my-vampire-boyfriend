@@ -1,7 +1,7 @@
 // render buttons connects with the three response buttons and 
 // adds the functionality stored in the responses JSON
 // if the button is live, 'active' is added to its classList
-export function renderButtons(object){
+export function renderNavButtons(object){
     const buttons = document.getElementsByClassName('small-buttons');
 
     for (let i = 0; i < buttons.length; i++){
@@ -18,5 +18,13 @@ export function renderButtons(object){
             buttons[i].onclick = '';
         }
     }
+}
 
+export function resetNavButtons(object){
+    const buttons = document.getElementsByClassName('small-buttons');
+    for (let button of buttons){
+        button.onclick = '';
+        button.classList.toggle('active');
+        button.style.color = 'black';
+    }
 }

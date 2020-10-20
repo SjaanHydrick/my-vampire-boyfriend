@@ -9,8 +9,13 @@
 }
 
 @font-face {
-    font-family: InternetFriends;
-    src: url('../fonts/Internet\ Friends.ttf');
+    font-family: Beauty and the Beast;
+    src: url('../fonts/Beauty\ and\ the\ Beast\ Sample.ttf');
+}
+
+@font-face {
+    font-family: DoubleFeature;
+    src: url('../fonts/DoubleFeature20.ttf');
 }
 
 #dial {
@@ -73,5 +78,36 @@ input[type="radio"] {
     transform: scale(1.2);
     transition-duration: 1.5s;
     filter: none;
+}
+
+#logo {
+    float: left;
+    margin-left: 15px;
+    margin-top: -20px;
+    height: 30px;
+    opacity: .5;
+}
+
+.m {
+    float: left;
+    margin-top: -10px;
+    font-family: Beauty and the Beast;
+    color: white;
+}
+
+.v {
+    margin-top: -12px;
+    margin-left: 1px;
+    font-family: DoubleFeature;
+    color: maroon;
+    font-size: 20pt;
+}
+
+.b {
+    float: right;
+    margin-left: 1px;
+    margin-top: 15px;
+    font-family: Beauty and the Beast;
+    color: white;
 }
 
