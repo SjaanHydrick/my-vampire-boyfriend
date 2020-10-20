@@ -6,8 +6,8 @@ import { returnAvatar } from '../utils/return-avatar.js';
 
 export const I1 = {
     id: 'intro',
-
     image: 'intro.jpg',
+
     char: returnAvatar(),
     dialogueBox: 
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
@@ -22,8 +22,7 @@ const I2 = {
     id: 'intro',
     dialogueBox: 
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
-    buttonChoice: 'dial',
-
+    buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I3);
     },
