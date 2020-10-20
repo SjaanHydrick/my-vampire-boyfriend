@@ -12,9 +12,9 @@ export const I1 = {
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
     dialogueBox: returnsUserName(),
-    [
-        `Hi!  My name is Sally, and I have a new boyfriend!`,
-        `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
+    // [
+    //     `Hi!  My name is Sally, and I have a new boyfriend!`,
+    //     `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
     buttonChoice: "dial",
     responseFunction: function() {
         updateBeat(I2);
