@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, tofu } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -35,8 +35,9 @@ export const S1B1 = {
             resultText: "The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies."
         },
         responseFunction: function() {
-
+            tofu();
             gameOverVampireDied();
+
             // console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
 
         },
@@ -58,7 +59,8 @@ const S1B2 = {
             },
             responseFunction: function() {
 
-                gameOverYouDied();
+                gameOverVampireDied();
+
 
             },                
         },
@@ -88,7 +90,7 @@ const S1B3 = {
 
                 gameOverYouDied();
 
-                gameOver(this.result);
+                
 
             }
         },

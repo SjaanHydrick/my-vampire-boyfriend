@@ -1,5 +1,5 @@
 
-import { setInLocalStorage, getFromLocalStorage} from './manage-local-storage.js'
+import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js'
 
 const storageKey = 'USERKEY';
 
@@ -25,4 +25,11 @@ export function gameOver(resultObject){
     setInLocalStorage(userData);
 
 
+}
+
+
+export function tofu(){
+    const player = getFromLocalStorage(storageKey);
+    player.tofu = true;
+    setInLocalStorage(player);
 }
