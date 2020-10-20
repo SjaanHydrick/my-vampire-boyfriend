@@ -1,9 +1,9 @@
 
-export function renderCharacter(char){
+export function renderCharacter(char, id){
     const characterImage = document.createElement('img');
     const characterDiv = document.createElement('div');
 
-    characterImage.id = 'character-image';
+    characterImage.id = id;
     characterImage.src = `../assets/${char}`;
 
     characterDiv.id = 'character-div';
