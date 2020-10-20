@@ -1,6 +1,7 @@
 import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
+import { S3B1 } from './scene-three.js';
 
 export const S2B1 = {
     id: 'coffee-shop',
@@ -23,7 +24,7 @@ export const S2B1 = {
 
     }, 
     {
-        id: 'greenTea',
+        id: 'green-tea',
         response: `I'm really more of a tea person, a pot of green tea please!`,
         result: {
             dead: 'player',
@@ -56,7 +57,7 @@ const S2B2 = {
             response: 'Sneak up and give him a big hug!',
             result: {
                 dead: 'vampire',
-                resultText: ['Your boyfriend loses his balance and falls into a huge box of coffee stirrers', 'Why do those look so sharp?!?', 'He dies.']
+                resultText: 'Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.'
             },
             responseFunction: function() {
                 gameOverVampireDied();
