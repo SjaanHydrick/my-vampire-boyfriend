@@ -24,7 +24,11 @@ export function updateScene(object){
 
     const newScreen = renderScene(object);
     screenFrame.appendChild(newScreen);
-    renderVent();
+
+    const ventSection = document.getElementById('vent');
+    ventSection.innerHTML = '';
+    ventSection.appendChild(renderVent());
+    // renderVent();
 
   
 }
