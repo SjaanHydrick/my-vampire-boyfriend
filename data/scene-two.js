@@ -4,7 +4,7 @@ import { updateScene } from '../utils/render-scene.js';
 
 export const S2B1 = {
     id: 'coffee-shop',
-    image: 'coffee-shop.jpg',
+    image: 'cafe.jpg',
     char: 'Vampire_BF.png',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{

@@ -5,7 +5,7 @@ import { S2B1 } from './scene-two.js';
 
 export const S1B1 = {
     id: 'cafeteria',
-    image: 'castle.jpg',
+    image: 'cafeteria.jpg',
     char: 'Vampire_BF.png',
     buttonChoice: 'nav',
     dialogueBox: 
