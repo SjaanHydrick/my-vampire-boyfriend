@@ -1,4 +1,4 @@
-import { gameOver } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -30,10 +30,9 @@ export const S1B1 = {
         id: 'tofu',
         response: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
         responseFunction: function() {
-            gameOver();
-            console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
+            gameOverVampireDied();
+            // console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
         },
-        vbfDie: true
     }
     ]
 };
@@ -46,7 +45,7 @@ const S1B2 = {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
             responseFunction: function() {
-                console.log('Here! 4');
+                gameOverYouDied();
             },                
         },
         {
@@ -67,7 +66,7 @@ const S1B3 = {
             id: 'youDie',
             response: `I'll let him...`,
             responseFunction: function() {
-                gameOver();
+                gameOverYouDied();
             }
         },
         {
