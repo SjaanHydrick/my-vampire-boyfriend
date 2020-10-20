@@ -33,3 +33,9 @@ export function tofu(){
     player.tofu = true;
     setInLocalStorage(player);
 }
+
+export function nextChapter() {
+    const player = getFromLocalStorage(storageKey);
+    player.chapters++;
+    setInLocalStorage(player);
+}

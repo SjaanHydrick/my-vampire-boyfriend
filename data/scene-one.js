@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, tofu } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, tofu, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -69,6 +69,7 @@ const S1B2 = {
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
                 updateScene(S2B1);
+                nextChapter();
             },                
         }
     ]
@@ -98,6 +99,7 @@ const S1B3 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
+
                 updateScene(S2B1);
             }
         }]

@@ -16,7 +16,8 @@ function makePlayer(data) {
         avatar: data.get('avatar'),
         gender: data.get('gender'),
         vampire: 'alive',
-        player: 'alive'
+        player: 'alive',
+        chapters: 0,
 
     };
     return user;
