@@ -1,5 +1,6 @@
-import { gameOverYouDied } from '../utils/game-over';
+import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over';
 import { updateBeat } from '../utils/render-beat.js';
+import { updateScene } from '../utils/render-scene';
 
 export const S2B1 = {
     id: 'coffee-shop',
@@ -35,5 +36,61 @@ export const S2B1 = {
             gameOverYouDied();
         },
     }
+    ]
+};
+
+const S2B2 = {
+    id: 'uninterested',
+    dialogueBox: 'OMG he thinks I\'m a total loser, he\'s acting really cold and hobbling away.',
+    buttonChoice: 'nav',
+    choices: [
+        {
+            id: 'pout',
+            response: 'Pout until he notices you\'re upset',
+            result: {
+                resultText: ['Well this date wasn\'t the best idea.', 'But I know our connection is SO strong', 'He\'s just SOoOo dreamy!']
+            },
+            responseFunction: function() {
+                updateScene(S3B1);
+            }
+        },
+        {
+            id: 'hugAttack',
+            response: 'Sneak up and give him a big hug!',
+            result: {
+                dead: 'vampire',
+                resultText: ['Your boyfriend loses his balance and falls into a huge box of coffee stirrers', 'Why do those look so sharp?!?', 'He dies.']
+            },
+            responseFunction: function() {
+                gameOverVampireDied();
+            }
+        }
+    ]
+};
+
+const S2B3 = {
+    id: 'showsInterest',
+    dialogueBox: 'Uhh, he seems totally interested in me!!',
+    buttonChoice: 'nav',
+    choices: [
+        {
+            id: 'modesty',
+            response: 'Show some restraint and pull away',
+            responseFunction: function() {
+                updateScene(S3B1);
+            }
+        },
+        {
+            id: 'cuddle',
+            response: 'Cuddle with him!',
+            result: {
+                dead: 'player',
+                resultText: 'Ok, big mistake! Your boyfriend took the opportunity and killed you.'
+            },
+            responseFunction: function() {
+                gameOverYouDied();
+            }
+
+        }
     ]
 };
