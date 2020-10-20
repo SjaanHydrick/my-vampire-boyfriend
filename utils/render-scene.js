@@ -2,6 +2,7 @@
 import { renderBeat } from './render-beat.js';
 import { renderCharacter } from './render-character.js';
 import { renderVent } from './render-vent.js';
+
 export function renderScene(object){
     const screen = document.createElement('section');
 
@@ -28,6 +29,11 @@ export function updateScene(object){
     screenFrame.appendChild(newScreen);
     // renderVent();
     
+
+    const ventSection = document.getElementById('vent');
+    ventSection.innerHTML = '';
+    ventSection.appendChild(renderVent());
+    // renderVent();
 
   
 }
