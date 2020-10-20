@@ -1,12 +1,18 @@
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S1B1 } from './scene-one.js';
+import { getFromLocalStorage } from '../utils/manage-local-storage.js';
+
+function returnsUserName(){
+    return [getFromLocalStorage().name];
+}
 
 export const I1 = {
     id: 'intro',
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
-    dialogueBox: [
+    dialogueBox: returnsUserName(),
+    [
         `Hi!  My name is Sally, and I have a new boyfriend!`,
         `He doesn't talk much, but thats ok.  I talk enough for the both of us!`],
     buttonChoice: "dial",
@@ -30,7 +36,7 @@ const I2 = {
 const I3 = {
     id: 'intro',
     dialogueBox: [
-        "Did I mention I'm a nurse?  Because I'm a nurse"
+        "Did I mention I'm a nurse?  Because I'm a nurse."
     ],
     buttonChoice: "dial",
     responseFunction: function() {
