@@ -3,6 +3,16 @@
     src: url('../fonts/Paper\ Flowers.ttf');
 }
 
+@font-face {
+    font-family: Luna;
+    src: url('../fonts/Luna.ttf');
+}
+
+@font-face {
+    font-family: InternetFriends;
+    src: url('../fonts/Internet\ Friends.ttf');
+}
+
 #dial {
     margin-top: 0px;
 }
@@ -17,7 +27,7 @@
 
 p {
     margin: 20px;
-    font-family: Paper Flowers;
+    font-family: Luna;
     font-size: 20pt;
     color: white;
 }

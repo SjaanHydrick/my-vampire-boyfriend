@@ -1,26 +1,6 @@
 @font-face {
-    font-family: A Lolita Scorned;
-    src: url('../fonts/A_Lolita_Scorned.ttf');
-}
-
-@font-face {
     font-family: Beauty and the Beast;
     src: url('../fonts/Beauty\ and\ the\ Beast\ Sample.ttf');
-}
-
-@font-face {
-    font-family: BloodLust;
-    src: url('../fonts/BloodLust.ttf');
-}
-
-@font-face {
-    font-family: Night of Terror;
-    src: url('../fonts/CFNightofTerrorPERSONAL-Reg.ttf');
-}
-
-@font-face {
-    font-family: Crafty Beach;
-    src: url('../fonts/Crafty\ Beach.otf');
 }
 
 @font-face {
@@ -31,11 +11,6 @@
 @font-face {
     font-family: Paper Flowers;
     src: url('../fonts/Paper\ Flowers.ttf');
-}
-
-@font-face {
-    font-family: SweetPurple;
-    src: url('../fonts/sweet\ purple.ttf');
 }
 
 body {
