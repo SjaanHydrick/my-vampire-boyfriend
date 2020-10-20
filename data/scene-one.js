@@ -7,6 +7,7 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'castle.jpg',
     char: 'Vampire_BF.png',
+    buttonChoice: "nav",
     dialogueBox: [
         "My boyfriend is volunteering at the hospital blood drive today, so we're going to have a lunch date in the cafeteria!",
         "He's keto or something so normally I'm the only one who eats. But I really don't mind at all, it's just nice to spend time together!",
@@ -46,6 +47,7 @@ export const S1B1 = {
 const S1B2 = {
     id: 'feed',
     dialogueBox: [`Wow he seems like he might want to share this with me, how romantic! What should I do?`],
+    buttonChoice: "nav",
     choices: [
         {
             id: 'meatSick',
@@ -73,6 +75,7 @@ const S1B2 = {
 const S1B3 = {
     id: 'letHim',
     dialogueBox: [`Omg he's leaning closer to my neck`],
+    buttonChoice: "nav",
     choices: [
         {
             id: 'youDie',
