@@ -1,4 +1,4 @@
-import { gameOver } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -34,7 +34,10 @@ export const S1B1 = {
             resultText: "The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies."
         },
         responseFunction: function() {
-            gameOver(this.result);
+
+            gameOverVampireDied();
+            // console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
+
         },
     }
     ]
@@ -52,7 +55,9 @@ const S1B2 = {
                 resultText: "He shriveled up and died!"
             },
             responseFunction: function() {
-                gameOver(this.result);
+
+                gameOverYouDied();
+
             },                
         },
         {
@@ -77,7 +82,11 @@ const S1B3 = {
                 resultText: 'He bit me and I died' 
             },
             responseFunction: function() {
+
+                gameOverYouDied();
+
                 gameOver(this.result);
+
             }
         },
         {
