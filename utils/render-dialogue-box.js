@@ -1,14 +1,17 @@
 // pulls dialgoue information from passed object, creates 'p' element
 // returns it
-export function renderDialogueBox(text){
+export function renderDialogueBox(textArray){
     const div = document.createElement("div");
-    const dialogueBox = document.createElement("p");
-    dialogueBox.id = "dialogue-box";
-    dialogueBox.textContent = text;
+
+    for (let text of textArray){
+        const dialogueString = document.createElement("p");
+        dialogueString.id = "dialogue-box";
+        dialogueString.textContent = text;
+        div.appendChild(dialogueString);
+    }
 
     div.id = "dialogue-div"
     
-    div.appendChild(dialogueBox);
     return div;
 }
 
