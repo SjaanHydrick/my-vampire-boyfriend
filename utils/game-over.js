@@ -1,3 +1,4 @@
+
 import { setInLocalStorage, getFromLocalStorage} from './manage-local-storage.js'
 
 const storageKey = 'USERKEY';
@@ -16,4 +17,12 @@ export function gameOverVampireDied(){
     player.vampire = 'dead';
     setInLocalStorage(player);
     window.location.href = '../results';
+}
+
+export function gameOver(resultObject){
+    let userData = getFromLocalStorage();
+    userData.results = resultObject;
+    setInLocalStorage(userData);
+
+
 }
