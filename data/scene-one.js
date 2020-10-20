@@ -54,12 +54,11 @@ const S1B2 = {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
             result: {
-                dead: 'vampire',
-                resultText: 'He shriveled up and died!'
+                resultText: 'Your boyfriend looks sick and walks out on lunch'
             },
             responseFunction: function() {
 
-                gameOverVampireDied();
+                updateScene(S2B1);
 
 
             },                
