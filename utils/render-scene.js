@@ -14,6 +14,9 @@ export function renderScene(object){
 
     screen.appendChild(beatSection);
     screen.appendChild(characterSection);
+    
+    
+   
 
     return screen;
 }
@@ -24,6 +27,8 @@ export function updateScene(object){
 
     const newScreen = renderScene(object);
     screenFrame.appendChild(newScreen);
+    // renderVent();
+    
 
     const ventSection = document.getElementById('vent');
     ventSection.innerHTML = '';

@@ -10,6 +10,7 @@ export function renderResponses(choices){
         response.id = `response${i}`;
         response.textContent = choice.response;
         responseSection.appendChild(response);
+        i++;
     }
 
     return responseSection;

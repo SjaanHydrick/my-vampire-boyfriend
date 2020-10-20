@@ -22,7 +22,7 @@ const I2 = {
     id: 'intro',
     dialogueBox: 
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
-    buttonChoice: "dial",
+    buttonChoice: 'dial',
     responseFunction: function() {
         updateBeat(I3);
     },

@@ -1,5 +1,5 @@
-import { renderAvatar, renderUserName } from './render-avatar.js';
-import { getFromLocalStorage } from './manage-local-storage.js';
+import { renderVent } from './render-vent.js';
+// import { getFromLocalStorage } from './manage-local-storage.js';
 import { cafeteria } from '../data/scenes.js';
 import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
@@ -10,15 +10,16 @@ const dialogueBox = document.createElement('p');
 dialogueBox.id = 'dialogue-box';
 screen.appendChild(dialogueBox);
 
-const vent = document.getElementById('vent');
+renderVent();
+// const vent = document.getElementById('vent');
 
-const userData = getFromLocalStorage();
+// const userData = getFromLocalStorage();
 
-const avatar = renderAvatar();
-vent.appendChild(avatar);
+// const avatar = renderAvatar();
+// vent.appendChild(avatar);
 
-const playerName = renderUserName();
-vent.appendChild(playerName);
+// const playerName = renderUserName();
+// vent.appendChild(playerName);
 
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
