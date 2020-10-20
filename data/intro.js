@@ -45,7 +45,7 @@ const I4 = {
         "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: 'dial',
     responseFunction: function() {
-        updateScene(S1B1);
+        updateBeat(I5);
     },
 };
 

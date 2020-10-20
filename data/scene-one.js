@@ -45,7 +45,7 @@ export const S1B1 = {
 
 const S1B2 = {
     id: 'feed',
-    dialogueBox: [`Wow he seems like he might want to share this with me, how romantic! What should I do?`],
+    dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
         {

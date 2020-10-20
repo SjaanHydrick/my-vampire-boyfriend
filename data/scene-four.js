@@ -1,7 +1,7 @@
 import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
-import { S5B1 } from './scene-five.js';
+// import { S5B1 } from './scene-five.js';
 
 export const S4B1 = {
     id: 'halloweenDance',
