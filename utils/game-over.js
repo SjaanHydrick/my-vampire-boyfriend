@@ -1,5 +1,5 @@
 
-import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js'
+import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
 
 const storageKey = 'USERKEY';
 
