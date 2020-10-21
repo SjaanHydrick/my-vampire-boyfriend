@@ -9,10 +9,12 @@ const div = document.createElement('div');
 div.classList.add('text-div');
 resultText.classList.add('result-text');
 numberOfDates.classList.add('date-text');
+
 renderVent();
 renderResultText(resultText);
 renderDatesText(numberOfDates);
 renderResultImage(image)
+
 div.appendChild(resultText);
 div.appendChild(numberOfDates);
 div.appendChild(image)
