@@ -6,6 +6,8 @@ import { S3B1 } from './scene-three.js';
 export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
+    rightResize: true,
+    rightFadeIn: true,
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
@@ -37,6 +39,8 @@ export const S2B1 = {
 const S2B2 = {
     id: 'uninterested',
     leftChar: null,
+    rightResize: true,
+    rightFadeIn: false,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
@@ -61,6 +65,7 @@ const S2B2 = {
 const S2B3 = {
     id: 'showsInterest',
     leftChar: null,
+    rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
@@ -87,6 +92,7 @@ const S2B3 = {
 const S2B4 = {
     id: 'teaDeath',
     leftChar: null,
+    rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.`,
     responseFunction: function() {
@@ -97,6 +103,7 @@ const S2B4 = {
 const S2B5 = {
     id: 'sickVamp',
     leftChar: null,
+    rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
@@ -108,6 +115,7 @@ const S2B5 = {
 const S2B6 = {
     id: 'coffeeDeath',
     leftChar: null,
+    rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.`,
     responseFunction: function() {
@@ -118,6 +126,7 @@ const S2B6 = {
 const S2B7 = {
     id: 'hugDeath',
     leftChar: null,
+    rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `Ok, big mistake! Your boyfriend took the opportunity and killed you.`,
     responseFunction: function() {
