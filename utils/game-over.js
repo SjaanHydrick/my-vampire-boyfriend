@@ -6,7 +6,7 @@ import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.j
 
 export function gameOverYouDied(){
     const player = getFromLocalStorage();
-    player.player = 'dead';
+    player.playerAlive = false;
     setInLocalStorage(player);
     window.location.href = '../results';
 }
@@ -14,7 +14,7 @@ export function gameOverYouDied(){
 
 export function gameOverVampireDied(){
     const player = getFromLocalStorage();
-    player.vampire = 'dead';
+    player.vampireAlive = false;
     setInLocalStorage(player);
     window.location.href = '../results';
 }
@@ -43,8 +43,21 @@ export function nextChapter() {
 
 export function gameOverMothMan(){
     const player = getFromLocalStorage();
-    player.tofu = true;
+    player.mothMan = true;
     setInLocalStorage(player);
     window.location.href = '../results';
 
+}
+
+export function youWin(){
+    const player = getFromLocalStorage();
+    player.win = true;
+    setInLocalStorage(player);
+    window.location.href = '../results';
+
+}
+export function isVampire(){
+    const player = getFromLocalStorage();
+    player.isVampire = true;
+    setInLocalStorage(player);
 }

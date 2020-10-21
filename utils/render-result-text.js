@@ -6,7 +6,17 @@ import { getFromLocalStorage } from './manage-local-storage.js';
 export function renderResultText(resultText) {
     const player = getFromLocalStorage();
 
-    if (player.vampire === 'dead' && player.tofu === true) {
+    if (player.win === true && player.isVampire === true) {
+
+        resultText.textContent = `You did it! Your vampire boyfriend loves you so much he turned you into a vampire and you can spend eternity forever.` ;
+
+    }
+    if (player.chapters === true) {
+
+        resultText.textContent = `You survived!  Your vampire boyfriend is so  accustomed to your presence he's not even actively trying to murder you.` ;
+
+    }
+    if (player.tofu === true && player.vampireAlive === false) {
 
         resultText.textContent = `Your tofu is drenched in garlic sauce! Upon taking a whiff, your boyfriend starts to choke and suddenly explodes into a pile of ash!` ;
 
@@ -16,6 +26,17 @@ export function renderResultText(resultText) {
 
         resultText.textContent = 'Your vampire boyfirend is lame. It\'s all about the Mothman';
     }
+    
+    if (player.playerAlive === false){
+
+        resultText.textContent = 'Whelp you died';
+    }
+    if (player.vampireAlive === false){
+
+        resultText.textContent = 'Whelp you killed your vampire boyfriend';
+    }
+
+
 
 }
 
@@ -24,8 +45,9 @@ export function renderResultText(resultText) {
 export function renderResultImage(image){
     const player = getFromLocalStorage();
     if (player.mothMan === true){
-        image.src = '../assets/Vampire_BF.png'
+        image.src = '../assets/MothMan.png';
     }
+    
 
 }
 

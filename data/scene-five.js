@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, youWin, isVampire } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 
 export const S5B1 = {
@@ -94,7 +94,7 @@ const S5B3 = {
                 resultText: 'Your vampire boyfriend surprisingly decides to reward your modest behavior by letting you live! Congrats!'
             },
             responseFunction: function() {
-                gameOverYouWin();
+                youWin();
             }
 
         }
@@ -127,7 +127,9 @@ const S5B4 = {
                 resultText: 'Your boyfriend loves you too and wants to be with you forever! He turns you into a vampire!!'
             },
             responseFunction: function() {
-                gameOverYouVampire();
+                isVampire()
+                youWin();
+
             }
         }
     ]
