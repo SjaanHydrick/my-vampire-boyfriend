@@ -127,7 +127,7 @@ const S5B4 = {
                 resultText: 'Your boyfriend loves you too and wants to be with you forever! He turns you into a vampire!!'
             },
             responseFunction: function() {
-                isVampire()
+                isVampire();
                 youWin();
 
             }

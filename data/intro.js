@@ -8,7 +8,7 @@ export const I1 = {
     id: 'intro',
     image: 'intro.jpg',
     transitionTitle: {
-        title: 'Introduction',
+        title: 'Introduction:',
         subtitle: 'the hospital'
     },
     leftChar: returnAvatar(),

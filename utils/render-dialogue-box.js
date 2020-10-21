@@ -4,8 +4,8 @@ export function renderDialogueBox(text){
     const div = document.createElement('div');
     let i = 0;
 
-    const dialogueString = document.createElement("p");
-    dialogueString.id = "dialogue-box";
+    const dialogueString = document.createElement('p');
+    dialogueString.id = 'dialogue-box';
 
     div.appendChild(dialogueString);
     typeWriter(dialogueString, text, i);
