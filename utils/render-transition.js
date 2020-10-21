@@ -8,7 +8,7 @@ export function renderTransition(transitionText){
 
     let transitionCard = renderTransitionTitle(transitionText);
     screenSection.appendChild(transitionCard);
-
+    playTransitionAudio();
     return screenSection;
 }
 
@@ -28,4 +28,9 @@ function renderTransitionTitle(transitionText){
     titleDiv.appendChild(subtitleSpan);
 
     return titleDiv;
+}
+
+function playTransitionAudio(){
+    let audioElement = new Audio("../assets/transition-clip.mp3");
+    audioElement.play();
 }
