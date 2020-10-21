@@ -13,12 +13,17 @@ export function renderNavButtons(object){
 
             buttons[i].onmouseenter = function() {
                 let response = document.getElementById(`response${i+1}`);
-                response.classList.toggle('button-hover');
+                response.classList.add('button-hover');
+            };
+
+            buttons[i].onmouseover = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.add('button-hover');
             };
 
             buttons[i].onmouseleave = function() {
                 let response = document.getElementById(`response${i+1}`);
-                response.classList.toggle('button-hover');
+                response.classList.remove('button-hover');
             };
 
             buttons
@@ -30,6 +35,9 @@ export function renderNavButtons(object){
             buttons[i].classList.toggle('active');
             buttons[i].style.color = 'black';
             buttons[i].onclick = '';
+            buttons[i].onmouseenter = '';
+            buttons[i].onmouseleave = '';
+            buttons[i].onmouseover = '';
         }
     }
 }
