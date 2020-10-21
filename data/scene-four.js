@@ -24,18 +24,15 @@ export const S4B1 = {
     {
         id: 'drinks',
         response: `I need a drink!`,
-        result: {
-            resultText: `You order two Bloody Mary's. Your boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`
-        },
         responseFunction: function() {
-            updateScene(S5B1);
+            updateBeat(S4B3);
         }
     }, 
     {
         id: 'small-talk',
         response: `Make small talk`,
         responseFunction: function() {
-            updateBeat(S4B3);
+            updateBeat(S4B4);
         },
     }
     ]
@@ -53,24 +50,31 @@ const S4B2 = {
             id: 'not-here',
             response: `Not in front of all these people!`,
             responseFunction: function() {
-                updateBeat(S4B4);
+                updateBeat(S4B5);
             }
         },
         {
             id: 'pda',
             response: 'A little PDA never hurt!',
-            result: {
-                dead: 'vampire',
-                resultText: 'A man dressed in a lot of leather comes up behind him and stabs him in the heart with a broom handle. OMG MY BOYFRIEND JUST TURNED TO DUST!!'
-            },
             responseFunction: function() {
-                gameOverVampireDied();
+                updateBeat(S4B6);
             }
         }
     ]
 };
 
 const S4B3 = {
+    id: 'bloody-mary',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `You order two Bloody Mary's. Your boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
+    responseFunction: function() {
+        updateScene(S5B1);
+    },
+};
+
+const S4B4 = {
     id: 'mysterious',
     leftChar: null,
     rightResize: true,
@@ -81,28 +85,21 @@ const S4B3 = {
         {
             id: 'try-harder',
             response: `Try harder to get him to talk`,
-            result: {
-                resultText: `No luck! But it's okay we're still so in love!!!`
-            },
             responseFunction: function() {
-                updateScene(S5B1);
+                updateBeat(S4B7);
             }
         },
         {
             id: 'look-down',
             response: 'Bat your eyelashes and look down at your feet',
-            result: {
-                dead: 'player',
-                resultText: 'He looks excited and pulls you in close...to bite your neck and kill you.'
-            },
             responseFunction: function() {
-                gameOverYouDied();
+                updateBeat(S4B8);
             }
         }
     ]
 };
 
-const S4B4 = {
+const S4B5 = {
     id: 'hot-bothered',
     leftChar: null,
     rightResize: true,
@@ -113,23 +110,71 @@ const S4B4 = {
         {
             id: 'turn-around',
             response: `Just turn around and walk away`,
-            result: {
-                dead: 'player',
-                resultText: 'You turn your back on your boyfriend. Big mistake! He kills you without blinking an eye.'
-            },
             responseFunction: function() {
-                gameOverYouDied();
+                updateBeat(S4B9);
             }
         },
         {
             id: 'be-nice',
             response: `Be nice person!`,
-            result: {
-                resultText: `You try and salvage the night but lose him in the crowd. I love him so much and need to make this work no matter what!!`
-            },
             responseFunction: function() {
-                updateScene(S5B1);
+                updateBeat(S4B10);
             }
         }
     ]
+};
+
+const S4B6 = {
+    id: 'hunter',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `A man dressed in a lot of leather comes up behind him and stabs him in the heart with a broom handle. OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
+    responseFunction: function() {
+        gameOverVampireDied();
+    },
+};
+
+const S4B7 = {
+    id: 'no-luck',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `No luck! But it's okay we're still so in love!!!`,
+    responseFunction: function() {
+        updateScene(S5B1);
+    },
+};
+
+const S4B8 = {
+    id: 'excited',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `He looks excited and pulls you in close...to bite your neck and kill you.`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
+};
+
+const S4B9 = {
+    id: 'back-turn',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `You turn your back on your boyfriend. Big mistake! He kills you without blinking an eye.`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
+};
+
+const S4B10 = {
+    id: 'salvage',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `You try and salvage the night but lose him in the crowd. I love him so much and need to make this work no matter what!!`,
+    responseFunction: function() {
+        updateScene(S5B1);
+    },
 };
