@@ -6,6 +6,10 @@ import { S2B1 } from './scene-two.js';
 export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
+    transitionTitle: {
+        title: 'Date 1',
+        subtitle: 'hospital cafeteria'
+    },
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     rightFadeIn: true,

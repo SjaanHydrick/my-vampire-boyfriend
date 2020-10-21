@@ -6,6 +6,10 @@ import { S3B1 } from './scene-three.js';
 export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
+    transitionTitle: {
+        title: 'Date 2',
+        subtitle: 'coffee shop'
+    },
     rightResize: true,
     rightFadeIn: true,
     leftChar: null,

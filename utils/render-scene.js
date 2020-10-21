@@ -8,8 +8,8 @@ import { renderTransition } from './render-transition.js';
 export function renderScene(object){
     const screenFrame = document.querySelector('#screenframe');
 
-    // screen = renderTransition(object.transitionTitle);
-    // screenFrame.appendChild(screen)
+    screen = renderTransition(object.transitionTitle);
+    screenFrame.appendChild(screen)
     setTimeout( function() {
         renderScreen(object);
     }, 3000);
