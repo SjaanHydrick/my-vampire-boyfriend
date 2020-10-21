@@ -1,7 +1,7 @@
 
 import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
 
-// const storageKey = 'USERKEY';
+const storageKey = 'USERKEY';
 
 
 export function gameOverYouDied(){

@@ -41,7 +41,7 @@ export function updateScene(object){
     screenFrame.innerHTML = '';
 
     const newScreen = renderScene(object);
-    screenFrame.appendChild(newScreen);
+    screenFrame.append(newScreen);
     
 
     const ventSection = document.getElementById('vent');
