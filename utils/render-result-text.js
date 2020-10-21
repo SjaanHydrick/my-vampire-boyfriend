@@ -1,4 +1,4 @@
-import { coffee } from './game-over.js';
+
 import { getFromLocalStorage } from './manage-local-storage.js';
 
 
@@ -40,7 +40,7 @@ export function renderResultText(resultText) {
 
         resultText.textContent = 'Whelp you died';
     } else
-    
+
     if (player.vampireAlive === false){
 
         resultText.textContent = 'Whelp you killed your vampire boyfriend';
@@ -74,22 +74,22 @@ export function renderDatesText(datesText) {
     }
     if (player.chapters === 1) {
 
-        datesText.textContent = `You  made it through a single date with your boyfriend.` ;
+        datesText.textContent = `You  survived the cafeteria, but the cafe was your relationships kryptonite.` ;
 
     }
     if (player.chapters === 2) {
 
-        datesText.textContent = `You made it through two whole dates with your boyfriend.` ;
+        datesText.textContent = `You made it through the cafeteria and the cafe! The river walk was where your romance ends.` ;
 
     }
     if (player.chapters === 3) {
 
-        datesText.textContent = `You made  it through three  dates with your boyfriend. Do I hear wedding bells?` ;
+        datesText.textContent = `Your love overcame the cafeteria, the cafe, and a walk on the river, but like so many before you, it ends at a bar.` ;
 
     }
     if (player.chapters === 4) {
 
-        datesText.textContent = `You made it through four dates with your boyfriend, that pretty impressive.` ;
+        datesText.textContent = `The cafeteria was filling. The cafe was stimulating. The river walk invigorating. The bar was intoxicating. You made it all the way to your vampire boyfriends house. But this is where your adventure ends.` ;
 
     }
     if (player.chapters === 5) {
