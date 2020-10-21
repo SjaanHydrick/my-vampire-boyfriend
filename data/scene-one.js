@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, tofu, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied,  nextChapter, tofu } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -49,7 +49,7 @@ const S1B2 = {
             resultText: 'The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.'
         },
         responseFunction: function() {
-            tofu();
+           tofu();
             gameOverVampireDied();
         },
     }
