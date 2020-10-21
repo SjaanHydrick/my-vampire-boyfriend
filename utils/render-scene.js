@@ -2,9 +2,24 @@
 import { renderBeat } from './render-beat.js';
 import { renderVent } from './render-vent.js';
 import { renderLogo } from './render-logo.js';
+import { renderTransition } from './render-transition.js';
 
 
 export function renderScene(object){
+    const screenFrame = document.querySelector('#screenframe');
+
+    screen = renderTransition(object.transitionTitle);
+    screenFrame.appendChild(screen)
+    setTimeout( function() {
+        renderScreen(object);
+    }, 3000);
+
+    
+}
+
+function renderScreen(object){
+    const screenFrame = document.querySelector('#screenframe');
+    screenFrame.innerHTML = '';
     const screen = document.createElement('section');
 
 
@@ -17,8 +32,8 @@ export function renderScene(object){
     
     const logo = renderLogo();
     screen.appendChild(logo);
-
-    return screen;
+    
+    screenFrame.appendChild(screen);
 }
 
 export function updateScene(object){
