@@ -88,8 +88,10 @@
 }
 
 .resize {
-    float: right;
-    height: 377px;
+    position: absolute;
+    height: 450px;
+    left: 400px;
+    bottom: 127px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -103,7 +105,7 @@
 }
 
 .resize > #right-char {
-    height: 700px;
+    height: 800px;
 
 }
 

@@ -7,7 +7,7 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     rightFadeIn: true,
     rightResize: true,
     buttonChoice: 'dial',
@@ -15,11 +15,11 @@ export const S1B1 = {
     responseFunction: function() {
         updateBeat(S1B2);
     },
-}
+};
 
 const S1B2 = {
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     rightFadeIn: false,
     rightResize: true,
     buttonChoice: 'nav',
@@ -61,6 +61,7 @@ const S1B3 = {
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     rightFadeIn: false,
+    rightResize: true,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -94,6 +95,7 @@ const S1B4 = {
     id: 'letHim',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
+    rightResize: true,
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
