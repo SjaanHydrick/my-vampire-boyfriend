@@ -68,18 +68,28 @@
     background-color:#ff83c1;
 }
 
-#button1:hover > .response {
-    box-shadow: 2pt 2pt 5pt white;
-}
-
-#left-char, #right-char{
+#left-char {
     float: left;
     margin-right: 25px;
     margin-top: 45px;
     max-height: 300px;
-    animation: avatar;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: avatar 5s infinite;
+}
+
+#right-char {
+    float: right;
+    margin-right: 120px;
+    margin-top: 55px;
+    height: 400px;
+    animation: vampire 5s infinite, fadein 1s;
+}
+
+.fadein {
+    animation: fadein 2s;
+}
+
+.fadeout {
+    animation: fadeout 2s;
 }
 
 #logo {
@@ -128,3 +138,26 @@
     }
 }
 
+@keyframes vampire {
+    0% {
+        transform: translateX(0px)
+    }
+    10% {
+        transform: translateX(-30px)
+    }
+    50% {
+        transform: translateX(10px)
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
