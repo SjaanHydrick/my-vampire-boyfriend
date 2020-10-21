@@ -6,6 +6,10 @@ import { S5B1 } from './scene-five.js';
 export const S4B1 = {
     id: 'halloween-dance',
     image: 'bar.jpg',
+    transitionTitle: {
+        title: 'Date 4',
+        subtitle: 'the dance'
+    },
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',

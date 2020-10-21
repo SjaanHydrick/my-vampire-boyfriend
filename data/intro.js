@@ -7,7 +7,10 @@ import { returnAvatar } from '../utils/return-avatar.js';
 export const I1 = {
     id: 'intro',
     image: 'intro.jpg',
-    transitionTitle: 'Introduction',
+    transitionTitle: {
+        title: 'Introduction',
+        subtitle: 'the hospital'
+    },
     leftChar: returnAvatar(),
     rightChar: null,
     dialogueBox: 

@@ -4,6 +4,10 @@ import { updateBeat } from '../utils/render-beat.js';
 export const S5B1 = {
     id: 'vampire-lair',
     image: 'lair.jpg',
+    transitionTitle: {
+        title: 'Date 5',
+        subtitle: "my boyfriend's liar"
+    },
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',

@@ -6,6 +6,10 @@ import { S3B1 } from './scene-three.js';
 export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
+    transitionTitle: {
+        title: 'Date 2',
+        subtitle: 'coffee shop'
+    },
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
