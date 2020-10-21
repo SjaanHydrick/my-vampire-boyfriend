@@ -110,7 +110,8 @@ const S1B4 = {
 const S1B5 = {
     id: 'tofuDeath',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
     buttonChoice: 'dial',
     dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
     responseFunction: function() {
