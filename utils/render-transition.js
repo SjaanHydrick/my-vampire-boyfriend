@@ -1,4 +1,4 @@
-import { renderDialogueBox } from './render-dialogue-box.js';
+import { playTransitionAudio } from './game-audio.js';
 
 export function renderTransition(transitionText){
 
@@ -30,8 +30,3 @@ function renderTransitionTitle(transitionText){
     return titleDiv;
 }
 
-function playTransitionAudio(){
-    let audioElement = new Audio("../assets/transition-clip.mp3");
-    audioElement.volume = 0.4;
-    audioElement.play();
-}
