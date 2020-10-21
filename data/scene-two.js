@@ -10,10 +10,10 @@ export const S2B1 = {
         title: 'Date 2:',
         subtitle: 'coffee shop'
     },
-    rightResize: true,
     rightFadeIn: true,
+    rightResize: true,
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'nav',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
@@ -46,7 +46,7 @@ const S2B2 = {
     leftChar: null,
     rightResize: true,
     rightFadeIn: false,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
@@ -71,13 +71,14 @@ const S2B3 = {
     id: 'showsInterest',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeIn: false,
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
     choices: [
         {
             id: 'modesty',
-            response: 'Show some restraint and pull away',
+            response: 'Show some restraint and pull away!',
             responseFunction: function() {
                 updateScene(S3B1);
                 nextChapter();
@@ -98,9 +99,10 @@ const S2B4 = {
     id: 'tea-death',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeIn: false,
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.`,
+    dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and kisses your neck! He uses a lot of teeth...you're feeling weak...`,
     responseFunction: function() {
         gameOverYouDied();
         tea();
@@ -110,8 +112,9 @@ const S2B4 = {
 const S2B5 = {
     id: 'sick-vamp',
     leftChar: null,
+    rightChar: 'Vampire_BF_Crop.png',
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
     buttonChoice: 'dial',
     dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
@@ -123,10 +126,11 @@ const S2B5 = {
 const S2B6 = {
     id: 'coffee-death',
     leftChar: null,
+    rightChar: 'Vampire_BF_Crop.png',
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.`,
+    dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He explodes into a pile of ash!`,
     responseFunction: function() {
         coffee();
         gameOverVampireDied();
@@ -137,9 +141,9 @@ const S2B7 = {
     id: 'hug-death',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Ok, big mistake! Your boyfriend took the opportunity and killed you.`,
+    dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that really hurts...`,
     responseFunction: function() {
         gameOverYouDied();
     },
