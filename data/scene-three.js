@@ -171,7 +171,7 @@ const S3B8 = {
     rightResize: true,
     rightChar: 'Vampire_BF.png',
     buttonChoice: 'dial',
-    dialogueBox: `A jogger runs just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
+    dialogueBox: `A jogger just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S4B1);
