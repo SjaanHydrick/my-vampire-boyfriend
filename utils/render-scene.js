@@ -1,6 +1,5 @@
 
 import { renderBeat } from './render-beat.js';
-import { renderCharacter } from './render-character.js';
 import { renderVent } from './render-vent.js';
 
 export function renderScene(object){
@@ -28,5 +27,4 @@ export function updateScene(object){
     ventSection.innerHTML = '';
     renderVent();
 
-  
 }
