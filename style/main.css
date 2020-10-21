@@ -105,33 +105,35 @@
 }
 
 #left-char {
-    float: left;
-    margin-right: 25px;
+    position: fixed;
+    margin-left: -300px;
     margin-top: 45px;
     height: 300px;
     animation: avatar 5s infinite;
 }
 
 .resize {
-    position: absolute;
-    height: 450px;
+    position: fixed;
+    padding: 0;
+    width: 476px;
+    height: 476px;
+    margin-top: 0;
+    margin-left: 0;
     left: 400px;
-    bottom: 127px;
-    object-fit: cover;
-    overflow: hidden;
 }
 
 #right-char {
-    float: right;
+    position: absolute;
     margin-right: 120px;
     margin-top: 55px;
     height: 400px;
     animation: vampire 5s infinite;
 }
 
-.resize > #right-char {
-    height: 800px;
-
+.resize #right-char {
+    height: 350px;
+    bottom: 0;
+    right: 40px;
 }
 
 .fade-in {
@@ -139,7 +141,7 @@
 }
 
 .fade-out {
-    animation: fadeout 5s;
+    animation: fadeout 4s;
     opacity: 0;
 }
 
@@ -227,9 +229,6 @@
         opacity: 1;
     }
 
-    60% {
-        opacity: 0.9;
-    }
     100% {
         opacity: 0;
     }

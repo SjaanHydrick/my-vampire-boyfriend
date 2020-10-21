@@ -39,7 +39,6 @@ const I3 = {
     id: 'intro',
     leftChar: returnAvatar(),
     rightChar: 'Vampire_BF.png',
-    rightFadeOut: true,
     dialogueBox: 
         'I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: 'dial',
@@ -52,7 +51,8 @@ const I3 = {
 const I4 = {
     id: 'intro',
     leftChar: returnAvatar(),
-    rightChar: null,
+    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
     dialogueBox: 
         "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: 'dial',
