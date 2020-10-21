@@ -1,4 +1,4 @@
-
+import { getVolumeLevel } from './manage-local-storage.js';
 
 export function createGameAudio(){
     // let audioDiv = document.createElement('div')
@@ -8,7 +8,7 @@ export function createGameAudio(){
 
     audioElement.id = 'game-play-music';
     audioElement.loop = true;
-    audioElement.volume = .3;
+    audioElement.volume = getVolumeLevel();
     dialSection.appendChild(audioElement);
 }
 

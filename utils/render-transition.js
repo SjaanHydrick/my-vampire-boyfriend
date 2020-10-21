@@ -1,3 +1,4 @@
+import { getVolumeLevel } from './manage-local-storage.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
 
 export function renderTransition(transitionText){
@@ -32,6 +33,7 @@ function renderTransitionTitle(transitionText){
 
 function playTransitionAudio(){
     let audioElement = new Audio("../assets/transition-clip.mp3");
-    audioElement.volume = 0.4;
+    audioElement.id = "transition-music";
+    audioElement.volume = getVolumeLevel();
     audioElement.play();
 }
