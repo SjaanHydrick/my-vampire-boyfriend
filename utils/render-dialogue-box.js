@@ -3,8 +3,7 @@
 export function renderDialogueBox(text){
     const div = document.createElement("div");
     let i = 0;
-
-
+    
     const dialogueString = document.createElement("p");
     dialogueString.id = "dialogue-box";
     div.appendChild(dialogueString);
@@ -24,5 +23,18 @@ export function typeWriter(dialogueString, text, i){
         setTimeout(function () {
             typeWriter(dialogueString, text, i)
         }, speed);
+    }
+    else {
+        console.log("i: " +i)
+        console.log("text: " +text.length);
+        toggleResponse();
+    }
+}
+
+export function toggleResponse(){
+    let responseSection = document.getElementById('response-section');
+
+    if (document.getElementById('response-section')){
+        responseSection.style.visibility = 'visible';
     }
 }
