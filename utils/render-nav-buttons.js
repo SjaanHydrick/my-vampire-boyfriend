@@ -26,8 +26,6 @@ export function renderNavButtons(object){
                 response.classList.remove('button-hover');
             };
 
-            buttons
-
             buttons[i].style.color = 'maroon';
             buttons[i].classList.toggle('active');
         }

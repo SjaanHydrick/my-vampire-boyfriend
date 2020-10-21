@@ -7,7 +7,6 @@ const storageKey = 'USERKEY';
 export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);
     
- 
 
     if (player.chapters === 3 ) {
         const heartSpan1 = document.createElement('img');
@@ -29,6 +28,7 @@ export function renderHeart(section) {
 
 
     }
+
     if (player.chapters === 2 ) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';
