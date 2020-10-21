@@ -83,8 +83,15 @@
     float: left;
     margin-right: 25px;
     margin-top: 45px;
-    max-height: 300px;
+    height: 300px;
     animation: avatar 5s infinite;
+}
+
+.resize {
+    float: right;
+    height: 377px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #right-char {
@@ -93,6 +100,11 @@
     margin-top: 55px;
     height: 400px;
     animation: vampire 5s infinite;
+}
+
+.resize > #right-char {
+    height: 700px;
+
 }
 
 .fade-in {
@@ -104,8 +116,9 @@
     opacity: 0;
 }
 
+
 #logo {
-    float: left;
+    float: bottom;
     margin-left: 55px;
     margin-top: 613px;
     height: 30px;

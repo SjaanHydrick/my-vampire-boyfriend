@@ -5,7 +5,7 @@ import { S5B1 } from './scene-five.js';
 
 export const S4B1 = {
     id: 'halloween-dance',
-    image: 'cafeteria.jpg',
+    image: 'bar.jpg',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `I never went to prom because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween dance tonight, what should we do first?`,

@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, tofu, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied,  nextChapter, tofu } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -20,7 +20,7 @@ export const S1B1 = {
 const S1B2 = {
     leftChar: null,
     rightChar: 'Vampire_BF.png',
-    rightFadeIn: true,
+    rightFadeIn: false,
     rightResize: true,
     buttonChoice: 'nav',
     id: 'cafeteria',
