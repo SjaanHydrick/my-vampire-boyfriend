@@ -27,12 +27,8 @@ export const S2B1 = {
     {
         id: 'green-tea',
         response: `I'm really more of a tea person, a pot of green tea please!`,
-        result: {
-            dead: 'player',
-            resultText: 'While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.' 
-        },
         responseFunction: function() {
-            gameOverYouDied();
+            updateBeat(S2B4);
         },
     }
     ]
@@ -48,24 +44,15 @@ const S2B2 = {
         {
             id: 'pout',
             response: `Pout until he notices you're upset`,
-            result: {
-                resultText: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`
-            },
             responseFunction: function() {
-                updateScene(S3B1);
-                nextChapter();
-
+                updateBeat(S2B5);
             }
         },
         {
             id: 'hugAttack',
             response: 'Sneak up and give him a big hug!',
-            result: {
-                dead: 'vampire',
-                resultText: 'Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.'
-            },
             responseFunction: function() {
-                gameOverVampireDied();
+                updateBeat(S2B6);
             }
         }
     ]
@@ -89,14 +76,51 @@ const S2B3 = {
         {
             id: 'cuddle',
             response: 'Cuddle with him!',
-            result: {
-                dead: 'player',
-                resultText: 'Ok, big mistake! Your boyfriend took the opportunity and killed you.'
-            },
             responseFunction: function() {
-                gameOverYouDied();
+                updateBeat(S2B7);
             }
 
         }
     ]
+};
+
+const S2B4 = {
+    id: 'teaDeath',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
+};
+
+const S2B5 = {
+    id: 'sickVamp',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
+    responseFunction: function() {
+        updateScene(S3B1);
+        nextChapter();
+    },
+};
+
+const S2B6 = {
+    id: 'coffeeDeath',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.`,
+    responseFunction: function() {
+        gameOverVampireDied();
+    },
+};
+
+const S2B7 = {
+    id: 'hugDeath',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Ok, big mistake! Your boyfriend took the opportunity and killed you.`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
 };
