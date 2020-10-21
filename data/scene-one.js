@@ -8,21 +8,36 @@ export const S1B1 = {
     image: 'cafeteria.jpg',
     leftChar: null,
     rightChar: "Vampire_BF.png",
+    rightFadeIn: true,
+    rightResize: true,
+    buttonChoice: 'dial',
+    dialogueBox:  `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats.`,
+    responseFunction: function() {
+        updateBeat(S1B2);
+    },
+}
+
+const S1B2 = {
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
+    rightFadeIn: true,
+    rightResize: true,
     buttonChoice: 'nav',
+    id: 'cafeteria',
     dialogueBox: 
-        `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
+       `What should I have for lunch?`,
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
         responseFunction: function() {
-            updateBeat(S1B2);
+            updateBeat(S1B3);
         },
     },
     {
         id: 'salad',
         response: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
         responseFunction: function() {
-            updateBeat(S1B3);
+            updateBeat(S1B4);
         },
 
     }, 
@@ -36,18 +51,16 @@ export const S1B1 = {
         responseFunction: function() {
             tofu();
             gameOverVampireDied();
-
-            // console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
-
         },
     }
     ]
 };
 
-const S1B2 = {
+const S1B3 = {
     id: 'feed',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
+    rightFadeIn: false,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -77,10 +90,10 @@ const S1B2 = {
     ]
 };
                 
-const S1B3 = {
+const S1B4 = {
     id: 'letHim',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
@@ -110,6 +123,4 @@ const S1B3 = {
             }
         }]
 };
-
-// dialogueBox: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`,
 

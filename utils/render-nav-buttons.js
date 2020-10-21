@@ -6,9 +6,28 @@ export function renderNavButtons(object){
 
     for (let i = 0; i < buttons.length; i++){
         if (object.choices[i]){
+
             buttons[i].onclick = function() {
                 object.choices[i].responseFunction();
             };
+
+            buttons[i].onmouseenter = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.add('button-hover');
+            };
+
+            buttons[i].onmouseover = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.add('button-hover');
+            };
+
+            buttons[i].onmouseleave = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.remove('button-hover');
+            };
+
+            buttons
+
             buttons[i].style.color = 'maroon';
             buttons[i].classList.toggle('active');
         }
@@ -16,6 +35,9 @@ export function renderNavButtons(object){
             buttons[i].classList.toggle('active');
             buttons[i].style.color = 'black';
             buttons[i].onclick = '';
+            buttons[i].onmouseenter = '';
+            buttons[i].onmouseleave = '';
+            buttons[i].onmouseover = '';
         }
     }
 }

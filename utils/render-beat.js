@@ -9,9 +9,8 @@ import { renderCharacter } from './render-character.js';
 // renders the dialogueBox, responses, and wires the buttons to the responses
 export function renderBeat(object){
     const section = document.createElement('section');
-
+    
     const dialogueBox = renderDialogueBox(object.dialogueBox);
-    // const responseSection = renderResponses(object.choices);
 
     section.id = 'beat-section';
 
@@ -19,6 +18,7 @@ export function renderBeat(object){
     if (object.buttonChoice === 'dial'){
         renderDialButton(object);
         resetNavButtons();
+
     } else{
         const responseSection = renderResponses(object.choices);
         section.appendChild(responseSection);
@@ -27,14 +27,39 @@ export function renderBeat(object){
     }
 
     if (object.leftChar){
+      
         const leftChar = renderCharacter(object.leftChar, "left-char");
+        
+        if (object.leftResize){
+            leftChar.classList.add('resize');
+        }
+
+        if (object.leftFadeIn){
+            leftChar.classList.add('fade-in');
+        }
+        if (object.leftFadeOut) {
+            leftChar.classList.add('fade-out');
+        }
         section.appendChild(leftChar);
     }
 
     if (object.rightChar){
+
         const rightChar = renderCharacter(object.rightChar, "right-char");
+        
+        if (object.rightResize){
+            rightChar.classList.add('resize');
+        }
+
+        if (object.rightFadeIn){
+            rightChar.classList.add('fade-in');
+        }
+        if (object.rightFadeOut){
+            rightChar.classList.add('fade-out');
+        }
         section.appendChild(rightChar);
     }
+
 
     return section;
 }

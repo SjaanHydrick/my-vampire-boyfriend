@@ -1,12 +1,13 @@
 import { gameOverYouDied, gameOverMothMan } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
-// import { S4B1 } from './scene-four.js';
+import { S4B1 } from './scene-four.js';
 
 export const S3B1 = {
     id: 'riverwalk',
     image: 'riverwalk.jpg',
-    char: 'Vampire_BF.png',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Tonight we're taking the most romantic walk along the river. My boyfriend loves coming here, but it's a little creepy because lots of people go missing. Where to?`,
     choices: [{
         id: 'crowded-path',
@@ -35,6 +36,8 @@ export const S3B1 = {
 
 const S3B2 = {
     id: 'distracted',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Umm ok wow, he seems really interested in that crowd of people over there, but I want him to pay attention to me!`,
     buttonChoice: 'nav',
     choices: [
@@ -45,7 +48,7 @@ const S3B2 = {
                 resultText: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`
             },
             responseFunction: function() {
-                updateScene(S3B5);
+                updateBeat(S3B5);
             }
         },
         {
@@ -63,6 +66,8 @@ const S3B2 = {
 
 const S3B3 = {
     id: 'alcove',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Ok, it is totally spooky here but my boyfriend looks like he wants to snuggle! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -92,6 +97,8 @@ const S3B3 = {
 
 const S3B4 = {
     id: 'bench-snuggle',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `This is so hot! He's breathing so heavy, and leaning towards me! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -121,6 +128,8 @@ const S3B4 = {
 
 const S3B5 = {
     id: 'got-him',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Ok I totally have his attention, he's leaning in to kiss my neck! What should I do?`,
     buttonChoice: 'nav',
     choices: [

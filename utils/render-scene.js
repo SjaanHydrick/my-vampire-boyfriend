@@ -1,10 +1,12 @@
 
 import { renderBeat } from './render-beat.js';
-import { renderCharacter } from './render-character.js';
 import { renderVent } from './render-vent.js';
+import { renderLogo } from './render-logo.js';
+
 
 export function renderScene(object){
     const screen = document.createElement('section');
+
 
     const beatSection = renderBeat(object);
 
@@ -13,8 +15,8 @@ export function renderScene(object){
 
     screen.appendChild(beatSection);
     
-    
-   
+    const logo = renderLogo();
+    screen.appendChild(logo);
 
     return screen;
 }
@@ -25,13 +27,10 @@ export function updateScene(object){
 
     const newScreen = renderScene(object);
     screenFrame.appendChild(newScreen);
-    // renderVent();
     
 
     const ventSection = document.getElementById('vent');
     ventSection.innerHTML = '';
     renderVent();
-    // renderVent();
 
-  
 }

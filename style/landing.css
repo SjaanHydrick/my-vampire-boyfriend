@@ -90,14 +90,13 @@ main {
 }
 
 button {
-    margin-top: 13px;
-    margin-left: 13px;
-    width: 225px;
-    height: 225px;
+    margin-top: 17px;
+    margin-left: 17px;
+    width: 215px;
+    height: 215px;
     font-family: Paper Flowers;
     font-size: 50pt;
     letter-spacing: 2px;
-    line-height: 24pt;
     background-color: silver;
     border: outset 2px dimgray;
     border-radius: 150px;
@@ -106,7 +105,8 @@ button {
 
 button:hover {
     transform: rotate(45deg);
-    
+    cursor: pointer;
+
 }
 
 .choice-button {
