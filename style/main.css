@@ -34,7 +34,7 @@
     max-width: 650px;
     height: 100px;
     padding: 10px;
-    background-color: #ff83c1;
+    background-color: #a21eff;
     border: solid 2px white;
     border-radius: 10px;
 }
@@ -47,10 +47,8 @@
     text-align: left;
 }
 
-
 .response{
     float: left;
-    margin-left: 25px;
     margin-top: 10px;
     padding: 5px;
     width: 200px;
@@ -58,14 +56,27 @@
     font-size: 8pt;
     letter-spacing: 1pt;
     color: white;
-    /* background-color: #ff83c1; */
-    background-color: gray;
+    background-color: #a21eff;
+    filter: grayscale(100%);
     border: solid 1px white;
     border-radius: 5px;
 }
 
 .button-hover{
-    background-color:#ff83c1;
+    filter: none;
+    transition-duration: 1.3s;
+}
+
+#response1 {
+    margin-left: 35px;
+}
+
+#response2 {
+    margin-left: 32px;
+}
+
+#response3 {
+    margin-left: 32px;
 }
 
 #left-char {
@@ -81,15 +92,16 @@
     margin-right: 120px;
     margin-top: 55px;
     height: 400px;
-    animation: vampire 5s infinite, fadein 1s;
+    animation: vampire 5s infinite;
 }
 
-.fadein {
+.fade-in {
     animation: fadein 2s;
 }
 
-.fadeout {
-    animation: fadeout 2s;
+.fade-out {
+    animation: fadeout 5s;
+    opacity: 0;
 }
 
 #logo {
@@ -98,6 +110,14 @@
     margin-top: 613px;
     height: 30px;
     opacity: .5;
+    z-index: 1;
+}
+
+.heart {
+    margin-left: 15px;
+    margin-top: -15px;
+    margin-right: 15px;
+    animation: bounce 4s infinite;
 }
 
 .m {
@@ -159,5 +179,18 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
     }
 }

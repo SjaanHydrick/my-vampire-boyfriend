@@ -10,17 +10,17 @@ const storageKey = 'USERKEY';
 export function renderHeart() {
     const player = getFromLocalStorage(storageKey);
     const heartSpan1 = document.createElement('img');
-
+    heartSpan1.classList.add('heart');
 
     if (player.chapters === 0) {
 
-        heartSpan1.src = '../assets/heart1.png';
+        heartSpan1.src = '../assets/heart.png';
 
 
     }
     if (player.chapters === 1) {
 
-        heartSpan1.src = '../assets/heart2.png';
+        heartSpan1.src = '../assets/heart.png';
 
 
     }
