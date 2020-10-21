@@ -19,7 +19,7 @@ export function renderBeat(object){
         renderDialButton(object);
         resetNavButtons();
 
-    } else{
+    } else {
         const responseSection = renderResponses(object.choices);
         section.appendChild(responseSection);
         renderNavButtons(object);
