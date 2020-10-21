@@ -12,7 +12,6 @@ export function renderBeat(object){
 
     const dialogueBox = renderDialogueBox(object.dialogueBox);
     // const responseSection = renderResponses(object.choices);
-
     section.id = 'beat-section';
 
     section.appendChild(dialogueBox);
@@ -27,7 +26,13 @@ export function renderBeat(object){
     }
 
     if (object.leftChar){
-        const leftChar = renderCharacter(object.leftChar, 'left-char');
+      
+        const leftChar = renderCharacter(object.leftChar, "left-char");
+        
+        if (object.leftResize){
+            leftChar.classList.add('resize');
+        }
+
         if (object.leftFadeIn){
             leftChar.classList.add('fade-in');
         }
@@ -38,7 +43,13 @@ export function renderBeat(object){
     }
 
     if (object.rightChar){
-        const rightChar = renderCharacter(object.rightChar, 'right-char');
+
+        const rightChar = renderCharacter(object.rightChar, "right-char");
+        
+        if (object.rightResize){
+            rightChar.classList.add('resize');
+        }
+
         if (object.rightFadeIn){
             rightChar.classList.add('fade-in');
         }
@@ -47,6 +58,7 @@ export function renderBeat(object){
         }
         section.appendChild(rightChar);
     }
+
 
     return section;
 }

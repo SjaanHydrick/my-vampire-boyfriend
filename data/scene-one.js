@@ -7,8 +7,9 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
-    rightFadeIn: true, 
+    rightChar: "Vampire_BF.png",
+    rightFadeIn: true,
+    rightResize: true,
     buttonChoice: 'nav',
     dialogueBox: 
         `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
