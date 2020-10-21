@@ -8,7 +8,7 @@ export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);
     
 
-    if (player.chapters === 3 ) {
+    if (player.chapters === 4 ) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';
         heartSpan1.classList.add('heart');
@@ -29,7 +29,7 @@ export function renderHeart(section) {
 
     }
 
-    if (player.chapters === 2 ) {
+    if (player.chapters === 3 ) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';
         heartSpan1.classList.add('heart');
@@ -45,7 +45,7 @@ export function renderHeart(section) {
 
 
     }
-    if (player.chapters === 1 ) {
+    if (player.chapters === 2 ) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';
         heartSpan1.classList.add('heart');
@@ -57,7 +57,7 @@ export function renderHeart(section) {
 
 
     }
-    if (player.chapters === 0 ) {
+    if (player.chapters === 1 ) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';
         heartSpan1.classList.add('heart');

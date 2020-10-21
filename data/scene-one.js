@@ -75,8 +75,8 @@ const S1B3 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
-                updateScene(S2B1);
                 nextChapter();
+                updateScene(S2B1);
             },                
         }
     ]
@@ -101,8 +101,8 @@ const S1B4 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
-                updateScene(S2B1);
                 nextChapter();
+                updateScene(S2B1);
 
             }
         }]
@@ -127,8 +127,9 @@ const S1B6 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend looks sick and walks out on lunch`,
     responseFunction: function() {
+        nextChapter(); 
         updateScene(S2B1);
-        nextChapter();
+       
     },
 };
 
