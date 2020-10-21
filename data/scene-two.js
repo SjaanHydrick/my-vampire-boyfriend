@@ -6,7 +6,8 @@ import { S3B1 } from './scene-three.js';
 export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
-    char: 'Vampire_BF.png',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
         id: 'coffee',
@@ -39,6 +40,9 @@ export const S2B1 = {
 
 const S2B2 = {
     id: 'uninterested',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
+
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
@@ -68,6 +72,9 @@ const S2B2 = {
 
 const S2B3 = {
     id: 'showsInterest',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
+
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
     choices: [
