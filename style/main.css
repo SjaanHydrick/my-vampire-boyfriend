@@ -113,13 +113,11 @@
 }
 
 .resize {
-    position: fixed;
-    padding: 0;
-    width: 476px;
-    height: 476px;
-    margin-top: 0;
-    margin-left: 0;
-    left: 400px;
+    position: absolute;
+    width: 770px;
+    height: 620px;
+    left: 120px;
+    top: 120px;
 }
 
 #right-char {
@@ -132,8 +130,8 @@
 
 .resize #right-char {
     height: 350px;
-    bottom: 0;
     right: 40px;
+    bottom: 0;
 }
 
 .fade-in {
