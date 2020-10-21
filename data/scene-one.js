@@ -74,9 +74,8 @@ const S1B3 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
-                nextChapter();
-                updateScene(S2B1);
-            },                
+                updateBeat(S1B8);
+            }               
         }
     ]
 };
@@ -100,9 +99,7 @@ const S1B4 = {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
-                nextChapter();
-                updateScene(S2B1);
-
+                updateBeat(S1B8);
             }
         }]
 };
@@ -113,7 +110,7 @@ const S1B5 = {
     rightChar: 'Vampire_BF.png',
     rightFadeOut: true,
     buttonChoice: 'dial',
-    dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
+    dialogueBox: `The stir-fry contains an obscene amount of garlic, just how I like it! Oh no, my boyfriend isn't looking too great...`,
     responseFunction: function() {
         tofu();
         gameOverVampireDied();
@@ -126,7 +123,7 @@ const S1B6 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF.png',
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend looks sick and walks out on lunch`,
+    dialogueBox: `Oh no! My boyfriend gets sick and has to leave. It must have been something he ate!`,
     responseFunction: function() {
         nextChapter(); 
         updateScene(S2B1);
@@ -143,6 +140,18 @@ const S1B7 = {
     responseFunction: function() {
         gameOverYouDied();
     
+    }
+};
+
+const S1B8 = {
+    id: 'pushAwayMessage',
+    leftChar: null,
+    rightChar: 'Vampire_BF_Crop.png',
+    buttonChoice: 'dial',
+    dialogueBox: `Haha, my boyfriend got so frustrated that he got up and left. I love driving him crazy!`,
+    responseFunction: function() {
+        nextChapter(); 
+        updateScene(S2B1);
     }
 };
 

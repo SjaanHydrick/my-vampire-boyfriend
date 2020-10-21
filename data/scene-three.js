@@ -12,20 +12,20 @@ export const S3B1 = {
     },
     leftChar: null,
     rightFadeIn: true,
-    rightResize: true,
+    rightResize: false,
     rightChar: 'Vampire_BF.png',
     buttonChoice: 'nav',
     dialogueBox: `Tonight we're taking the most romantic walk along the river. My boyfriend loves coming here, but it's a little creepy because lots of people go missing. Where to?`,
     choices: [{
         id: 'crowded-path',
-        response: `Stay on crowded path`,
+        response: `Stay on crowded path!`,
         responseFunction: function() {
             updateBeat(S3B2);
         },
     },
     {
         id: 'secret-path',
-        response: `Take a secret secluded path`,
+        response: `Take a secret secluded path!`,
         responseFunction: function() {
             updateBeat(S3B3);
         },
@@ -33,7 +33,7 @@ export const S3B1 = {
     }, 
     {
         id: 'bench',
-        response: `Sit on a cute bench`,
+        response: `Sit on a cute bench!`,
         responseFunction: function() {
             updateBeat(S3B4);
         },
@@ -45,15 +45,16 @@ const S3B2 = {
     id: 'distracted',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeIn: true,
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: `Umm ok wow, he seems really interested in that crowd of people over there, but I want him to pay attention to me!`,
     buttonChoice: 'nav',
     choices: [
         {
             id: 'snuggle',
-            response: `Snuggle up to him for attention`,
+            response: `Snuggle up to him for attention!`,
             responseFunction: function() {
-                updateBeat(S3B5);
+                updateBeat(S3B6);
             }
         },
         {
@@ -70,13 +71,14 @@ const S3B3 = {
     id: 'alcove',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeIn: false,
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: `Ok, it is totally spooky here but my boyfriend looks like he wants to snuggle! What should I do?`,
     buttonChoice: 'nav',
     choices: [
         {
             id: 'modest',
-            response: `Be modest and walk away`,
+            response: `Be modest and walk away!`,
             responseFunction: function() {
                 updateBeat(S3B8);
             }
@@ -95,13 +97,13 @@ const S3B4 = {
     id: 'bench-snuggle',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: `This is so hot! He's breathing so heavy, and leaning towards me! What should I do?`,
     buttonChoice: 'nav',
     choices: [
         {
             id: 'walk-away',
-            response: `This is moving way too fast, just walk away`,
+            response: `This is moving way too fast, just scoot away!`,
             responseFunction: function() {
                 updateBeat(S3B10);
             }
@@ -116,23 +118,11 @@ const S3B4 = {
     ]
 };
 
-const S3B5 = {
-    id: 'connection',
-    leftChar: null,
-    rightResize: true,
-    rightChar: 'Vampire_BF.png',
-    buttonChoice: 'dial',
-    dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
-    responseFunction: function() {
-        updateBeat(S3B6);
-    },
-};
-
 const S3B6 = {
     id: 'got-him',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     dialogueBox: `Ok I totally have his attention, he's leaning in to kiss my neck! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -157,21 +147,21 @@ const S3B7 = {
     id: 'mothman',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `You start yelling about how you deserve love and affection! Suddenly, MothMan appears...and he will definitely treat you right.`,
+    dialogueBox: `I start yelling at my boyfriend! I deserve love and affection! Suddenly, MothMan appears...and he would definitely treat me right.`,
     responseFunction: function() {
         gameOverMothMan();
     },
 };
 
 const S3B8 = {
-    id: 'dump-body',
+    id: 'alcove-push',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `A jogger just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
+    dialogueBox: `My boyfriend gets so fiesty when I push him away! A jogger ran by and my boyfriend was so riled up, he started to chase after them. Haha, I drive him so crazy!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S4B1);
@@ -179,12 +169,12 @@ const S3B8 = {
 };
 
 const S3B9 = {
-    id: 'shallow-grave',
+    id: 'alcove-snuggle',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend kills you and burys your body in a shallow grave. Dating is so hard these days!`,
+    dialogueBox: `My boyfriend leans in for a kiss! Oh, wait, he's kissing my neck instead. Oh, everything is getting so cold...`,
     responseFunction: function() {
         river();
         gameOverYouDied();
@@ -192,12 +182,12 @@ const S3B9 = {
 };
 
 const S3B10 = {
-    id: 'dump-body',
+    id: 'robber',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Ok that ROBBER just tried to grab my bag!! My boyfriend is chasing after him, he's so brave!`,
+    dialogueBox: `My boyfriend leans in for a kiss, but a ROBBER runs up and tries to grab my bag!! My boyfriend started chasing after him, he's so brave and loves me so much!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S4B1);
@@ -205,12 +195,12 @@ const S3B10 = {
 };
 
 const S3B11 = {
-    id: 'dump-body',
+    id: 'bench-snuggle',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!`,
+    dialogueBox: `I hope my boyfriend is a good kisser! Oh, he's kissing my neck! Er, wait, that kind of hurts...`,
     responseFunction: function() {
         river();
         gameOverYouDied();
@@ -221,9 +211,10 @@ const S3B12 = {
     id: 'falls',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `You kiss him on the cheek and he's so surprised he stumbles and falls right into the river! Your poor boyfriend!!`,
+    dialogueBox: `I kiss him on the cheek and he's so surprised he stumbles and falls right into the river! My poor, clumsy boyfriend!!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S4B1);
@@ -234,9 +225,10 @@ const S3B13 = {
     id: 'howl',
     leftChar: null,
     rightResize: true,
-    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
+    rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `He leans in VERY close but then there's a howl from deep in the woods. Your super mysterious boyfriend darts away!`,
+    dialogueBox: `He leans in VERY close but suddenly there's a howl from deep in the woods. My super mysterious boyfriend darts away! Gosh, he's sOoOo dreamy!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S4B1);
