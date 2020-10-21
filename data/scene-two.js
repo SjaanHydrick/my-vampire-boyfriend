@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter, tea, coffee } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S3B1 } from './scene-three.js';
@@ -101,6 +101,7 @@ const S2B4 = {
     dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.`,
     responseFunction: function() {
         gameOverYouDied();
+        tea();
     },
 };
 
@@ -123,6 +124,7 @@ const S2B6 = {
     rightChar: 'Vampire_BF.png',
     dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.`,
     responseFunction: function() {
+        coffee();
         gameOverVampireDied();
     },
 };

@@ -1,3 +1,4 @@
+import { coffee } from './game-over.js';
 import { getFromLocalStorage } from './manage-local-storage.js';
 
 
@@ -25,6 +26,14 @@ export function renderResultText(resultText) {
     if (player.mothMan === true){
 
         resultText.textContent = 'Your vampire boyfirend is lame. It\'s all about the Mothman';
+    }
+    if (player.tea === true && player.playerAlive === false){
+
+        resultText.textContent = 'You died, maybe next time drink something a little more American.';
+    }
+    if (player.vampireAlive === false && player.coffee === true){
+
+        resultText.textContent = 'You hugged your boyfriend to death, just like that old fortune teller said... ';
     }
     
     if (player.playerAlive === false){
