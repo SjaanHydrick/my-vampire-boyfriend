@@ -5,7 +5,7 @@ import { S5B1 } from './scene-five.js';
 
 export const S4B1 = {
     id: 'halloween-dance',
-    image: 'bar.jpg',
+    image: 'cafeteria.jpg',
     leftChar: null,
     rightChar: "Vampire_BF.png",
     dialogueBox: `I never went to prom because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween dance tonight, what should we do first?`,
@@ -47,7 +47,7 @@ const S4B2 = {
             id: 'not-here',
             response: `Not in front of all these people!`,
             responseFunction: function() {
-                updateScene(S4B4);
+                updateBeat(S4B4);
             }
         },
         {

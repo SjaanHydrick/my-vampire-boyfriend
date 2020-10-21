@@ -17,7 +17,7 @@ export function renderDialogueBox(text){
 
 
 export function typeWriter(dialogueString, text, i){
-    let speed = 50;
+    let speed = 35;
     if (i < text.length){
         dialogueString.textContent += text.charAt(i);
         i++;

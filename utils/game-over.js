@@ -1,11 +1,11 @@
 
 import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
 
-const storageKey = 'USERKEY';
+// const storageKey = 'USERKEY';
 
 
 export function gameOverYouDied(){
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
     player.player = 'dead';
     setInLocalStorage(player);
     window.location.href = '../results';
@@ -13,7 +13,7 @@ export function gameOverYouDied(){
 
 
 export function gameOverVampireDied(){
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
     player.vampire = 'dead';
     setInLocalStorage(player);
     window.location.href = '../results';
@@ -29,19 +29,20 @@ export function gameOver(resultObject){
 
 
 export function tofu(){
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
     player.tofu = true;
     setInLocalStorage(player);
 }
 
 export function nextChapter() {
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
     player.chapters++;
+    console.log(player);
     setInLocalStorage(player);
 }
 
 export function gameOverMothMan(){
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
     player.tofu = true;
     setInLocalStorage(player);
 }

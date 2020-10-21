@@ -1,7 +1,7 @@
 import { gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
-// import { S4B1 } from './scene-four.js';
+import { S4B1 } from './scene-four.js';
 
 export const S3B1 = {
     id: 'riverwalk',
@@ -48,7 +48,7 @@ const S3B2 = {
                 resultText: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`
             },
             responseFunction: function() {
-                updateScene(S3B5);
+                updateBeat(S3B5);
             }
         },
         {
