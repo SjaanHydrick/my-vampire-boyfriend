@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied,  nextChapter, tofu } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter, tofu } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -108,6 +108,7 @@ const S1B5 = {
     id: 'tofuDeath',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
     responseFunction: function() {
         tofu();
@@ -119,6 +120,7 @@ const S1B6 = {
     id: 'sickVamp',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Your boyfriend looks sick and walks out on lunch`,
     responseFunction: function() {
         updateScene(S2B1);
@@ -130,6 +132,7 @@ const S1B7 = {
     id: 'firstYouDie',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
     responseFunction: function() {
         gameOverYouDied();
