@@ -1,14 +1,11 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
 
-const storageKey = 'USERKEY';
-
-
-
 
 
 export function renderHeart() {
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
+    console.log(player);
     const heartSpan1 = document.createElement('img');
     heartSpan1.classList.add('heart');
 
@@ -20,7 +17,7 @@ export function renderHeart() {
     }
     if (player.chapters === 1) {
 
-        heartSpan1.src = '../assets/heart.png';
+        heartSpan1.src = '../assets/heart2.png';
 
 
     }

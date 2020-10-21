@@ -26,8 +26,6 @@ export function typeWriter(dialogueString, text, i){
         }, speed);
     }
     else {
-        console.log("i: " +i)
-        console.log("text: " +text.length);
         toggleResponse();
     }
 }
