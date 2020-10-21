@@ -6,9 +6,23 @@ export function renderNavButtons(object){
 
     for (let i = 0; i < buttons.length; i++){
         if (object.choices[i]){
+
             buttons[i].onclick = function() {
                 object.choices[i].responseFunction();
             };
+
+            buttons[i].onmouseover = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.toggle('button-hover');
+            };
+
+            buttons[i].onmouseleave = function() {
+                let response = document.getElementById(`response${i+1}`);
+                response.classList.toggle('button-hover');
+            };
+
+            buttons
+
             buttons[i].style.color = 'maroon';
             buttons[i].classList.toggle('active');
         }

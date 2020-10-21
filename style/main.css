@@ -57,9 +57,14 @@
     font-size: 8pt;
     letter-spacing: 1pt;
     color: white;
-    background-color: #ff83c1;
+    /* background-color: #ff83c1; */
+    background-color: gray;
     border: solid 1px white;
     border-radius: 5px;
+}
+
+.button-hover{
+    background-color: pink;
 }
 
 #button1:hover > .response {
