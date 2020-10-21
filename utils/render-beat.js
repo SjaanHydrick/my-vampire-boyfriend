@@ -28,11 +28,17 @@ export function renderBeat(object){
 
     if (object.leftChar){
         const leftChar = renderCharacter(object.leftChar, "left-char");
+        if (object.leftFadeIn){
+            leftChar.classList.add('fade-in');
+        }
         section.appendChild(leftChar);
     }
 
     if (object.rightChar){
         const rightChar = renderCharacter(object.rightChar, "right-char");
+        if (object.rightFadeIn){
+            rightChar.classList.add('fade-in');
+        }
         section.appendChild(rightChar);
     }
 
