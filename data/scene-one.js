@@ -13,7 +13,6 @@ export const S1B1 = {
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     rightFadeIn: true,
-    rightResize: true,
     buttonChoice: 'dial',
     dialogueBox:  `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats.`,
     responseFunction: function() {
@@ -23,8 +22,8 @@ export const S1B1 = {
 
 const S1B2 = {
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
-    rightFadeIn: false,
+    rightChar: 'Vampire_BF_Crop.png',
+    rightFadeIn: true,
     rightResize: true,
     buttonChoice: 'nav',
     id: 'cafeteria',
@@ -58,7 +57,7 @@ const S1B2 = {
 const S1B3 = {
     id: 'feed',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     rightFadeIn: false,
     rightResize: true,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
@@ -85,7 +84,7 @@ const S1B3 = {
 const S1B4 = {
     id: 'letHim',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     rightResize: true,
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
@@ -111,7 +110,7 @@ const S1B4 = {
 const S1B5 = {
     id: 'tofuDeath',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
     dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
     responseFunction: function() {
@@ -123,6 +122,7 @@ const S1B5 = {
 const S1B6 = {
     id: 'sickVamp',
     leftChar: null,
+    rightFadeOut: true,
     rightChar: 'Vampire_BF.png',
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend looks sick and walks out on lunch`,
@@ -136,7 +136,7 @@ const S1B6 = {
 const S1B7 = {
     id: 'firstYouDie',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
+    rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
     dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
     responseFunction: function() {
