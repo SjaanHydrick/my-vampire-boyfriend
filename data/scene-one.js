@@ -6,7 +6,8 @@ import { S2B1 } from './scene-two.js';
 export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
-    char: 'Vampire_BF.png',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     buttonChoice: 'nav',
     dialogueBox: 
         `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
@@ -45,6 +46,8 @@ export const S1B1 = {
 
 const S1B2 = {
     id: 'feed',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -76,6 +79,8 @@ const S1B2 = {
                 
 const S1B3 = {
     id: 'letHim',
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [

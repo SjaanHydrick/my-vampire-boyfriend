@@ -6,14 +6,12 @@ import { renderVent } from './render-vent.js';
 export function renderScene(object){
     const screen = document.createElement('section');
 
-    const characterSection = renderCharacter(object.char);
     const beatSection = renderBeat(object);
 
     screen.id = 'screen';
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
     screen.appendChild(beatSection);
-    screen.appendChild(characterSection);
     
     
    
