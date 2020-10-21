@@ -31,7 +31,7 @@ form.addEventListener('submit', (e) => {
     const player = makePlayer(data);
     // saveUser(player);
     setInLocalStorage(player);
-    window.location.href = '../main/index.html?id=cafeteria';
+    window.location.href = '../main/';
     
 
 });

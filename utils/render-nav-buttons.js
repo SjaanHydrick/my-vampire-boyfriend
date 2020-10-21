@@ -11,7 +11,7 @@ export function renderNavButtons(object){
                 object.choices[i].responseFunction();
             };
 
-            buttons[i].onmouseover = function() {
+            buttons[i].onmouseenter = function() {
                 let response = document.getElementById(`response${i+1}`);
                 response.classList.toggle('button-hover');
             };
