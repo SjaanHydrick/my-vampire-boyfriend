@@ -21,7 +21,8 @@ export const I1 = {
 const I2 = {
     id: 'intro',
     leftChar: returnAvatar(),
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
+    rightFadeIn: true,
     dialogueBox: 
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
     buttonChoice: 'dial',
@@ -33,7 +34,8 @@ const I2 = {
 const I3 = {
     id: 'intro',
     leftChar: returnAvatar(),
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
+    rightFadeOut: true,
     dialogueBox: 
         'I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: 'dial',
@@ -60,7 +62,6 @@ const I4 = {
 const I5 = {
     id: 'intro',
     leftChar: returnAvatar(),
-    rightChar: "Vampire_BF.png",
     dialogueBox: 
         "I'm about to meet him for our first date in the cafeteria!",
     buttonChoice: 'dial',

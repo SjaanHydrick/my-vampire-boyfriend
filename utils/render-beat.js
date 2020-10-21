@@ -19,7 +19,7 @@ export function renderBeat(object){
     if (object.buttonChoice === 'dial'){
         renderDialButton(object);
         resetNavButtons();
-    } else{
+    } else {
         const responseSection = renderResponses(object.choices);
         section.appendChild(responseSection);
         renderNavButtons(object);
@@ -27,17 +27,23 @@ export function renderBeat(object){
     }
 
     if (object.leftChar){
-        const leftChar = renderCharacter(object.leftChar, "left-char");
+        const leftChar = renderCharacter(object.leftChar, 'left-char');
         if (object.leftFadeIn){
             leftChar.classList.add('fade-in');
+        }
+        if (object.leftFadeOut) {
+            leftChar.classList.add('fade-out');
         }
         section.appendChild(leftChar);
     }
 
     if (object.rightChar){
-        const rightChar = renderCharacter(object.rightChar, "right-char");
+        const rightChar = renderCharacter(object.rightChar, 'right-char');
         if (object.rightFadeIn){
             rightChar.classList.add('fade-in');
+        }
+        if (object.rightFadeOut){
+            rightChar.classList.add('fade-out');
         }
         section.appendChild(rightChar);
     }

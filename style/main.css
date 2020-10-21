@@ -81,16 +81,18 @@
     margin-right: 120px;
     margin-top: 55px;
     height: 400px;
-    animation: vampire 5s infinite, fadein 1s;
+    animation: vampire 5s infinite;
 }
 
-.fadein {
+.fade-in {
     animation: fadein 2s;
 }
 
-.fadeout {
-    animation: fadeout 2s;
+.fade-out {
+    animation: fadeout 5s;
+    opacity: 0;
 }
+
 
 #logo {
     float: left;
@@ -98,6 +100,7 @@
     margin-top: 613px;
     height: 30px;
     opacity: .5;
+    z-index: 1;
 }
 
 .m {
@@ -159,5 +162,18 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
     }
 }
