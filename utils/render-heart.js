@@ -20,6 +20,7 @@ export function renderHeart(section) {
         heart(section);
         heart(section);
         heart(section);
+        heart(section);
 
     }
 
