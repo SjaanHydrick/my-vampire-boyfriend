@@ -20,7 +20,7 @@ export const S1B1 = {
 const S1B2 = {
     leftChar: null,
     rightChar: "Vampire_BF.png",
-    rightFadeIn: true,
+    rightFadeIn: false,
     rightResize: true,
     buttonChoice: 'nav',
     id: 'cafeteria',
