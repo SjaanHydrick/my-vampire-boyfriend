@@ -2,6 +2,7 @@ import { renderResponses } from './render-responses.js';
 import { renderDialogueBox } from './render-dialogue-box.js';
 import { renderNavButtons, resetNavButtons } from './render-nav-buttons.js';
 import { renderDialButton, resetDialButton } from './render-dial-button.js';
+import { renderCharacter } from './render-character.js';
 
 
 // renderBeat() renders only the HTML elements that are neccisary within a scene
@@ -23,6 +24,16 @@ export function renderBeat(object){
         section.appendChild(responseSection);
         renderNavButtons(object);
         resetDialButton();
+    }
+
+    if (object.leftChar){
+        const leftChar = renderCharacter(object.leftChar, "left-char");
+        section.appendChild(leftChar);
+    }
+
+    if (object.rightChar){
+        const rightChar = renderCharacter(object.rightChar, "right-char");
+        section.appendChild(rightChar);
     }
 
     return section;
