@@ -15,33 +15,33 @@ export function renderHeart() {
     if (player.chapters === 0) {
 
         heartSpan1.src = '../assets/heart1.png';
-
+        return heartSpan1;
 
     }
     if (player.chapters === 1) {
 
         heartSpan1.src = '../assets/heart2.png';
-
+        return heartSpan1;
 
     }
     if (player.chapters === 2) {
 
         heartSpan1.src = '../assets/heart3.png';
-
+        return heartSpan1;
 
     }
     if (player.chapters === 3) {
 
         heartSpan1.src = '../assets/heart4.png';
-
+        return heartSpan1;
 
 
     }
     if (player.chapters === 4) {
 
         heartSpan1.src = '../assets/heart5.png';
-
+        return heartSpan1;
     }
-    return heartSpan1;
+    
 
 }
