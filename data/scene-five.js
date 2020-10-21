@@ -165,7 +165,6 @@ const S5B8 = {
     dialogueBox: `My boyfriend slumps into a chair. Haha, I love driving him crazy like this! He stops following me around as much while I explore his house. That's fine, because I like my space!`,
     responseFunction: function() {
         nextChapter();
-
         youWin();
     },
 };

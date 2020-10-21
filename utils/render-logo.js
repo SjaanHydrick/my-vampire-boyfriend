@@ -1,11 +1,10 @@
-
-
 export function renderLogo(){
     let section = document.createElement('section');
+    let a = document.createElement('a');
     let mSpan = document.createElement('span');
     let vSpan = document.createElement('span');
     let bSpan = document.createElement('span');
-
+    a.href = '../about-us/'
     section.id = 'logo';
 
     mSpan.classList.add('m');
@@ -20,6 +19,7 @@ export function renderLogo(){
     section.appendChild(mSpan);
     section.appendChild(vSpan);
     section.appendChild(bSpan);
-
-    return section;
+    a.appendChild(section);
+    return a
+    ;
 }

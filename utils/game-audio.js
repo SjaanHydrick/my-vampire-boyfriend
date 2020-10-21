@@ -7,18 +7,17 @@ export function createGameAudio(){
     let dialSection = document.getElementById('dial');
 
     audioElement.id = 'game-play-music';
+    audioElement.loop = true;
+    audioElement.volume = .3;
     dialSection.appendChild(audioElement);
 }
 
 export function playGameAudio(){
-    console.log('play')
-
     let audioElement = document.getElementById('game-play-music');
     audioElement.play();
 }
 
 export function pauseGameAudio(){
-    console.log('pause')
     let audioElement = document.getElementById('game-play-music');
     audioElement.pause();
     audioElement.currentTime = 0;

@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter, shallowGrave } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S5B1 } from './scene-five.js';
@@ -77,7 +77,6 @@ const S4B3 = {
     dialogueBox: `I order two Bloody Mary's! I just love the taste of these! My boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
         nextChapter();
-
         updateScene(S5B1);
     },
 };
@@ -157,7 +156,6 @@ const S4B7 = {
     dialogueBox: `No such luck! He wanders off into the crowd. But it's okay we're still so in love!!!`,
     responseFunction: function() {
         nextChapter();
-
         updateScene(S5B1);
     },
 };
@@ -170,6 +168,7 @@ const S4B8 = {
     buttonChoice: 'dial',
     dialogueBox: `He looks excited and pulls me in close...Oh, wait, ouch, he's not very good at necking...`,
     responseFunction: function() {
+        shallowGrave();
         gameOverYouDied();
     },
 };
@@ -196,7 +195,6 @@ const S4B10 = {
     dialogueBox: `I tried to salvage the night, but lost my boyfriend in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
         nextChapter();
-
         updateScene(S5B1);
     },
 };

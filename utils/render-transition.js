@@ -32,5 +32,6 @@ function renderTransitionTitle(transitionText){
 
 function playTransitionAudio(){
     let audioElement = new Audio("../assets/transition-clip.mp3");
+    audioElement.volume = 0.4;
     audioElement.play();
 }

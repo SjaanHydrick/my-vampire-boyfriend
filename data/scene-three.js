@@ -1,4 +1,4 @@
-import { gameOverYouDied, gameOverMothMan, nextChapter } from '../utils/game-over.js';
+import { gameOverYouDied, gameOverMothMan, nextChapter, river } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S4B1 } from './scene-four.js';
@@ -176,6 +176,7 @@ const S3B9 = {
     buttonChoice: 'dial',
     dialogueBox: `My boyfriend leans in for a kiss! Oh, wait, he's kissing my neck instead. Oh, everything is getting so cold...`,
     responseFunction: function() {
+        river();
         gameOverYouDied();
     },
 };
@@ -201,6 +202,7 @@ const S3B11 = {
     buttonChoice: 'dial',
     dialogueBox: `I hope my boyfriend is a good kisser! Oh, he's kissing my neck! Er, wait, that kind of hurts...`,
     responseFunction: function() {
+        river();
         gameOverYouDied();
     },
 };
@@ -215,7 +217,6 @@ const S3B12 = {
     dialogueBox: `I kiss him on the cheek and he's so surprised he stumbles and falls right into the river! My poor, clumsy boyfriend!!`,
     responseFunction: function() {
         nextChapter();
-
         updateScene(S4B1);
     },
 };
@@ -230,7 +231,6 @@ const S3B13 = {
     dialogueBox: `He leans in VERY close but suddenly there's a howl from deep in the woods. My super mysterious boyfriend darts away! Gosh, he's sOoOo dreamy!`,
     responseFunction: function() {
         nextChapter();
-
         updateScene(S4B1);
     },
 };

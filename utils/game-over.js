@@ -1,8 +1,4 @@
-
 import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
-
-const storageKey = 'USERKEY';
-
 
 export function gameOverYouDied(){
     const player = getFromLocalStorage();
@@ -31,6 +27,16 @@ export function gameOver(resultObject){
 export function tofu(){
     const player = getFromLocalStorage();
     player.tofu = true;
+    setInLocalStorage(player);
+}
+export function shallowGrave(){
+    const player = getFromLocalStorage();
+    player.shallowGrave = true;
+    setInLocalStorage(player);
+}
+export function river(){
+    const player = getFromLocalStorage();
+    player.river = true;
     setInLocalStorage(player);
 }
 export function tea(){
