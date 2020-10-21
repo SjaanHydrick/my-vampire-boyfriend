@@ -9,16 +9,17 @@ import { renderCharacter } from './render-character.js';
 // renders the dialogueBox, responses, and wires the buttons to the responses
 export function renderBeat(object){
     const section = document.createElement('section');
-
+    
     const dialogueBox = renderDialogueBox(object.dialogueBox);
-    // const responseSection = renderResponses(object.choices);
+
     section.id = 'beat-section';
 
     section.appendChild(dialogueBox);
     if (object.buttonChoice === 'dial'){
         renderDialButton(object);
         resetNavButtons();
-    } else {
+
+    } else{
         const responseSection = renderResponses(object.choices);
         section.appendChild(responseSection);
         renderNavButtons(object);

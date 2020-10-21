@@ -10,21 +10,34 @@ export const S1B1 = {
     rightChar: "Vampire_BF.png",
     rightFadeIn: true,
     rightResize: true,
+    buttonChoice: 'dial',
+    dialogueBox:  `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats.`,
+    responseFunction: function() {
+        updateBeat(S1B2);
+    },
+}
+
+const S1B2 = {
+    leftChar: null,
+    rightChar: "Vampire_BF.png",
+    rightFadeIn: true,
+    rightResize: true,
     buttonChoice: 'nav',
+    id: 'cafeteria',
     dialogueBox: 
-        `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats. What should I have for lunch?`,
+       `What should I have for lunch?`,
     choices: [{
         id: 'meat',
         response: `A steak, rare please!`,
         responseFunction: function() {
-            updateBeat(S1B2);
+            updateBeat(S1B3);
         },
     },
     {
         id: 'salad',
         response: `I'll go with salad, my boyfriend says he prefers vegetarians.`,
         responseFunction: function() {
-            updateBeat(S1B3);
+            updateBeat(S1B4);
         },
 
     }, 
@@ -38,15 +51,12 @@ export const S1B1 = {
         responseFunction: function() {
             tofu();
             gameOverVampireDied();
-
-            // console.log('`The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`');
-
         },
     }
     ]
 };
 
-const S1B2 = {
+const S1B3 = {
     id: 'feed',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
@@ -80,7 +90,7 @@ const S1B2 = {
     ]
 };
                 
-const S1B3 = {
+const S1B4 = {
     id: 'letHim',
     leftChar: null,
     rightChar: 'Vampire_BF.png',

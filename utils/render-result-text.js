@@ -1,14 +1,10 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
 
-const storageKey = 'USERKEY';
-
-
-
 
 
 export function renderResultText(resultText) {
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
 
     if (player.vampire === 'dead' && player.tofu === true) {
 
@@ -22,7 +18,7 @@ export function renderResultText(resultText) {
 
 
 export function renderDatesText(datesText) {
-    const player = getFromLocalStorage(storageKey);
+    const player = getFromLocalStorage();
 
     if (player.chapters === 0) {
 
