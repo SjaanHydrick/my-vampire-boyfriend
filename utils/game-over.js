@@ -45,4 +45,6 @@ export function gameOverMothMan(){
     const player = getFromLocalStorage();
     player.tofu = true;
     setInLocalStorage(player);
+    window.location.href = '../results';
+
 }
