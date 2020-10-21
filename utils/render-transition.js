@@ -18,10 +18,10 @@ function renderTransitionTitle(transitionText){
     let subtitleSpan = document.createElement('span');
     let titleDiv = document.createElement('div');
 
-    titleSpan.id = "transition-title";
+    titleSpan.id = 'transition-title';
     titleSpan.textContent = transitionText.title;
 
-    subtitleSpan.id = "transition-subtitle";
+    subtitleSpan.id = 'transition-subtitle';
     subtitleSpan.textContent = transitionText.subtitle;
 
     titleDiv.appendChild(titleSpan);
