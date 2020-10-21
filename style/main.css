@@ -123,9 +123,17 @@
 #right-char {
     position: absolute;
     margin-right: 120px;
-    margin-top: 55px;
+    margin-top: 185px;
     height: 400px;
     animation: vampire 5s infinite;
+}
+
+#right-char-div {
+    position: absolute;
+    width: 770px;
+    height: 620px;
+    left: 120px;
+    top: 120px;
 }
 
 .resize #right-char {
