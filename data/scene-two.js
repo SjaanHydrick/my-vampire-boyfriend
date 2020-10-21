@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S3B1 } from './scene-three.js';
@@ -7,7 +7,7 @@ export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
         id: 'coffee',
@@ -41,7 +41,7 @@ export const S2B1 = {
 const S2B2 = {
     id: 'uninterested',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
 
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
@@ -54,6 +54,8 @@ const S2B2 = {
             },
             responseFunction: function() {
                 updateScene(S3B1);
+                nextChapter();
+
             }
         },
         {
@@ -73,7 +75,7 @@ const S2B2 = {
 const S2B3 = {
     id: 'showsInterest',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
 
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
@@ -83,6 +85,7 @@ const S2B3 = {
             response: 'Show some restraint and pull away',
             responseFunction: function() {
                 updateScene(S3B1);
+                nextChapter();
             }
         },
         {
