@@ -40,8 +40,11 @@ export function updateScene(object){
     const screenFrame = document.getElementById('screenframe');
     screenFrame.innerHTML = '';
 
-    const newScreen = renderScene(object);
-    screenFrame.append(newScreen);
+    renderScene(object);
+    // screenFrame.appendChild(newScreen);
+//     const newScreen = renderScene(object);
+//     screenFrame.append(newScreen);
+
     
 
     const ventSection = document.getElementById('vent');
