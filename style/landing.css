@@ -13,6 +13,11 @@
     src: url('../fonts/Paper\ Flowers.ttf');
 }
 
+@font-face {
+    font-family: Leahlee;
+    src: url('../fonts/212\ Leahlee\ Sans.ttf');
+}
+
 body {
     background-image: url('../assets/background.jpg');
     background-size: auto;
