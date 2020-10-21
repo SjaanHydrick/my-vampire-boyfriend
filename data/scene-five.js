@@ -5,7 +5,8 @@ export const S5B1 = {
     id: 'vampire-lair',
     image: 'lair.jpg',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `Best night EVER! My boyfriend let me follow him back to his place. Wow it's so cavernous and dark, where should I go first?`,
     choices: [{
         id: 'library',
@@ -37,7 +38,8 @@ export const S5B1 = {
 const S5B2 = {
     id: 'books',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `Ok wow there are SO many books in here!`,
     buttonChoice: 'nav',
     choices: [
@@ -65,7 +67,8 @@ const S5B2 = {
 const S5B3 = {
     id: 'beautiful',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `Wow these instruments are so old and weird and dusty. My boyfriend isn't really paying attention to what I'm saying, he's just leaning in close...`,
     buttonChoice: 'nav',
     choices: [
@@ -97,7 +100,8 @@ const S5B3 = {
 const S5B4 = {
     id: 'vampire-books',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `OMG what?! There are so many books about vampires here...why would he--WAIT A MINUTE`,
     buttonChoice: 'nav',
     choices: [

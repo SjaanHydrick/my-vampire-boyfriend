@@ -12,8 +12,23 @@ export function renderResultText(resultText) {
 
     }
 
+    if (player.mothMan === true){
+
+        resultText.textContent = 'Your vampire boyfirend is lame. It\'s all about the Mothman';
+    }
 
 }
+
+
+
+export function renderResultImage(image){
+    const player = getFromLocalStorage();
+    if (player.mothMan === true){
+        image.src = '../assets/Vampire_BF.png'
+    }
+
+}
+
 
 
 
@@ -25,11 +40,34 @@ export function renderDatesText(datesText) {
         datesText.textContent = `You didn't make it through a single date with your boyfriend.` ;
 
     }
+    if (player.chapters === 1) {
+
+        datesText.textContent = `You  made it through a single date with your boyfriend.` ;
+
+    }
+    if (player.chapters === 2) {
+
+        datesText.textContent = `You made it through two whole dates with your boyfriend.` ;
+
+    }
+    if (player.chapters === 3) {
+
+        datesText.textContent = `You made  it through three  dates with your boyfriend. Do I hear wedding bells?` ;
+
+    }
+    if (player.chapters === 4) {
+
+        datesText.textContent = `You made it through four dates with your boyfriend, that pretty impressive.` ;
+
+    }
+    if (player.chapters === 5) {
+
+        datesText.textContent = `You made it through all  five dates!` ;
+
+    }
 
 
 }
-
-
 
 
 
