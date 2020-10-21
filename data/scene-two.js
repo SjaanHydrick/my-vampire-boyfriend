@@ -14,6 +14,7 @@ export const S2B1 = {
     rightFadeIn: true,
     leftChar: null,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'nav',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
         id: 'coffee',
@@ -57,7 +58,7 @@ const S2B2 = {
             }
         },
         {
-            id: 'hugAttack',
+            id: 'hug-attack',
             response: 'Sneak up and give him a big hug!',
             responseFunction: function() {
                 updateBeat(S2B6);
@@ -94,10 +95,11 @@ const S2B3 = {
 };
 
 const S2B4 = {
-    id: 'teaDeath',
+    id: 'tea-death',
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and finishes you off. You died.`,
     responseFunction: function() {
         gameOverYouDied();
@@ -105,10 +107,11 @@ const S2B4 = {
 };
 
 const S2B5 = {
-    id: 'sickVamp',
+    id: 'sick-vamp',
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
         updateScene(S3B1);
@@ -121,6 +124,7 @@ const S2B6 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He dies.`,
     responseFunction: function() {
         gameOverVampireDied();
@@ -132,6 +136,7 @@ const S2B7 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Ok, big mistake! Your boyfriend took the opportunity and killed you.`,
     responseFunction: function() {
         gameOverYouDied();
