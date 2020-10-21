@@ -1,4 +1,4 @@
-import { gameOverYouDied, gameOverMothMan, nextChapter } from '../utils/game-over.js';
+import { gameOverYouDied, gameOverMothMan, nextChapter, river } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S4B1 } from './scene-four.js';
@@ -186,6 +186,7 @@ const S3B9 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend kills you and burys your body in a shallow grave. Dating is so hard these days!`,
     responseFunction: function() {
+        river();
         gameOverYouDied();
     },
 };
@@ -211,6 +212,7 @@ const S3B11 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!`,
     responseFunction: function() {
+        river();
         gameOverYouDied();
     },
 };

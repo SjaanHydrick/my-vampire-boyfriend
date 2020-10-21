@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter, shallowGrave } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S5B1 } from './scene-five.js';
@@ -162,6 +162,7 @@ const S4B8 = {
     buttonChoice: 'dial',
     dialogueBox: `He looks excited and pulls you in close...to bite your neck and kill you.`,
     responseFunction: function() {
+        shallowGrave();
         gameOverYouDied();
     },
 };

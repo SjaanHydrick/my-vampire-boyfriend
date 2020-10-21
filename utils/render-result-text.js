@@ -22,6 +22,17 @@ export function renderResultText(resultText) {
         resultText.textContent = `Your tofu is drenched in garlic sauce! Upon taking a whiff, your boyfriend starts to choke and suddenly explodes into a pile of ash!` ;
 
     } else
+    if (player.shallowGrave === true && player.playerAlive === false) {
+
+        resultText.textContent = 'Your boyfriend kills you and burys your body in a shallow grave. Dating is so hard these days!';
+
+    } else
+    
+    if (player.river === true && player.playerAlive === false) {
+
+        resultText.textContent = `Oh no your vampire boyfriend kills you and dumps your body in the river, better luck next time.` ;
+
+    } else
 
     if (player.mothMan === true){
 

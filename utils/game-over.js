@@ -33,6 +33,16 @@ export function tofu(){
     player.tofu = true;
     setInLocalStorage(player);
 }
+export function shallowGrave(){
+    const player = getFromLocalStorage();
+    player.shallowGrave = true;
+    setInLocalStorage(player);
+}
+export function river(){
+    const player = getFromLocalStorage();
+    player.river = true;
+    setInLocalStorage(player);
+}
 export function tea(){
     const player = getFromLocalStorage();
     player.tea = true;
