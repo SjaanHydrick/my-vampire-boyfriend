@@ -1,6 +1,6 @@
 import { renderResultText, renderDatesText} from './render-result-text.js';
 import { renderVent } from './render-vent.js';
-const screen = document.querySelector('#screenframe');
+const screen = document.querySelector('#screen');
 const button = document.querySelector('#dial-button');
 const resultText = document.createElement('p');
 const numberOfDates = document.createElement('p');
