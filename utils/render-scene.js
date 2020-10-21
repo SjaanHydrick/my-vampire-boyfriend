@@ -12,9 +12,6 @@ export function renderScene(object){
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
     screen.appendChild(beatSection);
-    
-    
-   
 
     return screen;
 }
@@ -25,13 +22,11 @@ export function updateScene(object){
 
     const newScreen = renderScene(object);
     screenFrame.appendChild(newScreen);
-    // renderVent();
     
 
     const ventSection = document.getElementById('vent');
     ventSection.innerHTML = '';
     renderVent();
-    // renderVent();
 
   
 }
