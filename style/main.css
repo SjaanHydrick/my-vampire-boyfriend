@@ -145,9 +145,9 @@
 
 
 #logo {
-    float: bottom;
-    margin-left: 55px;
-    margin-top: 613px;
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 423px;
     height: 30px;
     opacity: .5;
     z-index: 1;
