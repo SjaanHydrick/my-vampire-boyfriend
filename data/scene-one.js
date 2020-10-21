@@ -7,7 +7,7 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
     transitionTitle: {
-        title: 'Date 1',
+        title: 'Date 1:',
         subtitle: 'hospital cafeteria'
     },
     leftChar: null,

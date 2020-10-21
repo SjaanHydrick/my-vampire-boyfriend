@@ -7,7 +7,7 @@ export const S2B1 = {
     id: 'coffee-shop',
     image: 'cafe.jpg',
     transitionTitle: {
-        title: 'Date 2',
+        title: 'Date 2:',
         subtitle: 'coffee shop'
     },
     rightResize: true,
