@@ -12,7 +12,7 @@ export function renderResultText(resultText) {
 
     if (player.vampire === 'dead' && player.tofu === true) {
 
-        resultText.textContent = `Your vampire BF dies of garlic.` ;
+        resultText.textContent = `Your tofu is drenched in garlic sauce! Upon taking a whiff, your boyfriend starts to choke and suddenly explodes into a pile of ash!` ;
 
     }
 
@@ -26,7 +26,7 @@ export function renderDatesText(datesText) {
 
     if (player.chapters === 0) {
 
-        datesText.textContent = ` You didn't make it through a single date with your vampire Boyfriend. You absolute Adonnis.` ;
+        datesText.textContent = `You didn't make it through a single date with your boyfriend.` ;
 
     }
 

@@ -49,7 +49,8 @@ export const S1B1 = {
 const S1B2 = {
     id: 'feed',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
+    rightFadeIn: false,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -82,7 +83,7 @@ const S1B2 = {
 const S1B3 = {
     id: 'letHim',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
