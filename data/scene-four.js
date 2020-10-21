@@ -14,6 +14,7 @@ export const S4B1 = {
     rightResize: true,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `I never went to bars because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween show tonight, what should we do first?`,
+    buttonChoice: 'nav',
     choices: [{
         id: 'dance',
         response: `Let's dance!`,
@@ -68,6 +69,7 @@ const S4B3 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `You order two Bloody Mary's. Your boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
         updateScene(S5B1);
@@ -129,6 +131,7 @@ const S4B6 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `A man dressed in a lot of leather comes up behind him and stabs him in the heart with a broom handle. OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
     responseFunction: function() {
         gameOverVampireDied();
@@ -140,6 +143,7 @@ const S4B7 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `No luck! But it's okay we're still so in love!!!`,
     responseFunction: function() {
         updateScene(S5B1);
@@ -151,6 +155,7 @@ const S4B8 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `He looks excited and pulls you in close...to bite your neck and kill you.`,
     responseFunction: function() {
         gameOverYouDied();
@@ -162,6 +167,7 @@ const S4B9 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `You turn your back on your boyfriend. Big mistake! He kills you without blinking an eye.`,
     responseFunction: function() {
         gameOverYouDied();
@@ -173,6 +179,7 @@ const S4B10 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `You try and salvage the night but lose him in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
         updateScene(S5B1);
