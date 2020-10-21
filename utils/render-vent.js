@@ -10,7 +10,6 @@ export function renderVent(){
     const playerName = renderUserName();
     vent.appendChild(playerName);
 
-    const hearts = renderHeart();
-    vent.appendChild(hearts);
+    const hearts = renderHeart(vent);
 
 }  
