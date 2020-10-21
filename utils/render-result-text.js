@@ -100,7 +100,7 @@ export function renderDatesText(datesText) {
     }
     if (player.chapters === 4) {
 
-        datesText.textContent = `The cafeteria was filling. The cafe was stimulating. The river walk invigorating. The bar was intoxicating. You made it all the way to your vampire boyfriends house. But this is where your adventure ends.` ;
+        datesText.textContent = `You made it through the cafeteria, the cafe, the river walk, and the bar but this is where your adventure ends.` ;
 
     }
     if (player.chapters === 5) {
