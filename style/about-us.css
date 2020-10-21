@@ -1,3 +1,58 @@
-main {
+
+
+.bio {
+    padding: 15px;
+    text-align: center;
+    font-family: Luna;
+    color: white;
+    letter-spacing: 1pt;
+    line-height: 30pt;
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.us {
+    background-color:#333;
+    padding: 10px;
+    border-radius:20px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+#logo {
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 567px;
+    height: 30px;
+    opacity: .5;
+    z-index: 1;
+}
+
+.m {
+    float: left;
+    margin-top: -10px;
+    font-family: Beauty and the Beast;
+    color: white;
+}
+
+.v {
+    margin-top: -12px;
+    margin-left: 1px;
+    font-family: DoubleFeature;
+    color: maroon;
+    font-size: 20pt;
+}
+
+.b {
+    float: right;
+    margin-left: 1px;
+    margin-top: 15px;
+    font-family: Beauty and the Beast;
     color: white;
 }
