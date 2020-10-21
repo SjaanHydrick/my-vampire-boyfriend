@@ -1,9 +1,12 @@
 
 import { renderBeat } from './render-beat.js';
 import { renderVent } from './render-vent.js';
+import { renderLogo } from './render-logo.js';
+
 
 export function renderScene(object){
     const screen = document.createElement('section');
+
 
     const beatSection = renderBeat(object);
 
@@ -11,6 +14,9 @@ export function renderScene(object){
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
     screen.appendChild(beatSection);
+    
+    const logo = renderLogo();
+    screen.appendChild(logo);
 
     return screen;
 }

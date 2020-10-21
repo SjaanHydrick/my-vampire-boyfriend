@@ -12,7 +12,6 @@ export function renderBeat(object){
 
     const dialogueBox = renderDialogueBox(object.dialogueBox);
     // const responseSection = renderResponses(object.choices);
-
     section.id = 'beat-section';
 
     section.appendChild(dialogueBox);
@@ -50,6 +49,7 @@ export function renderBeat(object){
         }
         section.appendChild(rightChar);
     }
+
 
     return section;
 }
