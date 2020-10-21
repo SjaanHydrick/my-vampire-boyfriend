@@ -12,7 +12,7 @@ export function renderScene(object){
     screenFrame.appendChild(screen);
     setTimeout(function() {
         renderScreen(object);
-    }, 7000);
+    }, 5500);
 
     
 }
