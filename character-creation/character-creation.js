@@ -1,10 +1,7 @@
 // import { saveUser } from './utils.js';
 import { setInLocalStorage } from '../utils/manage-local-storage.js';
-import { createGameAudio, playGameAudio } from '../utils/game-audio.js';
 
 
-createGameAudio();
-playGameAudio();
 const form = document.querySelector('form');
 
 const USER = 'USER';

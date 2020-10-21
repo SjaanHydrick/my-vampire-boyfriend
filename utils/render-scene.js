@@ -3,13 +3,12 @@ import { renderBeat } from './render-beat.js';
 import { renderVent } from './render-vent.js';
 import { renderLogo } from './render-logo.js';
 import { renderTransition } from './render-transition.js';
-import { playGameAudio, pauseGameAudio } from './game-audio.js';
+import { playGameAudio } from './game-audio.js';
 
 
 export function renderScene(object){
     const screenFrame = document.querySelector('#screenframe');
 
-    pauseGameAudio();
     screen = renderTransition(object.transitionTitle);
     screenFrame.appendChild(screen);
     setTimeout(function() {
