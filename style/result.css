@@ -57,12 +57,14 @@ button {
 }
 
 #logo {
-    float: left;
+    position: fixed;
     margin-left: 15px;
-    margin-top: 573px;
+    margin-top: 567px;
     height: 30px;
     opacity: .5;
+    z-index: 1;
 }
+
 
 .m {
     float: left;
