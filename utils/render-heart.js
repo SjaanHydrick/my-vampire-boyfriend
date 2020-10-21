@@ -17,7 +17,8 @@ export function renderHeart() {
         heartSpan1.src = '../assets/heart1.png';
 
 
-    } else if (player.chapters === 1) {
+    }
+    if (player.chapters === 1) {
 
         heartSpan1.src = '../assets/heart2.png';
 
