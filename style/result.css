@@ -29,42 +29,45 @@ button {
     line-height: 24pt;
 }
 
-#text-div {
+.text-div {
     position: fixed;
-    height: 550px;
-    width: 600px;
+    height: 620px;
+    width: 770px;
+    top: 120px;
+    left: 120px;
+    overflow: hidden;
 }
 
 .result-text {
-    padding: 75px;
+    padding: 50px;
     text-align: center;
-    font-family: Luna;
+    font-family: Leahlee;
+    font-size: 30pt;
     color: white;
     letter-spacing: 1pt;
     line-height: 30pt;
     animation: scroll-up 15s linear;
 }
 
-
 .date-text {
-    padding: 75px;
+    padding: 50px;
     text-align: center;
-    font-family: Luna;
+    font-family: LeahLee;
+    font-size: 30pt;
     color: white;
     letter-spacing: 1pt;
     line-height: 30pt;
     animation: scroll-up-date 15s linear;
 }
 
-#logo {
+a {
     position: fixed;
-    margin-left: 15px;
-    margin-top: 567px;
+    margin-left: -385px;
+    margin-top: 144px;
     height: 30px;
-    opacity: .5;
+    opacity: .7;
     z-index: 1;
 }
-
 
 .m {
     float: left;
@@ -87,13 +90,6 @@ button {
     margin-top: 15px;
     font-family: Beauty and the Beast;
     color: white;
-}
-
-.heart {
-    margin-left: 15px;
-    margin-top: -15px;
-    margin-right: 15px;
-    animation: bounce 4s infinite;
 }
 
 @keyframes scroll-up {
