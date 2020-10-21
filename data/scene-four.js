@@ -1,17 +1,16 @@
 import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
-// import { S5B1 } from './scene-five.js';
+import { S5B1 } from './scene-five.js';
 
 export const S4B1 = {
-    id: 'halloweenDance',
-    image: 'riverwalk.jpg',
+    id: 'halloween-dance',
+    image: 'bar.jpg',
     char: 'Vampire_BF.png',
     dialogueBox: `I never went to prom because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween dance tonight, what should we do first?`,
     choices: [{
         id: 'dance',
         response: `Let's dance!`,
-        result: {},
         responseFunction: function() {
             updateBeat(S4B2);
         },
