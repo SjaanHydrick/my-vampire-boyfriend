@@ -33,6 +33,17 @@ export function tofu(){
     player.tofu = true;
     setInLocalStorage(player);
 }
+export function tea(){
+    const player = getFromLocalStorage();
+    player.tea = true;
+    setInLocalStorage(player);
+}
+
+export function coffee(){
+    const player = getFromLocalStorage();
+    player.coffee = true;
+    setInLocalStorage(player);
+}
 
 export function nextChapter() {
     const player = getFromLocalStorage();
