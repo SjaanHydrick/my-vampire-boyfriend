@@ -1,7 +1,7 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
-
 const storageKey = 'USERKEY';
+
 
 function heart(section){
     const heartSpan1 = document.createElement('img');

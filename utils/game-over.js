@@ -1,8 +1,4 @@
-
 import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
-
-const storageKey = 'USERKEY';
-
 
 export function gameOverYouDied(){
     const player = getFromLocalStorage();

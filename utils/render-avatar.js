@@ -14,7 +14,6 @@ export function renderAvatar(){
 }
 
 // pulls userData from Local Storage, creates a text element, returns it
-
 export function renderUserName(){
     const userData = getFromLocalStorage();
 
