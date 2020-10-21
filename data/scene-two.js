@@ -78,10 +78,9 @@ const S2B3 = {
     choices: [
         {
             id: 'modesty',
-            response: 'Show some restraint and pull away!',
+            response: 'Show some restraint and pull away! A love like this is worth the wait!',
             responseFunction: function() {
-                nextChapter();
-                updateScene(S3B1);
+                updateBeat(S2B8);
                 
             }
         },
@@ -103,7 +102,7 @@ const S2B4 = {
     rightFadeIn: false,
     rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `While your tea is steeping, your boyfriend creeps up behind you and kisses your neck! He uses a lot of teeth...you're feeling weak...`,
+    dialogueBox: `While my tea is steeping, my boyfriend creeps up behind my and kisses my neck! He's so sweet! He uses a lot of teeth, tho...I'm feeling weak...`,
     responseFunction: function() {
         gameOverYouDied();
         tea();
@@ -117,7 +116,7 @@ const S2B5 = {
     rightResize: true,
     rightFadeOut: true,
     buttonChoice: 'dial',
-    dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
+    dialogueBox: `My boyfriend leaves! Well this date wasn't the best. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
         nextChapter();
         updateScene(S3B1);
@@ -131,7 +130,7 @@ const S2B6 = {
     rightResize: true,
     rightFadeOut: true,
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!? He explodes into a pile of ash!`,
+    dialogueBox: `My boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!?`,
     responseFunction: function() {
         coffee();
         gameOverVampireDied();
@@ -144,8 +143,22 @@ const S2B7 = {
     rightResize: true,
     rightChar: 'Vampire_BF_Crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that really hurts...`,
+    dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that sorta hurts...`,
     responseFunction: function() {
         gameOverYouDied();
+    },
+};
+
+const S2B8 = {
+    id: 'push-away',
+    leftChar: null,
+    rightResize: true,
+    rightFadeIn: false,
+    rightChar: 'Vampire_BF_Crop.png',
+    buttonChoice: 'dial',
+    dialogueBox: `My boyfriend gets sooooo frustrated when I push him away, it's so cute! He storms off, but it's okay! I know a love like ours is worth the wait!`,
+    responseFunction: function() {
+        nextChapter();
+        updateScene(S3B1);
     },
 };
