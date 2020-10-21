@@ -40,4 +40,8 @@ export function nextChapter() {
     setInLocalStorage(player);
 }
 
-export function gameOverMothMan(){}
+export function gameOverMothMan(){
+    const player = getFromLocalStorage(storageKey);
+    player.tofu = true;
+    setInLocalStorage(player);
+}

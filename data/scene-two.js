@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S3B1 } from './scene-three.js';
@@ -50,6 +50,8 @@ const S2B2 = {
             },
             responseFunction: function() {
                 updateScene(S3B1);
+                nextChapter()
+
             }
         },
         {
@@ -76,6 +78,7 @@ const S2B3 = {
             response: 'Show some restraint and pull away',
             responseFunction: function() {
                 updateScene(S3B1);
+                nextChapter();
             }
         },
         {
