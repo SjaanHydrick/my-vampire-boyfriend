@@ -42,7 +42,6 @@ const S2B2 = {
     id: 'uninterested',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
-
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
@@ -76,7 +75,6 @@ const S2B3 = {
     id: 'showsInterest',
     leftChar: null,
     rightChar: 'Vampire_BF.png',
-
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
     choices: [

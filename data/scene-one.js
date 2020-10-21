@@ -111,5 +111,3 @@ const S1B3 = {
         }]
 };
 
-// dialogueBox: `Wow, that steak must have not been on his diet, he seemed to get really sick and just got up and left. He's so mysterious!`,
-

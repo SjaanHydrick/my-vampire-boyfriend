@@ -106,7 +106,8 @@ button {
 
 button:hover {
     transform: rotate(45deg);
-    
+    cursor: pointer;
+
 }
 
 .choice-button {

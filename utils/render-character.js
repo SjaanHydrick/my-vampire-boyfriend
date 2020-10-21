@@ -6,7 +6,7 @@ export function renderCharacter(char, id){
     characterImage.id = id;
     characterImage.src = `../assets/${char}`;
 
-    characterDiv.id = 'character-div';
+    characterDiv.id = `${id}-div`;
     characterDiv.append(characterImage);
 
     return characterDiv;
