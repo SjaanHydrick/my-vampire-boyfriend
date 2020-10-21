@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, youWin, isVampire } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, youWin, isVampire, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 
 export const S5B1 = {
@@ -161,6 +161,8 @@ const S5B8 = {
     buttonChoice: 'dial',
     dialogueBox: `Your vampire boyfriend surprisingly decides to reward your modest behavior by letting you live! Congrats!`,
     responseFunction: function() {
+        nextChapter()
+
         youWin();
     },
 };
@@ -185,6 +187,7 @@ const S5B10 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend loves you too and wants to be with you forever! He turns you into a vampire!!`,
     responseFunction: function() {
+        nextChapter()
         isVampire();
         youWin();
     },

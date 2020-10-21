@@ -9,7 +9,7 @@ export function renderResultText(resultText) {
 
     if (player.win === true && player.isVampire === true) {
 
-        resultText.textContent = `You did it! Your vampire boyfriend loves you so much he turned you into a vampire and you can spend eternity forever.` ;
+        resultText.textContent = `You did it! Your vampire boyfriend loves you so much he turned you into a vampire and you can spend eternity together.` ;
 
     } else
     if (player.win === true) {
@@ -40,6 +40,7 @@ export function renderResultText(resultText) {
 
         resultText.textContent = 'Whelp you died';
     } else
+    
     if (player.vampireAlive === false){
 
         resultText.textContent = 'Whelp you killed your vampire boyfriend';
