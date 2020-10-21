@@ -79,8 +79,9 @@ const S2B3 = {
             id: 'modesty',
             response: 'Show some restraint and pull away',
             responseFunction: function() {
-                updateScene(S3B1);
                 nextChapter();
+                updateScene(S3B1);
+                
             }
         },
         {
@@ -115,8 +116,8 @@ const S2B5 = {
     buttonChoice: 'dial',
     dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
-        updateScene(S3B1);
         nextChapter();
+        updateScene(S3B1);
     },
 };
 

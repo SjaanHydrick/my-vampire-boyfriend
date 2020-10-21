@@ -8,6 +8,31 @@ export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);
     
 
+    if (player.chapters === 5) {
+        const heartSpan1 = document.createElement('img');
+        heartSpan1.src = '../assets/heart.png';
+        heartSpan1.classList.add('heart');
+        section.appendChild(heartSpan1);
+        const heartSpan2 = document.createElement('img');
+        heartSpan2.src = '../assets/heart.png';
+        heartSpan2.classList.add('heart');
+        section.appendChild(heartSpan2);
+        const heartSpan3 = document.createElement('img');
+        heartSpan3.src = '../assets/heart.png';
+        heartSpan3.classList.add('heart');
+        section.appendChild(heartSpan3);
+        const heartSpan4 = document.createElement('img');
+        heartSpan4.src = '../assets/heart.png';
+        heartSpan4.classList.add('heart');
+        section.appendChild(heartSpan4);
+        const heartSpan5 = document.createElement('img');
+        heartSpan5.src = '../assets/heart.png';
+        heartSpan5.classList.add('heart');
+        section.appendChild(heartSpan5);
+
+
+    }
+
     if (player.chapters === 4) {
         const heartSpan1 = document.createElement('img');
         heartSpan1.src = '../assets/heart.png';

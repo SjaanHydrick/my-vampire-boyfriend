@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S5B1 } from './scene-five.js';
@@ -72,6 +72,8 @@ const S4B3 = {
     buttonChoice: 'dial',
     dialogueBox: `You order two Bloody Mary's. Your boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
+        nextChapter()
+
         updateScene(S5B1);
     },
 };
@@ -146,6 +148,8 @@ const S4B7 = {
     buttonChoice: 'dial',
     dialogueBox: `No luck! But it's okay we're still so in love!!!`,
     responseFunction: function() {
+        nextChapter()
+
         updateScene(S5B1);
     },
 };
@@ -182,6 +186,8 @@ const S4B10 = {
     buttonChoice: 'dial',
     dialogueBox: `You try and salvage the night but lose him in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
+        nextChapter()
+
         updateScene(S5B1);
     },
 };
