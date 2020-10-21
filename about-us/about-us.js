@@ -1,4 +1,4 @@
-const button = document.querySelector('#dial-button')
+const button = document.querySelector('#dial-button');
 
 button.addEventListener('click', () => {
     localStorage.clear();

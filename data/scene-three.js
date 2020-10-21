@@ -173,7 +173,7 @@ const S3B8 = {
     buttonChoice: 'dial',
     dialogueBox: `A jogger runs just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
     responseFunction: function() {
-        nextChapter()
+        nextChapter();
         updateScene(S4B1);
     },
 };
@@ -198,7 +198,7 @@ const S3B10 = {
     buttonChoice: 'dial',
     dialogueBox: `Ok that ROBBER just tried to grab my bag!! My boyfriend is chasing after him, he's so brave!`,
     responseFunction: function() {
-        nextChapter()
+        nextChapter();
         updateScene(S4B1);
     },
 };
@@ -223,8 +223,7 @@ const S3B12 = {
     buttonChoice: 'dial',
     dialogueBox: `You kiss him on the cheek and he's so surprised he stumbles and falls right into the river! Your poor boyfriend!!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         updateScene(S4B1);
     },
 };
@@ -237,8 +236,7 @@ const S3B13 = {
     buttonChoice: 'dial',
     dialogueBox: `He leans in VERY close but then there's a howl from deep in the woods. Your super mysterious boyfriend darts away!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         updateScene(S4B1);
     },
 };
