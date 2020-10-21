@@ -161,8 +161,7 @@ const S5B8 = {
     buttonChoice: 'dial',
     dialogueBox: `Your vampire boyfriend surprisingly decides to reward your modest behavior by letting you live! Congrats!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         youWin();
     },
 };
@@ -187,7 +186,7 @@ const S5B10 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend loves you too and wants to be with you forever! He turns you into a vampire!!`,
     responseFunction: function() {
-        nextChapter()
+        nextChapter();
         isVampire();
         youWin();
     },

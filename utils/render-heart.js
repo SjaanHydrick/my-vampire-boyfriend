@@ -1,8 +1,6 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
-
 const storageKey = 'USERKEY';
-
 
 export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);

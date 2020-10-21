@@ -1,5 +1,3 @@
-
-
 export function renderLogo(){
     let section = document.createElement('section');
     let mSpan = document.createElement('span');

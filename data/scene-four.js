@@ -72,8 +72,7 @@ const S4B3 = {
     buttonChoice: 'dial',
     dialogueBox: `You order two Bloody Mary's. Your boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         updateScene(S5B1);
     },
 };
@@ -148,8 +147,7 @@ const S4B7 = {
     buttonChoice: 'dial',
     dialogueBox: `No luck! But it's okay we're still so in love!!!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         updateScene(S5B1);
     },
 };
@@ -187,8 +185,7 @@ const S4B10 = {
     buttonChoice: 'dial',
     dialogueBox: `You try and salvage the night but lose him in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
-        nextChapter()
-
+        nextChapter();
         updateScene(S5B1);
     },
 };
