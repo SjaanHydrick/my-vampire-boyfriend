@@ -14,6 +14,7 @@ export const S3B1 = {
     rightFadeIn: true,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'nav',
     dialogueBox: `Tonight we're taking the most romantic walk along the river. My boyfriend loves coming here, but it's a little creepy because lots of people go missing. Where to?`,
     choices: [{
         id: 'crowded-path',
@@ -120,6 +121,7 @@ const S3B5 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
         updateBeat(S3B6);
@@ -156,6 +158,7 @@ const S3B7 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `You start yelling about how you deserve love and affection! Suddenly, MothMan appears...and he will definitely treat you right.`,
     responseFunction: function() {
         gameOverMothMan();
@@ -167,6 +170,7 @@ const S3B8 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `A jogger runs just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
     responseFunction: function() {
         updateScene(S4B1);
@@ -178,6 +182,7 @@ const S3B9 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Your boyfriend kills you and burys your body in a shallow grave. Dating is so hard these days!`,
     responseFunction: function() {
         gameOverYouDied();
@@ -189,6 +194,7 @@ const S3B10 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Ok that ROBBER just tried to grab my bag!! My boyfriend is chasing after him, he's so brave!`,
     responseFunction: function() {
         updateScene(S4B1);
@@ -200,6 +206,7 @@ const S3B11 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!`,
     responseFunction: function() {
         gameOverYouDied();
@@ -211,6 +218,7 @@ const S3B12 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `You kiss him on the cheek and he's so surprised he stumbles and falls right into the river! Your poor boyfriend!!`,
     responseFunction: function() {
         updateScene(S4B1);
@@ -222,6 +230,7 @@ const S3B13 = {
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
+    buttonChoice: 'dial',
     dialogueBox: `He leans in VERY close but then there's a howl from deep in the woods. Your super mysterious boyfriend darts away!`,
     responseFunction: function() {
         updateScene(S4B1);
