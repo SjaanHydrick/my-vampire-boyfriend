@@ -118,7 +118,7 @@ const S2B5 = {
 };
 
 const S2B6 = {
-    id: 'coffeeDeath',
+    id: 'coffee-death',
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
@@ -129,7 +129,7 @@ const S2B6 = {
 };
 
 const S2B7 = {
-    id: 'hugDeath',
+    id: 'hug-death',
     leftChar: null,
     rightResize: true,
     rightChar: 'Vampire_BF.png',
