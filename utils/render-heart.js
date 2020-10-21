@@ -10,7 +10,7 @@ const storageKey = 'USERKEY';
 export function renderHeart() {
     const player = getFromLocalStorage(storageKey);
     const heartSpan1 = document.createElement('img');
-    heartSpan1.classList.add('hearts');
+    heartSpan1.classList.add('heart');
 
     if (player.chapters === 0) {
 
