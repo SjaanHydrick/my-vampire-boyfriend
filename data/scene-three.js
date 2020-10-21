@@ -6,6 +6,10 @@ import { S4B1 } from './scene-four.js';
 export const S3B1 = {
     id: 'riverwalk',
     image: 'riverwalk.jpg',
+    transitionTitle: {
+        title: 'Date 3:',
+        subtitle: 'River Walk'
+    },
     leftChar: null,
     rightFadeIn: true,
     rightResize: true,

@@ -5,7 +5,7 @@ export const S5B1 = {
     id: 'vampire-lair',
     image: 'lair.jpg',
     transitionTitle: {
-        title: 'Date 5',
+        title: 'Date 5:',
         subtitle: "my boyfriend's liar"
     },
     leftChar: null,
