@@ -7,7 +7,7 @@ export const S4B1 = {
     id: 'halloween-dance',
     image: 'cafeteria.jpg',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `I never went to prom because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween dance tonight, what should we do first?`,
     choices: [{
         id: 'dance',
@@ -39,7 +39,7 @@ export const S4B1 = {
 const S4B2 = {
     id: 'dance-floor',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `I'm totally workin' this dance floor! My boyfriends seems uncomfortable, he's so shy and cute. He looks like he's moving in for a kiss!`,
     buttonChoice: 'nav',
     choices: [
@@ -67,7 +67,7 @@ const S4B2 = {
 const S4B3 = {
     id: 'mysterious',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `My boyfriend is so quiet and mysterious and that's why I love him, but I want him to open up to me! What should I do?`,
     buttonChoice: 'nav',
     choices: [
@@ -98,7 +98,7 @@ const S4B3 = {
 const S4B4 = {
     id: 'hot-bothered',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     dialogueBox: `My boyfriend looks totally hot and bothered. Ok gosh!!! What should I do?!?`,
     buttonChoice: 'nav',
     choices: [

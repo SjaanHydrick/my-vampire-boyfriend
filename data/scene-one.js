@@ -7,7 +7,7 @@ export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     rightFadeIn: true,
     rightResize: true,
     buttonChoice: 'dial',
@@ -15,11 +15,11 @@ export const S1B1 = {
     responseFunction: function() {
         updateBeat(S1B2);
     },
-}
+};
 
 const S1B2 = {
     leftChar: null,
-    rightChar: "Vampire_BF.png",
+    rightChar: 'Vampire_BF.png',
     rightFadeIn: true,
     rightResize: true,
     buttonChoice: 'nav',
@@ -44,13 +44,8 @@ const S1B2 = {
     {
         id: 'tofu',
         response: `I'm feeling a little vegan today, I'll get the tofu stir-fry!`,
-        result: {
-            dead: 'vampire',
-            resultText: 'The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.'
-        },
         responseFunction: function() {
-            tofu();
-            gameOverVampireDied();
+            updateBeat(S1B5);
         },
     }
     ]
@@ -67,17 +62,9 @@ const S1B3 = {
         {
             id: 'meatSick',
             response: `I'll give him a little bite...`,
-            result: {
-                resultText: 'Your boyfriend looks sick and walks out on lunch'
-            },
             responseFunction: function() {
-            
-                updateScene(S2B1);
-                nextChapter();
-
-
-
-            },                
+                updateBeat(S1B6);
+            }               
         },
         {
             id: 'pushAway',
@@ -100,27 +87,51 @@ const S1B4 = {
         {
             id: 'youDie',
             response: `I'll let him...`,
-            result: {
-                dead: 'player',
-                resultText: 'He bit me and I died' 
-            },
             responseFunction: function() {
-
-                gameOverYouDied();
-
-                
-
+                updateBeat(S1B7);
             }
         },
         {
             id: 'pushAway',
             response: `I get overwhelmed when he pays this much attention to me, I'll just push him away.`,
             responseFunction: function() {
-
                 updateScene(S2B1);
                 nextChapter();
 
             }
         }]
+};
+
+const S1B5 = {
+    id: 'tofuDeath',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `The stir-fry contains an obscene amount of garlic and your vampire boyfriend becomes violently ill and dies.`,
+    responseFunction: function() {
+        tofu();
+        gameOverVampireDied();
+    },
+};
+
+const S1B6 = {
+    id: 'sickVamp',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Your boyfriend looks sick and walks out on lunch`,
+    responseFunction: function() {
+        updateScene(S2B1);
+        nextChapter();
+    },
+};
+
+const S1B7 = {
+    id: 'firstYouDie',
+    leftChar: null,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
+    responseFunction: function() {
+        gameOverYouDied();
+    
+    }
 };
 
