@@ -15,6 +15,7 @@ export const S2B1 = {
     leftChar: null,
     rightChar: 'Vampire_BF.png',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
+    buttonChoice: 'nav',
     choices: [{
         id: 'coffee',
         response: `Coffee, black.`,
