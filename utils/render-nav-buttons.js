@@ -12,17 +12,17 @@ export function renderNavButtons(object){
             };
 
             buttons[i].onmouseenter = function() {
-                let response = document.getElementById(`response${i+1}`);
+                let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
 
             buttons[i].onmouseover = function() {
-                let response = document.getElementById(`response${i+1}`);
+                let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
 
             buttons[i].onmouseleave = function() {
-                let response = document.getElementById(`response${i+1}`);
+                let response = document.getElementById(`response${i + 1}`);
                 response.classList.remove('button-hover');
             };
 

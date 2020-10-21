@@ -47,9 +47,6 @@ const S3B2 = {
         {
             id: 'snuggle',
             response: `Snuggle up to him for attention`,
-            result: {
-                resultText: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`
-            },
             responseFunction: function() {
                 updateBeat(S3B5);
             }
@@ -57,11 +54,8 @@ const S3B2 = {
         {
             id: 'make-scene',
             response: 'Make a huge scene!',
-            result: {
-                resultText: 'You start yelling about how you deserve love and affection! Suddenly, MothMan appears...and he will definitely treat you right.'
-            },
             responseFunction: function() {
-                gameOverMothMan();
+                updateBeat(S3B7);
             }
         }
     ]
@@ -78,22 +72,15 @@ const S3B3 = {
         {
             id: 'modest',
             response: `Be modest and walk away`,
-            result: {
-                resultText: `A jogger runs just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`
-            },
             responseFunction: function() {
-                updateScene(S4B1);
+                updateBeat(S3B8);
             }
         },
         {
             id: 'go-for-it',
             response: 'Go for it!',
-            result: {
-                dead: 'player',
-                resultText: 'Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!'
-            },
             responseFunction: function() {
-                gameOverYouDied();
+                updateBeat(S3B9);
             }
         }
     ]
@@ -110,28 +97,32 @@ const S3B4 = {
         {
             id: 'walk-away',
             response: `This is moving way too fast, just walk away`,
-            result: {
-                resultText: `Ok that ROBBER just tried to grab my bag!! My boyfriend is chasing after him, he's so brave!`
-            },
             responseFunction: function() {
-                updateScene(S4B1);
+                updateBeat(S3B10);
             }
         },
         {
             id: 'do-it',
             response: `Ummm let's do it!`,
-            result: {
-                dead: 'player',
-                resultText: 'Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!'
-            },
             responseFunction: function() {
-                gameOverYouDied();
+                updateBeat(S3B11);
             }
         }
     ]
 };
 
 const S3B5 = {
+    id: 'connection',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Well this date wasn't the best idea. But I know our connection is SO strong, he's just SOoOo dreamy!`,
+    responseFunction: function() {
+        updateBeat(S3B6);
+    },
+};
+
+const S3B6 = {
     id: 'got-him',
     leftChar: null,
     rightResize: true,
@@ -142,22 +133,93 @@ const S3B5 = {
         {
             id: 'kiss-him',
             response: `Kiss him first!`,
-            result: {
-                resultText: `You kiss him on the cheek and he's so surprised he stumbles and falls right into the river! Your poor boyfriend!!`
-            },
             responseFunction: function() {
-                updateScene(S4B1);
+                updateBeat(S3B12);
             }
         },
         {
             id: 'let-it-happen',
             response: `Just let it happen!`,
-            result: {
-                resultText: `He leans in VERY close but then there's a howl from deep in the woods. Your super mysterious boyfriend darts away!`
-            },
             responseFunction: function() {
-                updateScene(S4B1);
+                updateBeat(S3B13);
             }
         }
     ]
+};
+
+const S3B7 = {
+    id: 'mothman',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `You start yelling about how you deserve love and affection! Suddenly, MothMan appears...and he will definitely treat you right.`,
+    responseFunction: function() {
+        gameOverMothMan();
+    },
+};
+
+const S3B8 = {
+    id: 'dump-body',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `A jogger runs just ran by and my boyfriend started to follow them. Haha I drive him so crazy!`,
+    responseFunction: function() {
+        updateScene(S4B1);
+    },
+};
+
+const S3B9 = {
+    id: 'shallow-grave',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Your boyfriend kills you and burys your body in a shallow grave. Dating is so hard these days!`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
+};
+
+const S3B10 = {
+    id: 'dump-body',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Ok that ROBBER just tried to grab my bag!! My boyfriend is chasing after him, he's so brave!`,
+    responseFunction: function() {
+        updateScene(S4B1);
+    },
+};
+
+const S3B11 = {
+    id: 'dump-body',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `Your boyfriend drains the blood from your veins and dumps your body in the river. Better luck next time!`,
+    responseFunction: function() {
+        gameOverYouDied();
+    },
+};
+
+const S3B12 = {
+    id: 'falls',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `You kiss him on the cheek and he's so surprised he stumbles and falls right into the river! Your poor boyfriend!!`,
+    responseFunction: function() {
+        updateScene(S4B1);
+    },
+};
+
+const S3B13 = {
+    id: 'howl',
+    leftChar: null,
+    rightResize: true,
+    rightChar: 'Vampire_BF.png',
+    dialogueBox: `He leans in VERY close but then there's a howl from deep in the woods. Your super mysterious boyfriend darts away!`,
+    responseFunction: function() {
+        updateScene(S4B1);
+    },
 };
