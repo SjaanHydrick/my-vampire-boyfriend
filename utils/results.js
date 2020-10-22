@@ -24,6 +24,7 @@ renderDatesText(numberOfDates);
 renderResultImage(image);
 link.href = '../about-us';
 link.classList.add('about');
+linkBox.classList.add('link-box');
 link.textContent = 'Learn More About Us';
 
 
