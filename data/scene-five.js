@@ -97,6 +97,7 @@ const S5B4 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "OH NO!",
     dialogueBox: `Hey...there's a coffin just my size in here! Haha, he's so thoughtful. He gives me a long hug from behind and kisses my neck. Oh, things are getting sorta dark...`,
     responseFunction: function() {
         gameOverYouDied();
@@ -137,6 +138,7 @@ const S5B6 = {
     rightFadeIn: false,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "OH NO!",
     dialogueBox: `I cozy up to my boyfriend and he kisses my neck! Oh, jeez, he's not very good at this at all. He's using way too much teeth!`,
     responseFunction: function() {
         gameOverYouDied();
@@ -150,7 +152,8 @@ const S5B7 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Your boyfriend leans close when suddenly a vampire hunter bursts through a boarded-up window and stabs him straight throught the heart! :(`,
+    buttonText: "OH NO!",
+    dialogueBox: `Your boyfriend leans close when suddenly a vampire hunter bursts through a boarded-up window and stabs him straight through the heart! :(`,
     responseFunction: function() {
         gameOverVampireDied();
     },
@@ -162,6 +165,7 @@ const S5B8 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "YOU WIN!",
     dialogueBox: `My boyfriend slumps into a chair. Haha, I love driving him crazy like this! He stops following me around as much while I explore his house. That's fine, because I like my space!`,
     responseFunction: function() {
         nextChapter();
@@ -175,6 +179,7 @@ const S5B9 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "OH NO!",
     dialogueBox: `Now that I know his secret, I have to escape! I run back to the entrance, but the moment my hands touch the doorknob I feel the vampire grab me from behind and everything turns black...`,
     responseFunction: function() {
         gameOverYouDied();
@@ -187,6 +192,7 @@ const S5B10 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "YOU WIN!",
     dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell. He ends up making me a vampire, too! Now we can really be together forever!`,
     responseFunction: function() {
         nextChapter();
