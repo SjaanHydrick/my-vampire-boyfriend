@@ -8,7 +8,7 @@ import { playGameAudio, renderVolumeSlider } from './game-audio.js';
 
 export function renderScene(object) {
     const screenFrame = document.querySelector('#screenframe');
-
+   
     screen = renderTransition(object.transitionTitle);
     renderVolumeSlider();
     screenFrame.appendChild(screen);
@@ -19,7 +19,9 @@ export function renderScene(object) {
 
 }
 
+
 function renderScreen(object) {
+
     const screenFrame = document.querySelector('#screenframe');
     screenFrame.innerHTML = '';
     const screen = document.createElement('section');

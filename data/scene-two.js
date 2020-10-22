@@ -110,7 +110,7 @@ const S2B4 = {
         fadeIn: false,
     },    
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `While my tea is steeping, my boyfriend creeps up behind my and kisses my neck! He's so sweet! He uses a lot of teeth, tho...I'm feeling weak...`,
     responseFunction: function() {
         tea();
@@ -127,7 +127,7 @@ const S2B5 = {
         fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `My boyfriend leaves! Well this date wasn't the best. But I know our connection is SO strong, he's just SOoOo dreamy!`,
     responseFunction: function() {
         nextChapter();
@@ -144,7 +144,7 @@ const S2B6 = {
         fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "SHARP!",
+    buttonText: 'SHARP!',
     dialogueBox: `My boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!?`,
     responseFunction: function() {
         coffee();
@@ -160,7 +160,7 @@ const S2B7 = {
         resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT",
+    buttonText: 'NEXT',
     dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that sorta hurts...`,
     responseFunction: function() {
         muchTeeth();
@@ -172,12 +172,12 @@ const S2B8 = {
     id: 'push-away',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_Crop.png',
-        resize: true,
+        src: 'Vampire_BF.png',
+        resize: false,
         fadeIn: false,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `My boyfriend gets sooooo frustrated when I push him away, it's so cute! He storms off, but it's okay! I know a love like ours is worth the wait!`,
     responseFunction: function() {
         nextChapter();

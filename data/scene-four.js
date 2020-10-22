@@ -46,7 +46,7 @@ const S4B2 = {
     id: 'dance-floor',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: true,
     },    
@@ -74,13 +74,13 @@ const S4B3 = {
     id: 'bloody-mary',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
         fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `I order two Bloody Mary's! I just love the taste of these! My boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
         nextChapter();
@@ -92,7 +92,7 @@ const S4B4 = {
     id: 'mysterious',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
     },    
@@ -120,7 +120,7 @@ const S4B5 = {
     id: 'hot-bothered',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         fadeIn: false,
         resize: true,
     },
@@ -148,13 +148,13 @@ const S4B6 = {
     id: 'hunter',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "DUST?!",
-    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle! OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
+    buttonText: 'DUST?!',
+    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle!`,
     responseFunction: function() {
         vampireHunter();
         gameOverVampireDied();
@@ -165,12 +165,12 @@ const S4B7 = {
     id: 'no-luck',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },    
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `No such luck! He wanders off into the crowd. But it's okay we're still so in love!!!`,
     responseFunction: function() {
         nextChapter();
@@ -181,12 +181,12 @@ const S4B7 = {
 const S4B8 = {
     id: 'excited',
     leftChar: null,
-    rightResize: true,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `He looks excited and pulls me in close...Oh, wait, ouch, he's not very good at necking...`,
     responseFunction: function() {
         shallowGrave();
@@ -198,11 +198,11 @@ const S4B9 = {
     id: 'back-turn',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
-        rightResize: true,
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `I turn around and stomp away! Oh, but he hugs me from behind and kisses my neck! I knew he loved me too much to ever let me go! But yikes, is he bad at this...He's using too much teeth!`,
     responseFunction: function() {
         muchTeeth();
@@ -214,12 +214,12 @@ const S4B10 = {
     id: 'salvage',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },    
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `I tried to salvage the night, but lost my boyfriend in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
         nextChapter();
