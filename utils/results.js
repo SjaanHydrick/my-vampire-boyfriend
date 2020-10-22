@@ -1,4 +1,4 @@
-import { renderResultText, renderDatesText, renderResultImage} from './render-result-text.js';
+import { renderResultText, renderDatesText, renderResultImage } from './render-result-text.js';
 import { renderVent } from './render-vent.js';
 const screen = document.querySelector('#screen');
 const button = document.querySelector('#dial-button');
@@ -15,7 +15,7 @@ numberOfDates.classList.add('date-text');
 
 renderVent();
 renderResultText(resultText);
-renderDatesText(numberOfDates); 
+renderDatesText(numberOfDates);
 renderResultImage(image);
 link.href = '../about-us';
 link.classList.add('about');

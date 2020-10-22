@@ -1,4 +1,5 @@
 <head>
+    <link rel="icon" href="data:;base64,=">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,72 +8,71 @@
     <link rel="stylesheet" href="../style/character-creator.css">
     <title>My Vampire Boyfriend</title>
 </head>
+
 <body>
     <main>
         <form>
-        <section id="dial">  
-            <button>Begin!</button>
-        </section>
-        <section class="choice-button">
-            <button class="small-buttons">1</button>
-            <button class="small-buttons">2</button>
-            <button class="small-buttons">3</button>
-        </section>
+            <section id="dial">
+                <button>Begin!</button>
+            </section>
+            <section class="choice-button">
+                <button class="small-buttons">1</button>
+                <button class="small-buttons">2</button>
+                <button class="small-buttons">3</button>
+            </section>
             <section id="vent">
                 <!-- <div id="slider-div">
                     <input type="range" min="0" max="10" value="5" id="volume-slider">
                 </div> -->
             </section>
-        <section id="screenframe">
-            <section id="screen">
-                <section>
-                    <p>Enter Your Name:</p>
-                    <input type="text" name="name" class="name" required>
-                    <p>Choose your avatar:</p>
-                    <div>
-                        <label>
-                            <input type="radio" name="avatar" value="Enby_Protag.png" required>
-                            <img src="../assets/Enby_Protag.png" class="avatar">
-                        </label>
-                        <label>
-                            <input type="radio" name="avatar" value="Girl_Protagonist.png" required>
-                            <img src="../assets/Girl_Protagonist.png" class="avatar">
-                        </label>
-                        <label>
-                            <input type="radio" name="avatar" value="Himbo_Protag.png" required>
-                            <img src="../assets/Himbo_Protag.png" class="avatar">
-                        </label>
-                    </div>
-                    <div id="gender">
-                        <p>Choose your gender:</p>
-                        <label>
-                            <input type="radio" name="gender" value="male" required>
-                            <img src="../assets/male-symbol.png" class="gender">
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="non-binary" required>
-                            <img src="../assets/enby-symbol.png" class="gender">
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="female" required>
-                            <img src="../assets/female-symbol.png" class="gender">
-                        </label>
-                    </div>
+            <section id="screenframe">
+                <section id="screen">
+                    <section>
+                        <p>Enter Your Name:</p>
+                        <input type="text" name="name" class="name" required>
+                        <p>Choose your avatar:</p>
+                        <div>
+                            <label>
+                                <input type="radio" name="avatar" value="Enby_Protag.png" required>
+                                <img src="../assets/Enby_Protag.png" class="avatar">
+                            </label>
+                            <label>
+                                <input type="radio" name="avatar" value="Girl_Protagonist.png" required>
+                                <img src="../assets/Girl_Protagonist.png" class="avatar">
+                            </label>
+                            <label>
+                                <input type="radio" name="avatar" value="Himbo_Protag.png" required>
+                                <img src="../assets/Himbo_Protag.png" class="avatar">
+                            </label>
+                        </div>
+                        <div id="gender">
+                            <p>Choose your gender:</p>
+                            <label>
+                                <input type="radio" name="gender" value="male" required>
+                                <img src="../assets/male-symbol.png" class="gender">
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="non-binary" required>
+                                <img src="../assets/enby-symbol.png" class="gender">
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" required>
+                                <img src="../assets/female-symbol.png" class="gender">
+                            </label>
+                        </div>
+                    </section>
+                    <a href="../about-us/index.html">
+                        <section id="logo">
+                            <span class="m">M</span>
+                            <span class="v">V</span>
+                            <span class="b">B</span>
+                        </section>
+                    </a>
                 </section>
-                <a href="../about-us/index.html">
-                <section id="logo">
-                    <span class="m">M</span>
-                    <span class="v">V</span>
-                    <span class="b">B</span>
-                </section>
-                </a>
             </section>
-        </section>
         </form>
     </main>
     <script type="module" src="./character-creation.js"></script>
 </body>
+
 </html>
-
-
-
