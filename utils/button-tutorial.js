@@ -2,11 +2,8 @@
 export function buttonTutorial(){
 
     const buttons = document.getElementsByClassName('small-buttons');
-    const responses = document.getElementById('response1');
-    console.log(responses);
-    console.log(buttons);
+    // const responses = document.getElementById('response1');
         for (let i = 0; i < buttons.length; i++){
-            console.log(i);
             buttons[i].classList.add(`glow${i+1}`);
             // responses[i].classList.add(`glow`);
         }
