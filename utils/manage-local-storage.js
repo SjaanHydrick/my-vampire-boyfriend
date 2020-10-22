@@ -28,5 +28,6 @@ export function getTextSpeed() {
 }
 
 export function setTextSpeed(textSpeed) {
-    localStorage.setItem(textKey, JSON.stringify(textSpeed));
+    const array = [65, 55, 45, 35, 25, 15, 5];
+    localStorage.setItem(textKey, JSON.stringify(array[textSpeed]));
 }

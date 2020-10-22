@@ -21,8 +21,8 @@ export function renderTextSpeedSlider() {
     sliderDiv.id = 'text-slider-div';
 
     sliderElement.type = 'range';
-    sliderElement.min = 5;
-    sliderElement.max = 50;
+    sliderElement.min = 0;
+    sliderElement.max = 6;
     sliderElement.value = getTextSpeed();
     sliderElement.id = 'text-slider';
 

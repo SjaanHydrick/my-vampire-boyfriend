@@ -5,7 +5,7 @@ import { renderLogo } from './render-logo.js';
 import { renderTransition } from './render-transition.js';
 import { playGameAudio, renderVolumeSlider } from './game-audio.js';
 
-// 
+// renderScene
 export function renderScene(object) {
 
     const screenFrame = document.querySelector('#screenframe');
