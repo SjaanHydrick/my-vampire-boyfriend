@@ -3,16 +3,6 @@
     src: url('../fonts/Paper\ Flowers.ttf');
 }
 
-@font-face {
-    font-family: Luna;
-    src: url('../fonts/Luna.ttf');
-}
-
-@font-face {
-    font-family: InternetFriends;
-    src: url('../fonts/Internet\ Friends.ttf');
-}
-
 #avatar{
     margin-top: 20px;
     margin-bottom: 0;
