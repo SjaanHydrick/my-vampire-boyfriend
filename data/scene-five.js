@@ -216,7 +216,7 @@ const S5B10 = {
         resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "YOU WIN!",
+    buttonText: 'YOU WIN!',
     dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell. He ends up making me a vampire, too! Now we can really be together forever!`,
     responseFunction: function() {
         nextChapter();
