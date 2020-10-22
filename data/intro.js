@@ -7,6 +7,7 @@ import { returnAvatar } from '../utils/return-avatar.js';
 export const I1 = {
     id: 'intro',
     image: 'intro.jpg',
+    volumeSlider: true,
     transitionTitle: {
         title: 'Introduction:',
         subtitle: 'the hospital'
@@ -15,11 +16,11 @@ export const I1 = {
         src: returnAvatar(),
     },
     rightChar: null,
-    dialogueBox: 
+    dialogueBox:
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
     buttonChoice: 'dial',
     buttonText: "NEXT",
-    responseFunction: function() {
+    responseFunction: function () {
         updateBeat(I2);
     },
 };
@@ -33,11 +34,11 @@ const I2 = {
         src: 'Vampire_BF.png',
         fadeIn: true,
     },
-    dialogueBox: 
+    dialogueBox:
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
     buttonChoice: 'dial',
     buttonText: "NEXT",
-    responseFunction: function() {
+    responseFunction: function () {
         updateBeat(I3);
     },
 };
@@ -50,11 +51,11 @@ const I3 = {
     rightChar: {
         src: 'Vampire_BF.png',
     },
-    dialogueBox: 
+    dialogueBox:
         'I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: 'dial',
     buttonText: "NEXT",
-    responseFunction: function() {
+    responseFunction: function () {
         updateBeat(I4);
     },
 };
@@ -68,11 +69,11 @@ const I4 = {
         src: 'Vampire_BF.png',
         fadeOut: true,
     },
-    dialogueBox: 
+    dialogueBox:
         "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: 'dial',
     buttonText: "NEXT",
-    responseFunction: function() {
+    responseFunction: function () {
         updateBeat(I5);
     },
 };
@@ -84,11 +85,11 @@ const I5 = {
     leftChar: {
         src: returnAvatar(),
     },
-    dialogueBox: 
+    dialogueBox:
         "I'm about to meet him for our first date in the cafeteria!",
     buttonChoice: 'dial',
     buttonText: "NEXT",
-    responseFunction: function() {
+    responseFunction: function () {
         updateScene(S1B1);
     },
 };
