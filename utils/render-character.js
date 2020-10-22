@@ -18,7 +18,6 @@ export function renderCharacter(char, id){
     if (char.fadeOut) {
         characterDiv.classList.add('fade-out');
     }
-    console.log(characterDiv);
 
     characterDiv.append(characterImage);
 
