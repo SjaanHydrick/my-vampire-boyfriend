@@ -154,7 +154,7 @@ const S4B6 = {
     },
     buttonChoice: 'dial',
     buttonText: 'DUST?!',
-    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle! OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
+    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle!`,
     responseFunction: function() {
         vampireHunter();
         gameOverVampireDied();
@@ -181,9 +181,9 @@ const S4B7 = {
 const S4B8 = {
     id: 'excited',
     leftChar: null,
-    rightResize: true,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
+        resize: true,
     },
     buttonChoice: 'dial',
     buttonText: 'OH NO!',
@@ -199,7 +199,7 @@ const S4B9 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
-        rightResize: true,
+        resize: true,
     },
     buttonChoice: 'dial',
     buttonText: 'OH NO!',

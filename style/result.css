@@ -95,6 +95,19 @@ a {
     color: white;
 }
 
+a.about {
+    width: 675px;
+    margin-left: -564px;
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+    font-family: Leahlee;
+    font-size: 30pt;
+    color: white;
+    letter-spacing: 1pt;
+    text-decoration: none;
+}
+
 @keyframes scroll-up {
     0% {
         transform: translate(0, 100%);

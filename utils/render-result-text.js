@@ -10,7 +10,7 @@ export function renderResultText(resultText) {
 
     } else if (player.playerAlive === false && player.muchTeeth === true) {
 
-        resultText.textContent = `Your boyfriend's sharp teeth we're too much for your mortal neck.` ;
+        resultText.textContent = `Your boyfriend's sharp teeth were too much for your mortal neck.` ;
 
     } else if (player.win === true && player.isVampire === true) {
 
@@ -58,7 +58,7 @@ export function renderResultImage(image){
     const player = getFromLocalStorage();
     if (player.mothMan === true){
         image.src = '../assets/MothMan.png';
-}
+    }
 }
 
 export function renderDatesText(datesText) {
@@ -76,7 +76,7 @@ export function renderDatesText(datesText) {
     }
     if (player.chapters === 2) {
 
-        datesText.textContent = `You made it through the cafeteria and the cafe! The river walk was where your romance ends.` ;
+        datesText.textContent = `You made it through the cafeteria and the cafe! The river walk is where your romance ends.` ;
 
     }
     if (player.chapters === 3) {
