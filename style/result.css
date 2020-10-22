@@ -43,7 +43,7 @@ button {
 }
 
 .result-text {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     font-family: Leahlee;
     font-size: 30pt;
@@ -54,7 +54,7 @@ button {
 }
 
 .date-text {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     font-family: LeahLee;
     font-size: 30pt;
@@ -64,12 +64,32 @@ button {
     animation: scroll-up-date 15s linear;
 }
 
-a {
-    position: fixed;
+.link-box {
+    padding: 40px;
+    text-align: center;
+    font-family: LeahLee;
+    font-size: 30pt;
+    color: white;
+    letter-spacing: 1pt;
+    line-height: 30pt;
+    animation: scroll-up-link 15s linear;
+}
+
+#mvb-logo {
+    position: absolute;
     margin-left: -385px;
     margin-top: 144px;
     height: 30px;
     z-index: 1;
+}
+
+.about {
+    margin-top: 0;
+    text-decoration: none;
+    font-family: LeahLee;
+    font-size: 30pt;
+    color: white;
+    letter-spacing: 1pt;
 }
 
 .m {
@@ -95,19 +115,6 @@ a {
     color: white;
 }
 
-a.about {
-    width: 675px;
-    margin-left: -564px;
-    margin-top: 80px;
-    padding: 50px;
-    text-align: center;
-    font-family: Leahlee;
-    font-size: 30pt;
-    color: white;
-    letter-spacing: 1pt;
-    text-decoration: none;
-}
-
 @keyframes scroll-up {
     0% {
         transform: translate(0, 100%);
@@ -119,6 +126,16 @@ a.about {
 }
 
 @keyframes scroll-up-date {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes scroll-up-link {
     0% {
         transform: translate(0, 100%);
     }

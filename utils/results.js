@@ -31,8 +31,8 @@ link.textContent = 'Learn More About Us';
 div.appendChild(resultText);
 div.appendChild(numberOfDates);
 linkBox.appendChild(link);
-div.appendChild(image);
 div.appendChild(linkBox);
+div.appendChild(image);
 screen.appendChild(div);
 
 button.addEventListener('click', () => {
