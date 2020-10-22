@@ -4,9 +4,12 @@
 }
 
 #avatar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 0;
-    width: 250px;
+    width: 210px;
 }
 
 #player-name{
@@ -83,16 +86,38 @@
     outline: none;
 }
 
+/* #button1 {
+    animation: glow;
+    animation-duration: 5s;
+}
+
+#button2 {
+    animation: glow;
+    animation-duration: 5s;
+    animation-delay: 7s;
+}
+
+#button3 {
+    animation: glow;
+    animation-duration: 5s;
+} */
+
 #response1 {
     margin-left: 35px;
+    animation: glow;
 }
 
 #response2 {
     margin-left: 32px;
+    /* animation: glow;
+    animation-duration: 5s;
+    animation-delay: 9s; */
 }
 
 #response3 {
     margin-left: 32px;
+    /* animation: glow;
+    animation-duration: 14s */
 }
 
 #left-char {
@@ -138,7 +163,7 @@
 }
 
 .fade-out {
-    animation: fadeout 4s;
+    animation: fadeout 6s;
     opacity: 0;
 }
 
@@ -232,5 +257,18 @@ a:hover {
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes glow {
+    0%, 
+    
+    50%
+    {
+        box-shadow: 3px 3px 10px maroon;
+    }
+    100%
+    {
+        box-shadow: none;
     }
 }

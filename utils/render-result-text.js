@@ -46,7 +46,7 @@ export function renderResultText(resultText) {
     
     } else if (player.playerAlive === false){
 
-        resultText.textContent = 'Now you\'ll definitely never amount to anything... You died at the hands of your vampire boyfriend.';
+        resultText.textContent = 'Now you\'ll definitely never amount to anything...You died at the hands of your vampire boyfriend.';
     
     } else if (player.vampireAlive === false){
 
@@ -88,7 +88,7 @@ export function renderDatesText(datesText) {
     }
     if (player.chapters === 4) {
 
-        datesText.textContent = `You successfully navigated the cafeteria, the cafe, the river walk, and the bar but this is where your adventure ends.` ;
+        datesText.textContent = `You successfully navigated the cafeteria, the cafe, the river walk, and the bar, but this is where your adventure ends.` ;
 
     }
     if (player.chapters === 5) {
