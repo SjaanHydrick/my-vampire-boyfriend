@@ -25,6 +25,20 @@
     margin-top: 327px;
 }
 
+#volume-label {
+    font-family: Paper Flowers;
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 5px;
+}
+
+#text-speed-label {
+    font-family: Paper Flowers;
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 5px;
+}
+
 p {
     margin: 20px;
     font-family: Leahlee;
