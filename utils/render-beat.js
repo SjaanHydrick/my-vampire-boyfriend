@@ -15,9 +15,6 @@ export function renderBeat(object){
 
     section.id = 'beat-section';
 
-    if (object.tutorial){
-        buttonTutorial();
-    }
 
     section.appendChild(dialogueBox);
     if (object.buttonChoice === 'dial'){
@@ -25,12 +22,18 @@ export function renderBeat(object){
         resetNavButtons();
 
     } else {
-        const responseSection = renderResponses(object.choices);
+        const responseSection = renderResponses(object);
         section.appendChild(responseSection);
         renderNavButtons(object);
         resetDialButton();
+
+        if (object.tutorial){
+            buttonTutorial();
+        }
     }
 
+
+    
     if (object.leftChar){
       
         const leftChar = renderCharacter(object.leftChar, 'left-char');
