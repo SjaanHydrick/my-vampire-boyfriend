@@ -36,7 +36,7 @@ img:hover {
     justify-content:center;
 }
 
-.icon {
+.icon-text {
     font-family: icons;
     text-decoration: none;
     font-size: 20pt;
@@ -44,7 +44,7 @@ img:hover {
     color: pink;
 }
 
-.icon:hover {
+.icon-text:hover {
     color: maroon;
     transition-duration: 1s;
 }
