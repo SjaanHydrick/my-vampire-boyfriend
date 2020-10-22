@@ -11,10 +11,6 @@ export function renderResponses(object) {
         response.id = `response${i}`;
         response.textContent = choice.response;
 
-        if (object.tutorial) {
-            response.classList.add(`glow${i}`);
-        }
-
         responseSection.appendChild(response);
         i++;
     }
