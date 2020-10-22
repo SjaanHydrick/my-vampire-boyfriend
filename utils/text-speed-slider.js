@@ -6,11 +6,17 @@ export function renderTextSpeedSlider() {
     let sliderDiv = document.createElement('div');
     let sliderElement = document.createElement('input');
     const ventSection = document.getElementById('vent');
-    const label = document.createElement('p');
+    const textLabel = document.createElement('p');
+    const volumeLabel = document.createElement('p');
 
-    label.textContent = 'text speed';
-    label.id = 'text-speed-label';
-    label.classList.add = "label-class";
+    volumeLabel.textContent = 'volume';
+    volumeLabel.id = 'volume-label';
+    volumeLabel.classList.add = "label-class";
+
+
+    textLabel.textContent = 'text speed';
+    textLabel.id = 'text-speed-label';
+    textLabel.classList.add = "label-class";
 
     sliderDiv.id = 'text-slider-div';
 
@@ -24,9 +30,9 @@ export function renderTextSpeedSlider() {
         setTextSpeed(sliderElement.value);
     }
 
+    sliderDiv.appendChild(volumeLabel);
     sliderDiv.appendChild(sliderElement);
-    sliderDiv.appendChild(label);
-
+    sliderDiv.appendChild(textLabel);
 
     ventSection.appendChild(sliderDiv);
 
