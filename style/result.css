@@ -12,7 +12,10 @@
 #avatar-image{
     width: 100%;
 }
-
+.result-image{
+    width: 25%;
+   
+}
 #player-name{
     margin-top: 5px;
     text-align: center;
