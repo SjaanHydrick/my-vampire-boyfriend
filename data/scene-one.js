@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter, tofu } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, muchTeeth, nextChapter, tofu } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
@@ -138,6 +138,7 @@ const S1B7 = {
     buttonChoice: 'dial',
     dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
     responseFunction: function() {
+        muchTeeth();
         gameOverYouDied();
     
     }
