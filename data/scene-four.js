@@ -74,6 +74,7 @@ const S4B3 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "NEXT DATE!",
     dialogueBox: `I order two Bloody Mary's! I just love the taste of these! My boyfriend takes one sip, gets violently ill, and has to leave...What a lightweight!`,
     responseFunction: function() {
         nextChapter();
@@ -140,7 +141,8 @@ const S4B6 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle!`,
+    buttonText: "DUST?!",
+    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle! OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
     responseFunction: function() {
         vampireHunter();
         gameOverVampireDied();
@@ -154,6 +156,7 @@ const S4B7 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "NEXT DATE!",
     dialogueBox: `No such luck! He wanders off into the crowd. But it's okay we're still so in love!!!`,
     responseFunction: function() {
         nextChapter();
@@ -167,6 +170,7 @@ const S4B8 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "OH NO!",
     dialogueBox: `He looks excited and pulls me in close...Oh, wait, ouch, he's not very good at necking...`,
     responseFunction: function() {
         shallowGrave();
@@ -180,7 +184,8 @@ const S4B9 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `I turn around and stomp away! Oh, but he hugs me from behind and kisses my neck! Yikes... he is bad at this. He's using too much teeth!`,
+    buttonText: "OH NO!",
+    dialogueBox: `I turn around and stomp away! Oh, but he hugs me from behind and kisses my neck! I knew he loved me too much to ever let me go! But yikes, is he bad at this...He's using too much teeth!`,
     responseFunction: function() {
         muchTeeth();
         gameOverYouDied();
@@ -194,6 +199,7 @@ const S4B10 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
+    buttonText: "NEXT DATE!",
     dialogueBox: `I tried to salvage the night, but lost my boyfriend in the crowd. I love him so much and need to make this work no matter what!!`,
     responseFunction: function() {
         nextChapter();
