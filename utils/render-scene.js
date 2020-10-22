@@ -8,7 +8,7 @@ import { playGameAudio } from './game-audio.js';
 
 export function renderScene(object){
     const screenFrame = document.querySelector('#screenframe');
-
+   
     screen = renderTransition(object.transitionTitle);
     screenFrame.appendChild(screen);
     setTimeout(function() {
@@ -19,6 +19,8 @@ export function renderScene(object){
 }
 
 function renderScreen(object){
+    const buttton = document.querySelector('#dial-button')
+    // buttton.classList.toggle('hidden')
     const screenFrame = document.querySelector('#screenframe');
     screenFrame.innerHTML = '';
     const screen = document.createElement('section');

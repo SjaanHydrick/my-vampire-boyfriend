@@ -271,3 +271,7 @@ a:hover {
         box-shadow: none;
     }
 }
+
+.hidden{
+    display: none;
+}

@@ -1,7 +1,9 @@
 import { playTransitionAudio } from './game-audio.js';
-
+import { resetDialButton } from './render-dial-button.js';
 export function renderTransition(transitionText){
-
+    // const buttton = document.querySelector('#dial-button')
+    // buttton.classList.toggle('hidden')
+ 
     let screenSection = document.createElement('section');
     screenSection.id = 'screen';
     screenSection.classList.add('transition-screen');
@@ -13,7 +15,7 @@ export function renderTransition(transitionText){
 }
 
 function renderTransitionTitle(transitionText){
-    
+    resetDialButton();
     let titleSpan = document.createElement('span');
     let subtitleSpan = document.createElement('span');
     let titleDiv = document.createElement('div');
