@@ -4,6 +4,7 @@ import { createGameAudio, playGameAudio } from './game-audio.js';
 const screen = document.querySelector('#screen');
 const button = document.querySelector('#dial-button');
 const resultText = document.createElement('p');
+const linkBox = document.createElement('p');
 const numberOfDates = document.createElement('p');
 const image = document.createElement('img');
 const link = document.createElement('a');
@@ -12,6 +13,7 @@ const div = document.createElement('div');
 div.classList.add('text-div');
 resultText.classList.add('result-text');
 numberOfDates.classList.add('date-text');
+
 
 createGameAudio();
 playGameAudio();
@@ -27,8 +29,9 @@ link.textContent = 'Learn More About Us';
 
 div.appendChild(resultText);
 div.appendChild(numberOfDates);
-numberOfDates.appendChild(link);
+linkBox.appendChild(link);
 div.appendChild(image);
+div.appendChild(linkBox);
 screen.appendChild(div);
 
 button.addEventListener('click', () => {
