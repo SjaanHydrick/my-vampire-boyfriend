@@ -5,6 +5,7 @@ const button = document.querySelector('#dial-button');
 const resultText = document.createElement('p');
 const numberOfDates = document.createElement('p');
 const image = document.createElement('img')
+image.classList.add('result-image');
 const div = document.createElement('div');
 div.classList.add('text-div');
 resultText.classList.add('result-text');
