@@ -3,7 +3,6 @@
 export function renderResponses(object) {
     const responseSection = document.createElement('section');
     responseSection.id = 'response-section';
-    // responseSection.style.visibility = 'hidden';
     let i = 1;
 
     for (let choice of object.choices) {

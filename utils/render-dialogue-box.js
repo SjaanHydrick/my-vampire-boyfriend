@@ -36,20 +36,11 @@ export function typeWriter(dialogueString, object, i) {
             typeWriter(dialogueString, object, i);
         }, speed);
     } else {
-        toggleResponse();
         wireButtons(object);
         advance = false;
         if (i < object.dialogueBox.length) {
             dialogueString.textContent = object.dialogueBox;
         }
-    }
-}
-
-export function toggleResponse() {
-    let responseSection = document.getElementById('response-section');
-
-    if (document.getElementById('response-section')) {
-        responseSection.style.visibility = 'visible';
     }
 }
 
