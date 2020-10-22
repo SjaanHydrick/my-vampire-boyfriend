@@ -40,7 +40,7 @@ export function renderVolumeSlider(){
     sliderElement.id = 'volume-slider';
     
 
-    sliderElement.onchange = function() {
+    sliderElement.oninput = function() {
         const volumeLevel = sliderElement.value / 10;
         const gamePlayMusic = document.getElementById('game-play-music');
         const transitionMusic = document.getElementById('transition-music');
