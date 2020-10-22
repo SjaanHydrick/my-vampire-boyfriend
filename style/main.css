@@ -80,6 +80,7 @@
 .button-hover{
     filter: none;
     transition-duration: 1.3s;
+    outline: none;
 }
 
 #response1 {
