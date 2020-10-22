@@ -17,7 +17,7 @@ export const S1B1 = {
         fadeIn: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT",
+    buttonText: 'NEXT',
     dialogueBox:  `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats.`,
     responseFunction: function() {
         updateBeat(S1B2);
@@ -124,7 +124,7 @@ const S1B5 = {
         fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `The stir-fry contains an obscene amount of garlic, just how I like it! Oh no, my boyfriend isn't looking too great...`,
     responseFunction: function() {
         tofu();
@@ -137,10 +137,10 @@ const S1B6 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF.png',
-        rightFadeOut: true,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE",
+    buttonText: 'NEXT DATE',
     dialogueBox: `Oh no! My boyfriend gets sick and has to leave. It must have been something he ate!`,
     responseFunction: function() {
         nextChapter(); 
@@ -154,9 +154,10 @@ const S1B7 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
+        resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "YOU DIED!",
+    buttonText: 'YOU DIED!',
     dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
     responseFunction: function() {
         muchTeeth();
@@ -169,10 +170,11 @@ const S1B8 = {
     id: 'pushAwayMessage',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_Crop.png',
+        src: 'Vampire_BF.png',
+        fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `Haha, my boyfriend got so frustrated that he got up and left. I love driving him crazy!`,
     responseFunction: function() {
         nextChapter(); 
