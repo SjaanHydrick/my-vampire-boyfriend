@@ -6,6 +6,7 @@ import { S2B1 } from './scene-two.js';
 export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
+    tutorial: false,
     transitionTitle: {
         title: 'Date 1:',
         subtitle: 'hospital cafeteria'
@@ -26,8 +27,8 @@ const S1B2 = {
     rightChar: 'Vampire_BF_Crop.png',
     rightFadeIn: true,
     rightResize: true,
-    buttonChoice: 'nav',
     tutorial: true,
+    buttonChoice: 'nav',
     id: 'cafeteria',
     dialogueBox: 
        `What should I have for lunch?`,
@@ -62,6 +63,7 @@ const S1B3 = {
     rightChar: 'Vampire_BF_Crop.png',
     rightFadeIn: false,
     rightResize: true,
+    tutorial: false,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
     choices: [
