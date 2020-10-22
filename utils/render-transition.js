@@ -1,4 +1,5 @@
 import { playTransitionAudio } from './game-audio.js';
+import { resetDialButton } from './render-dial-button.js';
 
 export function renderTransition(transitionText){
 
@@ -9,6 +10,7 @@ export function renderTransition(transitionText){
     let transitionCard = renderTransitionTitle(transitionText);
     screenSection.appendChild(transitionCard);
     playTransitionAudio();
+    resetDialButton();
     return screenSection;
 }
 
