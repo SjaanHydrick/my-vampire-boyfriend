@@ -5,7 +5,7 @@ export function renderDialButton(object){
     dialButton.onclick = function() {
         object.responseFunction();
         };
-    dialButton.textContent = 'NEXT';
+    dialButton.textContent = object.buttonText;
 
 
 }
@@ -13,4 +13,5 @@ export function renderDialButton(object){
 export function resetDialButton(){
     const dialButton = document.getElementById('dial-button');
     dialButton.onclick = '';
+    dialButton.textContent = '';
 }

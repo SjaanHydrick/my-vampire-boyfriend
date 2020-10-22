@@ -23,7 +23,6 @@ function renderScreen(object){
     screenFrame.innerHTML = '';
     const screen = document.createElement('section');
 
-
     const beatSection = renderBeat(object);
 
     screen.id = 'screen';

@@ -58,6 +58,8 @@ export function renderResultImage(image){
     const player = getFromLocalStorage();
     if (player.mothMan === true){
         image.src = '../assets/MothMan.png';
+    } else if (player.tofu === true){
+        image.src = '../assets/Tofu.png'
     }
 }
 
