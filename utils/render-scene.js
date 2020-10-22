@@ -19,7 +19,10 @@ export function renderScene(object) {
 
 }
 
+
+
 function renderScreen(object) {
+
     const screenFrame = document.querySelector('#screenframe');
     screenFrame.innerHTML = '';
     const screen = document.createElement('section');

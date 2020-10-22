@@ -77,7 +77,7 @@ const S3B3 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
-        fadeIn: false,
+        fadeIn: true,
     },    
     dialogueBox: `Ok, it is totally spooky here but my boyfriend looks like he wants to snuggle! What should I do?`,
     buttonChoice: 'nav',
@@ -105,6 +105,7 @@ const S3B4 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeIn: true,
     },
     dialogueBox: `This is so hot! He's breathing so heavy, and leaning towards me! What should I do?`,
     buttonChoice: 'nav',
@@ -158,10 +159,10 @@ const S3B7 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
-        rightResize: true,
+        resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "MOTHMAN!",
+    buttonText: 'MOTHMAN!',
     dialogueBox: `I start yelling at my boyfriend! I deserve love and affection! Suddenly, MothMan appears...and he would definitely treat me right.`,
     responseFunction: function() {
         gameOverMothMan();
@@ -174,9 +175,10 @@ const S3B8 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `My boyfriend gets so fiesty when I push him away! A jogger ran by and my boyfriend was so riled up, he started to chase after them. Haha, I drive him so crazy!`,
     responseFunction: function() {
         nextChapter();
@@ -189,10 +191,10 @@ const S3B9 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
-        rightResize: true,
+        resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `My boyfriend leans in for a kiss! Oh, wait, he's kissing my neck instead. Oh, everything is getting so cold...`,
     responseFunction: function() {
         river();
@@ -206,9 +208,10 @@ const S3B10 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `My boyfriend leans in for a kiss, but a ROBBER runs up and tries to grab my bag!! My boyfriend started chasing after him, he's so brave and loves me so much!`,
     responseFunction: function() {
         nextChapter();
@@ -224,7 +227,7 @@ const S3B11 = {
         resize: true,
     },
     buttonChoice: 'dial',
-    buttonText: "OH NO!",
+    buttonText: 'OH NO!',
     dialogueBox: `I hope my boyfriend is a good kisser! Oh, he's kissing my neck! Er, wait, that kind of hurts...`,
     responseFunction: function() {
         river();
@@ -241,7 +244,7 @@ const S3B12 = {
         fadeOut: true,
     },    
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `I kiss him on the cheek and he's so surprised he stumbles and falls right into the river! My poor, clumsy boyfriend!!`,
     responseFunction: function() {
         nextChapter();
@@ -253,12 +256,12 @@ const S3B13 = {
     id: 'howl',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },    
     buttonChoice: 'dial',
-    buttonText: "NEXT DATE!",
+    buttonText: 'NEXT DATE!',
     dialogueBox: `He leans in VERY close but suddenly there's a howl from deep in the woods. My super mysterious boyfriend darts away! Gosh, he's sOoOo dreamy!`,
     responseFunction: function() {
         nextChapter();

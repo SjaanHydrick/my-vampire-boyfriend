@@ -43,7 +43,7 @@ const S5B2 = {
     id: 'books',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: true,
     },    
@@ -71,7 +71,7 @@ const S5B3 = {
     id: 'beautiful',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         fadeIn: true,
         resize: true,
     },    
@@ -100,8 +100,8 @@ const S5B4 = {
     id: 'coffin',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
-        fadeIn: false,
+        src: 'Vampire_BF_Crop.png',
+        fadeIn: true,
         resize: true,
     },    
     buttonChoice: 'dial',
@@ -117,7 +117,7 @@ const S5B5 = {
     id: 'vampire-books',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
     },    
@@ -146,7 +146,7 @@ const S5B6 = {
     id: 'also-cozy',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
     },    
@@ -163,7 +163,7 @@ const S5B7 = {
     id: 'vampire-hunter',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },    
@@ -180,7 +180,7 @@ const S5B8 = {
     id: 'you-win',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
     },
     buttonChoice: 'dial',
@@ -196,7 +196,7 @@ const S5B9 = {
     id: 'die',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
     },
     buttonChoice: 'dial',
@@ -212,12 +212,12 @@ const S5B10 = {
     id: 'turn-vampire',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
     },
     buttonChoice: 'dial',
     buttonText: 'YOU WIN!',
-    dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell. He ends up making me a vampire, too! Now we can really be together forever!`,
+    dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell.`,
     responseFunction: function() {
         nextChapter();
         isVampire();
