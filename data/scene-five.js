@@ -191,7 +191,7 @@ const S5B10 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell. He ends up making me a vampire, too! Now we can really be together forever!`,
+    dialogueBox: `Haha, I don't care that my boyfriend is a vampire! I love him anyway! He's very impressed with me, I can tell!`,
     responseFunction: function() {
         nextChapter();
         isVampire();
