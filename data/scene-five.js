@@ -165,7 +165,7 @@ const S5B7 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
-        rightfadeOut: true,
+        fadeOut: true,
     },    
     buttonChoice: 'dial',
     buttonText: 'OH NO!',
