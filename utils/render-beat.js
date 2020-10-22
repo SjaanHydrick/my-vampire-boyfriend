@@ -3,6 +3,7 @@ import { renderDialogueBox } from './render-dialogue-box.js';
 import { renderNavButtons, resetNavButtons } from './render-nav-buttons.js';
 import { renderDialButton, resetDialButton } from './render-dial-button.js';
 import { renderCharacter } from './render-character.js';
+import { buttonTutorial } from './button-tutorial.js';
 
 
 // renderBeat() renders only the HTML elements that are neccisary within a scene
@@ -13,6 +14,10 @@ export function renderBeat(object){
     const dialogueBox = renderDialogueBox(object.dialogueBox);
 
     section.id = 'beat-section';
+
+    if (object.tutorial){
+        buttonTutorial();
+    }
 
     section.appendChild(dialogueBox);
     if (object.buttonChoice === 'dial'){

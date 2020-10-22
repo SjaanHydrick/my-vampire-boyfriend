@@ -27,6 +27,7 @@ const S1B2 = {
     rightFadeIn: true,
     rightResize: true,
     buttonChoice: 'nav',
+    tutorial: true,
     id: 'cafeteria',
     dialogueBox: 
        `What should I have for lunch?`,
