@@ -19,10 +19,7 @@ export function gameOver(resultObject){
     let userData = getFromLocalStorage();
     userData.results = resultObject;
     setInLocalStorage(userData);
-
-
 }
-
 
 export function tofu(){
     const player = getFromLocalStorage();
@@ -63,7 +60,6 @@ export function gameOverMothMan(){
     player.mothMan = true;
     setInLocalStorage(player);
     window.location.href = '../results';
-
 }
 
 export function youWin(){
@@ -76,5 +72,17 @@ export function youWin(){
 export function isVampire(){
     const player = getFromLocalStorage();
     player.isVampire = true;
+    setInLocalStorage(player);
+}
+
+export function muchTeeth() {
+    const player = getFromLocalStorage();
+    player.muchTeeth = true;
+    setInLocalStorage(player);
+}
+
+export function vampireHunter() {
+    const player = getFromLocalStorage();
+    player.vampireHunter = true;
     setInLocalStorage(player);
 }

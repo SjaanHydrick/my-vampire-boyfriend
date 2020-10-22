@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter, tea, coffee } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, nextChapter, tea, coffee, muchTeeth } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S3B1 } from './scene-three.js';
@@ -105,8 +105,8 @@ const S2B4 = {
     buttonText: "OH NO!",
     dialogueBox: `While my tea is steeping, my boyfriend creeps up behind my and kisses my neck! He's so sweet! He uses a lot of teeth, tho...I'm feeling weak...`,
     responseFunction: function() {
-        gameOverYouDied();
         tea();
+        gameOverYouDied();
     },
 };
 
@@ -149,6 +149,7 @@ const S2B7 = {
     buttonText: "NEXT",
     dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that sorta hurts...`,
     responseFunction: function() {
+        muchTeeth();
         gameOverYouDied();
     },
 };
