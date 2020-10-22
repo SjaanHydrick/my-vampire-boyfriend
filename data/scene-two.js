@@ -172,8 +172,8 @@ const S2B8 = {
     id: 'push-away',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_Crop.png',
-        resize: true,
+        src: 'Vampire_BF.png',
+        resize: false,
         fadeIn: false,
     },
     buttonChoice: 'dial',
