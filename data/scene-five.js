@@ -1,4 +1,4 @@
-import { gameOverVampireDied, gameOverYouDied, youWin, isVampire, nextChapter } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, youWin, isVampire, nextChapter, muchTeeth, vampireHunter, shallowGrave } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 
 export const S5B1 = {
@@ -99,6 +99,7 @@ const S5B4 = {
     buttonChoice: 'dial',
     dialogueBox: `Hey...there's a coffin just my size in here! Haha, he's so thoughtful. He gives me a long hug from behind and kisses my neck. Oh, things are getting sorta dark...`,
     responseFunction: function() {
+        muchTeeth();
         gameOverYouDied();
     },
 };
@@ -139,6 +140,7 @@ const S5B6 = {
     buttonChoice: 'dial',
     dialogueBox: `I cozy up to my boyfriend and he kisses my neck! Oh, jeez, he's not very good at this at all. He's using way too much teeth!`,
     responseFunction: function() {
+        muchTeeth();
         gameOverYouDied();
     },
 };
@@ -152,6 +154,7 @@ const S5B7 = {
     buttonChoice: 'dial',
     dialogueBox: `Your boyfriend leans close when suddenly a vampire hunter bursts through a boarded-up window and stabs him straight throught the heart! :(`,
     responseFunction: function() {
+        vampireHunter();
         gameOverVampireDied();
     },
 };
@@ -177,6 +180,7 @@ const S5B9 = {
     buttonChoice: 'dial',
     dialogueBox: `Now that I know his secret, I have to escape! I run back to the entrance, but the moment my hands touch the doorknob I feel the vampire grab me from behind and everything turns black...`,
     responseFunction: function() {
+        shallowGrave();
         gameOverYouDied();
     },
 };

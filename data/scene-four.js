@@ -1,10 +1,10 @@
-import { gameOverVampireDied, gameOverYouDied, nextChapter, shallowGrave } from '../utils/game-over.js';
+import { gameOverVampireDied, gameOverYouDied, muchTeeth, nextChapter, shallowGrave, vampireHunter } from '../utils/game-over.js';
 import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S5B1 } from './scene-five.js';
 
 export const S4B1 = {
-    id: 'halloween-dance',
+    id: 'bar-scene',
     image: 'bar.jpg',
     transitionTitle: {
         title: 'Date 4:',
@@ -14,7 +14,7 @@ export const S4B1 = {
     rightResize: false,
     rightFadeIn: true,
     rightChar: 'Vampire_BF.png',
-    dialogueBox: `I never went to bars because my ex is totally crazy. My boyfriend is taking me to this super cool Halloween show tonight, what should we do first?`,
+    dialogueBox: `My crazy ex never brought me anywhere. But my new boyfriend is taking me to this super cool bar for Halloween night, what should we do first?`,
     buttonChoice: 'nav',
     choices: [{
         id: 'dance',
@@ -140,8 +140,9 @@ const S4B6 = {
     rightFadeOut: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle! OMG MY BOYFRIEND JUST TURNED TO DUST!!`,
+    dialogueBox: `My boyfriend moves closer when suddenly a man dressed in a lot of tacky leather comes up behind him and stabs him in the heart with a broom handle!`,
     responseFunction: function() {
+        vampireHunter();
         gameOverVampireDied();
     },
 };
@@ -179,8 +180,9 @@ const S4B9 = {
     rightResize: true,
     rightChar: 'Vampire_BF_crop.png',
     buttonChoice: 'dial',
-    dialogueBox: `I turn around and stomp away! Oh, but he hugs me from behind and kisses my neck! I knew he loved me too much to ever let me go! But yikes, is he bad at this...He's using too much teeth!`,
+    dialogueBox: `I turn around and stomp away! Oh, but he hugs me from behind and kisses my neck! Yikes... he is bad at this. He's using too much teeth!`,
     responseFunction: function() {
+        muchTeeth();
         gameOverYouDied();
     },
 };
