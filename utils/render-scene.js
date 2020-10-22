@@ -3,22 +3,23 @@ import { renderBeat } from './render-beat.js';
 import { renderVent } from './render-vent.js';
 import { renderLogo } from './render-logo.js';
 import { renderTransition } from './render-transition.js';
-import { playGameAudio } from './game-audio.js';
+import { playGameAudio, renderVolumeSlider } from './game-audio.js';
 
 
-export function renderScene(object){
+export function renderScene(object) {
     const screenFrame = document.querySelector('#screenframe');
 
     screen = renderTransition(object.transitionTitle);
+    renderVolumeSlider();
     screenFrame.appendChild(screen);
-    setTimeout(function() {
+    setTimeout(function () {
         renderScreen(object);
         playGameAudio();
     }, 5500);
-    
+
 }
 
-function renderScreen(object){
+function renderScreen(object) {
     const screenFrame = document.querySelector('#screenframe');
     screenFrame.innerHTML = '';
     const screen = document.createElement('section');
@@ -29,23 +30,23 @@ function renderScreen(object){
     screen.style.backgroundImage = `url('../assets/${object.image}')`;
 
     screen.appendChild(beatSection);
-    
+
     const logo = renderLogo();
     screen.appendChild(logo);
 
     screenFrame.appendChild(screen);
 }
 
-export function updateScene(object){
+export function updateScene(object) {
     const screenFrame = document.getElementById('screenframe');
     screenFrame.innerHTML = '';
 
     renderScene(object);
     // screenFrame.appendChild(newScreen);
-//     const newScreen = renderScene(object);
-//     screenFrame.append(newScreen);
+    //     const newScreen = renderScene(object);
+    //     screenFrame.append(newScreen);
 
-    
+
 
     const ventSection = document.getElementById('vent');
     ventSection.innerHTML = '';

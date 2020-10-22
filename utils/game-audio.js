@@ -1,7 +1,7 @@
 import { getVolumeLevel, setVolumeLevel } from './manage-local-storage.js';
 
-export function createGameAudio(){
-    let audioElement = new Audio ('../assets/game-play-music.mp3');
+export function createGameAudio() {
+    let audioElement = new Audio('../assets/game-play-music.mp3');
     let dialSection = document.getElementById('dial');
 
     audioElement.id = 'game-play-music';
@@ -9,16 +9,15 @@ export function createGameAudio(){
     audioElement.volume = getVolumeLevel();
 
     dialSection.appendChild(audioElement);
-    //renderVolumeSlider();
 }
 
-export function playGameAudio(){
+export function playGameAudio() {
     let audioElement = document.getElementById('game-play-music');
     audioElement.src = ('../assets/game-play-music.mp3');
     audioElement.play();
 }
 
-export function playTransitionAudio(){
+export function playTransitionAudio() {
     let audioElement = document.getElementById('game-play-music');
     audioElement.pause();
     audioElement.src = ('../assets/transition-clip.mp3');
@@ -26,7 +25,7 @@ export function playTransitionAudio(){
 }
 
 
-export function renderVolumeSlider(){
+export function renderVolumeSlider() {
     let sliderDiv = document.createElement('div');
     let sliderElement = document.createElement('input');
     const ventSection = document.getElementById('vent');
@@ -38,22 +37,17 @@ export function renderVolumeSlider(){
     sliderElement.max = 10;
     sliderElement.value = getVolumeLevel() * 10;
     sliderElement.id = 'volume-slider';
-    
 
-    sliderElement.oninput = function() {
+
+    sliderElement.oninput = function () {
         const volumeLevel = sliderElement.value / 10;
         const gamePlayMusic = document.getElementById('game-play-music');
-        // const transitionMusic = document.getElementById('transition-music');
 
         setVolumeLevel(volumeLevel);
-   
-        if(gamePlayMusic){
+
+        if (gamePlayMusic) {
             gamePlayMusic.volume = volumeLevel;
         }
-
-        // if(transitionMusic){
-        //     transitionMusic.volume = volumeLevel;
-        // }
 
     };
 
