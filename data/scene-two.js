@@ -32,7 +32,7 @@ export const S2B1 = {
             updateBeat(S2B3);
         },
 
-    }, 
+    },
     {
         id: 'green-tea',
         response: `I'm really more of a tea person, a pot of green tea please!`,
@@ -50,7 +50,7 @@ const S2B2 = {
         src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
-    },    
+    },
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
@@ -78,7 +78,7 @@ const S2B3 = {
         src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
-    },    
+    },
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
     choices: [
@@ -87,7 +87,7 @@ const S2B3 = {
             response: 'Show some restraint and pull away! A love like this is worth the wait!',
             responseFunction: function() {
                 updateBeat(S2B8);
-                
+
             }
         },
         {
@@ -108,7 +108,7 @@ const S2B4 = {
         src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeIn: false,
-    },    
+    },
     buttonChoice: 'dial',
     buttonText: 'OH NO!',
     dialogueBox: `While my tea is steeping, my boyfriend creeps up behind my and kisses my neck! He's so sweet! He uses a lot of teeth, tho...I'm feeling weak...`,
@@ -175,6 +175,7 @@ const S2B8 = {
         src: 'Vampire_BF.png',
         resize: false,
         fadeIn: false,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
     buttonText: 'NEXT DATE!',

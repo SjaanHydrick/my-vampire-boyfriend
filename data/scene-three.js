@@ -77,7 +77,7 @@ const S3B3 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
-        fadeIn: false,
+        fadeIn: true,
     },    
     dialogueBox: `Ok, it is totally spooky here but my boyfriend looks like he wants to snuggle! What should I do?`,
     buttonChoice: 'nav',
@@ -105,6 +105,7 @@ const S3B4 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeIn: true,
     },
     dialogueBox: `This is so hot! He's breathing so heavy, and leaning towards me! What should I do?`,
     buttonChoice: 'nav',
@@ -174,6 +175,7 @@ const S3B8 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
     buttonText: 'NEXT DATE!',
@@ -206,6 +208,7 @@ const S3B10 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
+        fadeOut: true,
     },
     buttonChoice: 'dial',
     buttonText: 'NEXT DATE!',

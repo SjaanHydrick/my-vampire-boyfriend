@@ -12,8 +12,8 @@ export const S4B1 = {
     },
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF.png',
-        resize: false,
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
         fadeIn: true,
     },    
     dialogueBox: `My crazy ex never brought me anywhere. But my new boyfriend is taking me to this super cool bar for Halloween night, what should we do first?`,
@@ -48,7 +48,7 @@ const S4B2 = {
     rightChar: {
         src: 'Vampire_BF_Crop.png',
         resize: true,
-        fadeIn: true,
+        fadeIn: false,
     },    
     dialogueBox: `I'm totally workin' this dance floor! My boyfriend seems uncomfortable, he's so shy and cute. He looks like he's moving in for a kiss!`,
     buttonChoice: 'nav',
