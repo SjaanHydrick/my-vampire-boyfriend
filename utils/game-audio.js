@@ -9,7 +9,7 @@ export function createGameAudio(){
     audioElement.volume = getVolumeLevel();
 
     dialSection.appendChild(audioElement);
-    renderVolumeSlider();
+    //renderVolumeSlider();
 }
 
 export function playGameAudio(){
@@ -39,9 +39,6 @@ export function renderVolumeSlider(){
     sliderElement.value = getVolumeLevel() * 10;
     sliderElement.id = 'volume-slider';
     
-    console.log("getVolume: " +getVolumeLevel());
-    console.log('value: ' +sliderElement.value)
-
 
     sliderElement.oninput = function() {
         const volumeLevel = sliderElement.value / 10;
@@ -49,10 +46,7 @@ export function renderVolumeSlider(){
         // const transitionMusic = document.getElementById('transition-music');
 
         setVolumeLevel(volumeLevel);
-
-        console.log("getVolume: " +getVolumeLevel());
-        console.log('value: ' +sliderElement.value)
-    
+   
         if(gamePlayMusic){
             gamePlayMusic.volume = volumeLevel;
         }

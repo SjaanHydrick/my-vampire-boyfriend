@@ -7,7 +7,6 @@ export function gameOverYouDied(){
     window.location.href = '../results';
 }
 
-
 export function gameOverVampireDied(){
     const player = getFromLocalStorage();
     player.vampireAlive = false;
