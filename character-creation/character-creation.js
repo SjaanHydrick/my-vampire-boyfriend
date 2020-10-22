@@ -1,5 +1,6 @@
 import { renderVolumeSlider } from '../utils/game-audio.js';
 import { setInLocalStorage } from '../utils/manage-local-storage.js';
+import { renderTextSpeedSlider } from '../utils/text-speed-slider.js';
 
 
 const form = document.querySelector('form');
@@ -7,6 +8,8 @@ const form = document.querySelector('form');
 //const USER = 'USER';
 
 renderVolumeSlider();
+renderTextSpeedSlider();
+
 function makePlayer(data) {
     const user = {
         name: data.get('name'),
@@ -28,9 +31,8 @@ form.addEventListener('submit', (e) => {
     const player = makePlayer(data);
     setInLocalStorage(player);
     window.location.href = '../main/';
-    
+
 
 });
 
 
- 

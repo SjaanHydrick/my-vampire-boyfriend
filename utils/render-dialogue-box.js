@@ -1,5 +1,6 @@
 // pulls dialgoue information from passed object, creates 'p' element
 
+import { getTextSpeed } from "./manage-local-storage.js";
 import { resetDialButton } from "./render-dial-button.js";
 import { resetNavButtons } from "./render-nav-buttons.js";
 import { wireButtons } from './wire-buttons.js';
@@ -27,7 +28,7 @@ export function renderDialogueBox(object) {
 
 
 export function typeWriter(dialogueString, object, i) {
-    let speed = 35;
+    let speed = getTextSpeed();
 
     if (i < object.dialogueBox.length && !advance) {
         dialogueString.textContent += object.dialogueBox.charAt(i);

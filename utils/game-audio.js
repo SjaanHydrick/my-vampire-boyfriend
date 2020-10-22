@@ -29,6 +29,11 @@ export function renderVolumeSlider() {
     let sliderDiv = document.createElement('div');
     let sliderElement = document.createElement('input');
     const ventSection = document.getElementById('vent');
+    const label = document.createElement('p');
+
+    label.textContent = 'volume';
+    label.id = 'volume-label';
+    label.classList.add = "label-class";
 
     sliderDiv.id = 'slider-div';
 
@@ -52,6 +57,6 @@ export function renderVolumeSlider() {
     };
 
     sliderDiv.appendChild(sliderElement);
-
+    sliderDiv.appendChild(label);
     ventSection.appendChild(sliderDiv);
 }
