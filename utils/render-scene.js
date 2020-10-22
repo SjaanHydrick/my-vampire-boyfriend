@@ -3,13 +3,14 @@ import { renderBeat } from './render-beat.js';
 import { renderVent } from './render-vent.js';
 import { renderLogo } from './render-logo.js';
 import { renderTransition } from './render-transition.js';
-import { playGameAudio } from './game-audio.js';
+import { playGameAudio, renderVolumeSlider } from './game-audio.js';
 
 
 export function renderScene(object) {
     const screenFrame = document.querySelector('#screenframe');
 
     screen = renderTransition(object.transitionTitle);
+    renderVolumeSlider();
     screenFrame.appendChild(screen);
     setTimeout(function () {
         renderScreen(object);
@@ -18,8 +19,9 @@ export function renderScene(object) {
 
 }
 
+
+
 function renderScreen(object) {
-    const buttton = document.querySelector('#dial-button')
 
     const screenFrame = document.querySelector('#screenframe');
     screenFrame.innerHTML = '';

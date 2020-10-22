@@ -158,7 +158,7 @@ const S3B7 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
-        rightResize: true,
+        resize: true,
     },
     buttonChoice: 'dial',
     buttonText: 'MOTHMAN!',
@@ -189,7 +189,7 @@ const S3B9 = {
     leftChar: null,
     rightChar: {
         src: 'Vampire_BF_Crop.png',
-        rightResize: true,
+        resize: true,
     },
     buttonChoice: 'dial',
     buttonText: 'OH NO!',
@@ -253,7 +253,7 @@ const S3B13 = {
     id: 'howl',
     leftChar: null,
     rightChar: {
-        src: 'Vampire_BF_crop.png',
+        src: 'Vampire_BF_Crop.png',
         resize: true,
         fadeOut: true,
     },    
