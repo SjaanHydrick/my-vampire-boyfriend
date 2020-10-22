@@ -11,7 +11,9 @@ export const I1 = {
         title: 'Introduction:',
         subtitle: 'the hospital'
     },
-    leftChar: returnAvatar(),
+    leftChar: {
+        src: returnAvatar(),
+    },
     rightChar: null,
     dialogueBox: 
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
@@ -24,9 +26,13 @@ export const I1 = {
 
 const I2 = {
     id: 'intro',
-    leftChar: returnAvatar(),
-    rightChar: 'Vampire_BF.png',
-    rightFadeIn: true,
+    leftChar: {
+        src: returnAvatar(),
+    },
+    rightChar: {
+        src: 'Vampire_BF.png',
+        fadeIn: true,
+    },
     dialogueBox: 
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
     buttonChoice: 'dial',
@@ -38,8 +44,12 @@ const I2 = {
 
 const I3 = {
     id: 'intro',
-    leftChar: returnAvatar(),
-    rightChar: 'Vampire_BF.png',
+    leftChar: {
+        src: returnAvatar(),
+    },
+    rightChar: {
+        src: 'Vampire_BF.png',
+    },
     dialogueBox: 
         'I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: 'dial',
@@ -51,9 +61,13 @@ const I3 = {
 
 const I4 = {
     id: 'intro',
-    leftChar: returnAvatar(),
-    rightChar: 'Vampire_BF.png',
-    rightFadeOut: true,
+    leftChar: {
+        src: returnAvatar(),
+    },
+    rightChar: {
+        src: 'Vampire_BF.png',
+        fadeOut: true,
+    },
     dialogueBox: 
         "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: 'dial',
@@ -67,7 +81,9 @@ const I4 = {
 
 const I5 = {
     id: 'intro',
-    leftChar: returnAvatar(),
+    leftChar: {
+        src: returnAvatar(),
+    },
     dialogueBox: 
         "I'm about to meet him for our first date in the cafeteria!",
     buttonChoice: 'dial',

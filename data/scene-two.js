@@ -10,10 +10,12 @@ export const S2B1 = {
         title: 'Date 2:',
         subtitle: 'coffee shop'
     },
-    rightFadeIn: true,
-    rightResize: true,
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        fadeIn: true,
+        resize: true,
+    },
     buttonChoice: 'nav',
     dialogueBox: `I invited my boyfriend to the cutest late-night coffee shop for a date. He only goes out at night, I think he's allergic to the sun...? What kind of drink should I order?`,
     choices: [{
@@ -44,9 +46,11 @@ export const S2B1 = {
 const S2B2 = {
     id: 'uninterested',
     leftChar: null,
-    rightResize: true,
-    rightFadeIn: false,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeIn: false,
+    },    
     dialogueBox: `OMG he thinks I'm a total loser, he's acting really cold and hobbling away.`,
     buttonChoice: 'nav',
     choices: [
@@ -70,9 +74,11 @@ const S2B2 = {
 const S2B3 = {
     id: 'showsInterest',
     leftChar: null,
-    rightResize: true,
-    rightFadeIn: false,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeIn: false,
+    },    
     dialogueBox: 'Uhh, he seems totally interested in me!!',
     buttonChoice: 'nav',
     choices: [
@@ -98,9 +104,11 @@ const S2B3 = {
 const S2B4 = {
     id: 'tea-death',
     leftChar: null,
-    rightResize: true,
-    rightFadeIn: false,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeIn: false,
+    },    
     buttonChoice: 'dial',
     buttonText: "OH NO!",
     dialogueBox: `While my tea is steeping, my boyfriend creeps up behind my and kisses my neck! He's so sweet! He uses a lot of teeth, tho...I'm feeling weak...`,
@@ -113,9 +121,11 @@ const S2B4 = {
 const S2B5 = {
     id: 'sick-vamp',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
-    rightResize: true,
-    rightFadeOut: true,
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeOut: true,
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT DATE!",
     dialogueBox: `My boyfriend leaves! Well this date wasn't the best. But I know our connection is SO strong, he's just SOoOo dreamy!`,
@@ -128,9 +138,11 @@ const S2B5 = {
 const S2B6 = {
     id: 'coffee-death',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
-    rightResize: true,
-    rightFadeOut: true,
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeOut: true,
+    },
     buttonChoice: 'dial',
     buttonText: "SHARP!",
     dialogueBox: `My boyfriend loses his balance and falls into a huge box of coffee stirrers. Why do those look so sharp?!?`,
@@ -143,8 +155,10 @@ const S2B6 = {
 const S2B7 = {
     id: 'hug-death',
     leftChar: null,
-    rightResize: true,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT",
     dialogueBox: `Ok, he's REALLY into necking! And he sure does use a lot of teeth! Actually...that sorta hurts...`,
@@ -157,9 +171,11 @@ const S2B7 = {
 const S2B8 = {
     id: 'push-away',
     leftChar: null,
-    rightResize: true,
-    rightFadeIn: false,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        resize: true,
+        fadeIn: false,
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT DATE!",
     dialogueBox: `My boyfriend gets sooooo frustrated when I push him away, it's so cute! He storms off, but it's okay! I know a love like ours is worth the wait!`,

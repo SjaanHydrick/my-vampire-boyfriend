@@ -12,8 +12,10 @@ export const S1B1 = {
         subtitle: 'hospital cafeteria'
     },
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
-    rightFadeIn: true,
+    rightChar: {
+        src: 'Vampire_BF.png',
+        fadeIn: true,
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT",
     dialogueBox:  `My boyfriend is working the blood drive today, we're going to have lunch in the cafeteria! He's keto or something, normally I'm the only one who eats.`,
@@ -24,9 +26,11 @@ export const S1B1 = {
 
 const S1B2 = {
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
-    rightFadeIn: true,
-    rightResize: true,
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        fadeIn: true,
+        resize: true,
+    },
     tutorial: true,
     buttonChoice: 'nav',
     id: 'cafeteria',
@@ -60,9 +64,11 @@ const S1B2 = {
 const S1B3 = {
     id: 'feed',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
-    rightFadeIn: false,
-    rightResize: true,
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+        fadeIn: false,
+        resize: true,
+    },
     tutorial: false,
     dialogueBox: `Wow he seems like he might want to share this with me, how romantic! What should I do?`,
     buttonChoice: 'nav',
@@ -87,8 +93,10 @@ const S1B3 = {
 const S1B4 = {
     id: 'letHim',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
-    rightResize: true,
+    rightChar: {
+        src:'Vampire_BF_Crop.png',
+        resize: true,
+    },
     dialogueBox: `Omg he's leaning closer to my neck`,
     buttonChoice: 'nav',
     choices: [
@@ -111,8 +119,10 @@ const S1B4 = {
 const S1B5 = {
     id: 'tofuDeath',
     leftChar: null,
-    rightChar: 'Vampire_BF.png',
-    rightFadeOut: true,
+    rightChar: {
+        src: 'Vampire_BF.png',
+        fadeOut: true,
+    },
     buttonChoice: 'dial',
     buttonText: "OH NO!",
     dialogueBox: `The stir-fry contains an obscene amount of garlic, just how I like it! Oh no, my boyfriend isn't looking too great...`,
@@ -125,8 +135,10 @@ const S1B5 = {
 const S1B6 = {
     id: 'sickVamp',
     leftChar: null,
-    rightFadeOut: true,
-    rightChar: 'Vampire_BF.png',
+    rightChar: {
+        src: 'Vampire_BF.png',
+        rightFadeOut: true,
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT DATE",
     dialogueBox: `Oh no! My boyfriend gets sick and has to leave. It must have been something he ate!`,
@@ -140,7 +152,9 @@ const S1B6 = {
 const S1B7 = {
     id: 'firstYouDie',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+    },
     buttonChoice: 'dial',
     buttonText: "YOU DIED!",
     dialogueBox: `Oh wow he likes to use a lot of teeth...I'm actually feeling pretty weak...`,
@@ -154,7 +168,9 @@ const S1B7 = {
 const S1B8 = {
     id: 'pushAwayMessage',
     leftChar: null,
-    rightChar: 'Vampire_BF_Crop.png',
+    rightChar: {
+        src: 'Vampire_BF_Crop.png',
+    },
     buttonChoice: 'dial',
     buttonText: "NEXT DATE!",
     dialogueBox: `Haha, my boyfriend got so frustrated that he got up and left. I love driving him crazy!`,
