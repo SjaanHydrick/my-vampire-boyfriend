@@ -18,7 +18,7 @@ playGameAudio();
 
 renderVent();
 renderResultText(resultText);
-renderDatesText(numberOfDates); 
+renderDatesText(numberOfDates);
 renderResultImage(image);
 link.href = '../about-us';
 link.classList.add('about');
