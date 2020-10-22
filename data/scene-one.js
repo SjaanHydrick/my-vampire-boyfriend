@@ -3,6 +3,8 @@ import { updateBeat } from '../utils/render-beat.js';
 import { updateScene } from '../utils/render-scene.js';
 import { S2B1 } from './scene-two.js';
 
+// Each break in the story has its own beat.
+//responseFunctions either take you to the next beat, the next scene, or end the game and render results text
 export const S1B1 = {
     id: 'cafeteria',
     image: 'cafeteria.jpg',
