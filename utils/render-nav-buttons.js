@@ -40,10 +40,13 @@ export function renderNavButtons(object){
     }
 }
 
-export function resetNavButtons(object){
+export function resetNavButtons(){
     const buttons = document.getElementsByClassName('small-buttons');
     for (let button of buttons){
         button.onclick = '';
+        button.onmouseenter = '';
+        button.onmouseleave = '';
+        button.onmouseover = '';
         button.classList.toggle('active');
         button.style.color = 'black';
     }

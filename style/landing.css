@@ -106,11 +106,13 @@ button {
     border: outset 2px dimgray;
     border-radius: 150px;
     transition: transform 2s;
+    outline: none;
 }
 
 button:hover {
     transform: rotate(45deg);
     cursor: pointer;
+    outline: none;
 
 }
 
@@ -118,6 +120,7 @@ button:hover {
     float: right;
     margin-top: 295px;
     margin-right: -220px;
+    outline: none;
 }
 
 .small-buttons {
@@ -127,6 +130,7 @@ button:hover {
     font-size: 20pt;
     margin-right: 5px;
     background-color: silver;
+    outline: none;
 }
 
 .number-spacing {

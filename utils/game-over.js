@@ -51,7 +51,6 @@ export function coffee(){
 export function nextChapter() {
     const player = getFromLocalStorage();
     player.chapters++;
-    console.log(player);
     setInLocalStorage(player);
 }
 
