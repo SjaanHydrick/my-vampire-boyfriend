@@ -34,7 +34,7 @@ export function renderResultText(resultText) {
 
     } else if (player.mothMan === true){
 
-        resultText.textContent = 'Your vampire ex-boyfriend is a lotal loser. MothMan is drawn to you like a moth to a flame.';
+        resultText.textContent = 'Your vampire ex-boyfriend is a total loser. MothMan is drawn to you like a moth to a flame.';
     
     } else if (player.tea === true && player.playerAlive === false){
 
@@ -59,7 +59,7 @@ export function renderResultImage(image){
     if (player.mothMan === true){
         image.src = '../assets/MothMan.png';
     } else if (player.tofu === true){
-        image.src = '../assets/Tofu.png'
+        image.src = '../assets/Tofu.png';
     }
 }
 
