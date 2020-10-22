@@ -39,21 +39,27 @@ export function renderVolumeSlider(){
     sliderElement.value = getVolumeLevel() * 10;
     sliderElement.id = 'volume-slider';
     
+    console.log("getVolume: " +getVolumeLevel());
+    console.log('value: ' +sliderElement.value)
 
-    sliderElement.onchange = function() {
+
+    sliderElement.oninput = function() {
         const volumeLevel = sliderElement.value / 10;
         const gamePlayMusic = document.getElementById('game-play-music');
-        const transitionMusic = document.getElementById('transition-music');
+        // const transitionMusic = document.getElementById('transition-music');
 
         setVolumeLevel(volumeLevel);
 
+        console.log("getVolume: " +getVolumeLevel());
+        console.log('value: ' +sliderElement.value)
+    
         if(gamePlayMusic){
             gamePlayMusic.volume = volumeLevel;
         }
 
-        if(transitionMusic){
-            transitionMusic.volume = volumeLevel;
-        }
+        // if(transitionMusic){
+        //     transitionMusic.volume = volumeLevel;
+        // }
 
     };
 
