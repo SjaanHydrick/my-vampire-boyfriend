@@ -1,8 +1,8 @@
 
 import { getFromLocalStorage } from './manage-local-storage.js';
 
-// pulls userData from Local Storage, creates an image elemnt, returns it
-export function renderAvatar(){
+// pulls userData from Local Storage, creates an image element, returns it
+export function renderAvatar() {
 
     const userData = getFromLocalStorage();
 
@@ -14,7 +14,7 @@ export function renderAvatar(){
 }
 
 // pulls userData from Local Storage, creates a text element, returns it
-export function renderUserName(){
+export function renderUserName() {
     const userData = getFromLocalStorage();
 
     const playerName = document.createElement('p');

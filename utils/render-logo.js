@@ -1,4 +1,6 @@
-export function renderLogo(){
+// creates 'MVB' logo for bottom left corner of screen
+// acts as watermark and link to 'about us' page
+export function renderLogo() {
     let section = document.createElement('section');
     let a = document.createElement('a');
     let mSpan = document.createElement('span');
@@ -21,5 +23,5 @@ export function renderLogo(){
     section.appendChild(bSpan);
     a.appendChild(section);
     return a
-    ;
+        ;
 }
