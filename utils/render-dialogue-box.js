@@ -1,8 +1,8 @@
 // pulls dialgoue information from passed object, creates 'p' element
 
-import { getTextSpeed } from "./manage-local-storage.js";
-import { resetDialButton } from "./render-dial-button.js";
-import { resetNavButtons } from "./render-nav-buttons.js";
+import { getTextSpeed } from './manage-local-storage.js';
+import { resetDialButton } from './render-dial-button.js';
+import { resetNavButtons } from './render-nav-buttons.js';
 import { wireButtons } from './wire-buttons.js';
 // variable that notifies typerWriter() if user has pushed 'advance' button
 let advance = false;
@@ -43,7 +43,7 @@ export function typeWriter(dialogueString, object, i) {
         // iterates counter
         i++;
         // timeout function that creates delay between letters being added to textContent
-        setTimeout(function () {
+        setTimeout(function() {
             // calls the function to iterate through passed string.
             typeWriter(dialogueString, object, i);
             // speed variable is user-defined speed of text rendering
@@ -67,7 +67,7 @@ function wireAdvanceButton() {
     const dialButton = document.getElementById('dial-button');
     // if user pushs dialButton, sets 'advance' to true
     // ends recursive typeWriter function
-    dialButton.onclick = function () {
+    dialButton.onclick = function() {
         advance = true;
     };
     dialButton.textContent = 'NEXT';

@@ -19,7 +19,7 @@ export function setVolumeLevel(volumeLevel) {
 }
 
 export function getVolumeLevel() {
-    return JSON.parse(localStorage.getItem(volumeKey))
+    return JSON.parse(localStorage.getItem(volumeKey));
 }
 
 export function getTextSpeed() {

@@ -19,8 +19,8 @@ export const I1 = {
     dialogueBox:
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
     buttonChoice: 'dial',
-    buttonText: "NEXT",
-    responseFunction: function () {
+    buttonText: 'NEXT',
+    responseFunction: function() {
         updateBeat(I2);
     },
 };
@@ -37,8 +37,8 @@ const I2 = {
     dialogueBox:
         'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
     buttonChoice: 'dial',
-    buttonText: "NEXT",
-    responseFunction: function () {
+    buttonText: 'NEXT',
+    responseFunction: function() {
         updateBeat(I3);
     },
 };
@@ -54,8 +54,8 @@ const I3 = {
     dialogueBox:
         'I never flirt with men at work, but I made an exception for this cutie!',
     buttonChoice: 'dial',
-    buttonText: "NEXT",
-    responseFunction: function () {
+    buttonText: 'NEXT',
+    responseFunction: function() {
         updateBeat(I4);
     },
 };
@@ -72,8 +72,8 @@ const I4 = {
     dialogueBox:
         "Did I mention I'm a nurse?  Because I'm a nurse.",
     buttonChoice: 'dial',
-    buttonText: "NEXT",
-    responseFunction: function () {
+    buttonText: 'NEXT',
+    responseFunction: function() {
         updateBeat(I5);
     },
 };
@@ -88,8 +88,8 @@ const I5 = {
     dialogueBox:
         "I'm about to meet him for our first date in the cafeteria!",
     buttonChoice: 'dial',
-    buttonText: "NEXT",
-    responseFunction: function () {
+    buttonText: 'NEXT',
+    responseFunction: function() {
         updateScene(S1B1);
     },
 };

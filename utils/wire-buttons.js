@@ -1,5 +1,5 @@
-import { renderNavButtons, resetNavButtons } from './render-nav-buttons.js';
-import { renderDialButton, resetDialButton } from './render-dial-button.js';
+import { renderNavButtons } from './render-nav-buttons.js';
+import { renderDialButton } from './render-dial-button.js';
 import { renderResponses } from './render-responses.js';
 import { buttonTutorial } from './button-tutorial.js';
 

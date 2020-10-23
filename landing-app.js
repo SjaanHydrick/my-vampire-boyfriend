@@ -1,4 +1,4 @@
-import { renderVolumeSlider } from "./utils/game-audio.js";
+import { renderVolumeSlider } from './utils/game-audio.js';
 
 const beginButton = document.getElementById('begin-button');
 

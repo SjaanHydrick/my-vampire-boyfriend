@@ -11,12 +11,12 @@ export function renderTextSpeedSlider() {
     // creates volume label, differentiates between the two sliders
     volumeLabel.textContent = 'volume';
     volumeLabel.id = 'volume-label';
-    volumeLabel.classList.add = "label-class";
+    volumeLabel.classList.add = 'label-class';
 
     // creates label for text speed label
     textLabel.textContent = 'text speed';
     textLabel.id = 'text-speed-label';
-    textLabel.classList.add = "label-class";
+    textLabel.classList.add = 'label-class';
 
     sliderDiv.id = 'text-slider-div';
     // slider attribute setup
@@ -30,7 +30,7 @@ export function renderTextSpeedSlider() {
     sliderElement.id = 'text-slider';
 
     // if user changes sliders, sets change in local storage
-    sliderElement.oninput = function () {
+    sliderElement.oninput = function() {
         setTextSpeed(sliderElement.value);
     };
 
@@ -52,8 +52,8 @@ function createExampleTextBox() {
     let textDiv = document.createElement('div');
     let textP = document.createElement('p');
 
-    textDiv.id = "example-text-div";
-    textP.id = "example-text-p";
+    textDiv.id = 'example-text-div';
+    textP.id = 'example-text-p';
 
     textDiv.appendChild(textP);
 
@@ -61,15 +61,13 @@ function createExampleTextBox() {
 }
 // creates text sample, and sets interval for text to render
 function runExampleTextBox() {
-    const text = " I love my vampire boyfriend!"
-    let textP = document.getElementById("example-text-p");
-    let currentSpeed = getTextSpeed();
-    // let renderSpeed = currentSpeed * 32;
+    const text = ' I love my vampire boyfriend!';
+    let textP = document.getElementById('example-text-p');
 
-    setInterval(function () {
+    setInterval(function() {
         let i = 0;
         exampleTypeWriter(textP, text, i);
-        textP.textContent = "";
+        textP.textContent = '';
     }, 2500);
 
 }
@@ -81,9 +79,9 @@ function exampleTypeWriter(textP, text, i) {
 
     if (i < text.length) {
         textP.textContent += text.charAt(i);
-        i++
-        setTimeout(function () {
-            exampleTypeWriter(textP, text, i)
+        i++;
+        setTimeout(function() {
+            exampleTypeWriter(textP, text, i);
         }, speed);
     }
 

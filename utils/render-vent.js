@@ -1,6 +1,6 @@
 import { renderVolumeSlider } from './game-audio.js';
 import { renderAvatar, renderUserName } from './render-avatar.js';
-import { renderHeart } from './render-heart.js'
+import { renderHeart } from './render-heart.js';
 
 // renders the vent section of the screen at each new scene
 export function renderVent() {
