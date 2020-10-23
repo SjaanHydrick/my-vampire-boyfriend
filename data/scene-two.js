@@ -84,7 +84,7 @@ const S2B3 = {
     choices: [
         {
             id: 'modesty',
-            response: 'Show some restraint and pull away! A love like this is worth the wait!',
+            response: 'Show some restraint and pull away!',
             responseFunction: function() {
                 updateBeat(S2B8);
 
