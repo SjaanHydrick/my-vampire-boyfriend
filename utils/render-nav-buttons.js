@@ -1,53 +1,57 @@
 // render buttons connects with the three response buttons and 
 // adds the functionality stored in the responses JSON
 // if the button is live, 'active' is added to its classList
-export function renderNavButtons(object){
+export function renderNavButtons(object) {
     const buttons = document.getElementsByClassName('small-buttons');
-
-    for (let i = 0; i < buttons.length; i++){
-        if (object.choices[i]){
-
-            buttons[i].onclick = function() {
+    // iterates through all buttons and JSON 'choices'
+    for (let i = 0; i < buttons.length; i++) {
+        // if there is a choice and button to pair in their arrays
+        if (object.choices[i]) {
+            // applies function passed from JSON
+            buttons[i].onclick = function () {
                 object.choices[i].responseFunction();
             };
-
-            buttons[i].onmouseenter = function() {
+            // grabs connected response element to add 'button-hover' class
+            // 'button-hover' class causes background of both button and response box to change color
+            // this is for when 'mouse enters button area'
+            buttons[i].onmouseenter = function () {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
-
-            buttons[i].onmouseover = function() {
+            // this is for when 'mouse is over button area'
+            buttons[i].onmouseover = function () {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
-
-            buttons[i].onmouseleave = function() {
+            // this removes 'button-hover' class from button and response box
+            // this is for when 'mouse is over button area'
+            buttons[i].onmouseleave = function () {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.remove('button-hover');
             };
-
+            // gives user information that button is active by changing button text color
             buttons[i].style.color = 'maroon';
             buttons[i].classList.toggle('active');
         }
         else {
-            buttons[i].classList.toggle('active');
-            buttons[i].style.color = 'black';
-            buttons[i].onclick = '';
-            buttons[i].onmouseenter = '';
-            buttons[i].onmouseleave = '';
-            buttons[i].onmouseover = '';
+            // buttons that aren't connected to responses buttons are disabled
+            resetNavButton(buttons[i]);
         }
     }
 }
-
-export function resetNavButtons(){
+// resets nav button attributes, disables them
+export function resetNavButtons() {
     const buttons = document.getElementsByClassName('small-buttons');
-    for (let button of buttons){
-        button.onclick = '';
-        button.onmouseenter = '';
-        button.onmouseleave = '';
-        button.onmouseover = '';
-        button.classList.toggle('active');
-        button.style.color = 'black';
+    for (let button of buttons) {
+        resetNavButton(button);
     }
+}
+// disables individual nav buttons
+function resetNavButton(button) {
+    button.onclick = '';
+    button.onmouseenter = '';
+    button.onmouseleave = '';
+    button.onmouseover = '';
+    button.classList.toggle('active');
+    button.style.color = 'black';
 }

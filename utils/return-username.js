@@ -1,5 +1,5 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
-
-export function returnUsername(){
+// returns userName attributes for JSON
+export function returnUsername() {
     return getFromLocalStorage().name;
 }

@@ -14,7 +14,6 @@ export function clearLocalStorage() {
     localStorage.removeItem(storageKey);
 }
 
-
 export function setVolumeLevel(volumeLevel) {
     localStorage.setItem(volumeKey, JSON.stringify(volumeLevel));
 }

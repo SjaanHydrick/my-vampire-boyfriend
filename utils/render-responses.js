@@ -3,6 +3,7 @@
 export function renderResponses(object) {
     const responseSection = document.createElement('section');
     responseSection.id = 'response-section';
+    // uses i as counter to create unique id attribution
     let i = 1;
 
     for (let choice of object.choices) {
