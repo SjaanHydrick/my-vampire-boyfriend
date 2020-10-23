@@ -3,7 +3,10 @@ import { updateScene } from '../utils/render-scene.js';
 import { S1B1 } from './scene-one.js';
 import { returnUsername } from '../utils/return-username.js';
 import { returnAvatar } from '../utils/return-avatar.js';
-
+// each JSON element provides the data for a single beat of the story.  
+// each attribute of the JSON lets 'renderScene' and 'renderBeat' which elements to render
+// and also what functionality those beats will have.
+// It also connects the JSON's with each other.  A ton of the work of the story is done in these story files
 export const I1 = {
     id: 'intro',
     image: 'intro.jpg',
@@ -35,7 +38,7 @@ const I2 = {
         fadeIn: true,
     },
     dialogueBox:
-        'I met my boyfriend at the local hospital where he was picking up blood for the bloodbank.',
+        'I met my boyfriend at the local hospital.  He was picking up blood for the bloodbank.',
     buttonChoice: 'dial',
     buttonText: "NEXT",
     responseFunction: function () {
