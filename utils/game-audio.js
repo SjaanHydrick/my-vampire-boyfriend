@@ -44,7 +44,7 @@ export function renderVolumeSlider() {
 
     // function that executes as slider moves
     // provides realtime feedback for user 
-    sliderElement.oninput = function () {
+    sliderElement.oninput = function() {
         const volumeLevel = sliderElement.value / 10;
         const gamePlayMusic = document.getElementById('game-play-music');
         // sets volume level in local storage

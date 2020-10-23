@@ -8,24 +8,24 @@ export function renderNavButtons(object) {
         // if there is a choice and button to pair in their arrays
         if (object.choices[i]) {
             // applies function passed from JSON
-            buttons[i].onclick = function () {
+            buttons[i].onclick = function() {
                 object.choices[i].responseFunction();
             };
             // grabs connected response element to add 'button-hover' class
             // 'button-hover' class causes background of both button and response box to change color
             // this is for when 'mouse enters button area'
-            buttons[i].onmouseenter = function () {
+            buttons[i].onmouseenter = function() {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
             // this is for when 'mouse is over button area'
-            buttons[i].onmouseover = function () {
+            buttons[i].onmouseover = function() {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.add('button-hover');
             };
             // this removes 'button-hover' class from button and response box
             // this is for when 'mouse is over button area'
-            buttons[i].onmouseleave = function () {
+            buttons[i].onmouseleave = function() {
                 let response = document.getElementById(`response${i + 1}`);
                 response.classList.remove('button-hover');
             };

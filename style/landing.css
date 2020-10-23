@@ -154,29 +154,6 @@ button:hover {
     border: solid 3pt black;
 }
 
-/* input[type=range]{
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 200px;
-}
-
-input[type=range]::-webkit-slider-runnable-track{
-    width: 100%;
-    background: gray;
-    height: 15px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 20px;
-    width: 20px;
-    background: dimgray;
-    border: 1px solid black;
-} */
-
 .hearts {
     font-size: 40pt;
     text-shadow: 0px 0px 15px pink;

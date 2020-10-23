@@ -8,7 +8,7 @@ function heart(section){
     heartSpan1.src = '../assets/heart.png';
     heartSpan1.classList.add('heart');
     section.appendChild(heartSpan1);
-        }
+}
 
 export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);

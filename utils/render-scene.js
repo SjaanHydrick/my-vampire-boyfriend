@@ -11,13 +11,13 @@ export function renderScene(object) {
 
     const screenFrame = document.querySelector('#screenframe');
     // each scene begins with a transition slide, renderTransition 
-    screen = renderTransition(object.transitionTitle);
+    const screen = renderTransition(object.transitionTitle);
     // renders the volume slider and attaches it to the vent section
     renderVolumeSlider();
 
     screenFrame.appendChild(screen);
     // after 5.5 second transition slide, render scene elements
-    setTimeout(function () {
+    setTimeout(function() {
         renderScreen(object);
         playGameAudio();
     }, 5500);

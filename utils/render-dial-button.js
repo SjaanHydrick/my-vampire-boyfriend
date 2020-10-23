@@ -3,7 +3,7 @@ export function renderDialButton(object) {
 
     const dialButton = document.getElementById('dial-button');
     // pulls function data from JSON and assigns it to dial button
-    dialButton.onclick = function () {
+    dialButton.onclick = function() {
         object.responseFunction();
     };
     // applies appropriate text information from JSON
