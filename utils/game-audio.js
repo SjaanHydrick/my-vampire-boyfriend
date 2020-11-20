@@ -12,18 +12,18 @@ export function createGameAudio() {
 
     dialSection.appendChild(audioElement);
 }
+
+// could possibly be refactored into a reusable function like so
+function makeAudioFunction(clip, id = 'game-play-music') {
+    return function() {
+        let audioElement = document.getElementById(id);
+        audioElement.src = (clip);
+        audioElement.play();    
+    };
+}
 // reassigns audio source to game play music and sets it to play.
-export function playGameAudio() {
-    let audioElement = document.getElementById('game-play-music');
-    audioElement.src = ('../assets/game-play-music.mp3');
-    audioElement.play();
-}
-// reassigns audio source to transition music and sets it to play
-export function playTransitionAudio() {
-    let audioElement = document.getElementById('game-play-music');
-    audioElement.src = ('../assets/transition-clip.mp3');
-    audioElement.play();
-}
+export const playGameAudio = makeAudioFunction('../assets/game-play-music.mp3');
+export const playTransitionAudio = makeAudioFunction('../assets/transition-clip.mp3');
 
 // creates volume slider element and appends it to 'vent' section
 export function renderVolumeSlider() {

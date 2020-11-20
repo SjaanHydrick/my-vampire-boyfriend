@@ -23,6 +23,7 @@ export const I1 = {
         `Hi!  My name is ${returnUsername()}, and I'm a nurse!`,
     buttonChoice: 'dial',
     buttonText: 'NEXT',
+    // nice data model! having a callback function living in your json configuration is really smart stuff!
     responseFunction: function() {
         updateBeat(I2);
     },

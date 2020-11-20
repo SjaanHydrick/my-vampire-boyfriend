@@ -32,6 +32,7 @@ export function renderDialogueBox(object) {
 }
 
 // recursive function that creates typing effect in dialogue box
+// soooo coooooool!!!
 export function typeWriter(dialogueString, object, i) {
     // pulls text speed from local storage
     let speed = getTextSpeed();

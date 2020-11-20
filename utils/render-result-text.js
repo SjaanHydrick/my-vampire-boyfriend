@@ -1,6 +1,6 @@
 import { getFromLocalStorage } from './manage-local-storage.js';
 
-
+// ugly stuff, but not sure there's a better way to handle it :)
 export function renderResultText(resultText) {
     const player = getFromLocalStorage();
 
@@ -61,42 +61,19 @@ export function renderResultImage(image){
     }
 }
 
+const dialogue = [
+    `You couldn't even make it through a single date with your boyfriend.`, 
+    `You survived the cafeteria, but the cafe spelled doom for your relationship.`, 
+    `You made it through the cafeteria and the cafe! The river walk is where your romance ends.`, 
+    `Your love overcame the cafeteria, the cafe, and a walk on the river; but like so many before you, it ends at a bar.`, 
+    `You successfully navigated the cafeteria, the cafe, the river walk, and the bar, but this is where your adventure ends.`, 
+    `You made it through all five dates, you're a real survior and a lot smarter than you look!`
+];
+
 export function renderDatesText(datesText) {
     const player = getFromLocalStorage();
 
-    if (player.chapters === 0) {
-
-        datesText.textContent = `You couldn't even make it through a single date with your boyfriend.` ;
-
-    }
-    if (player.chapters === 1) {
-
-        datesText.textContent = `You survived the cafeteria, but the cafe spelled doom for your relationship.` ;
-
-    }
-    if (player.chapters === 2) {
-
-        datesText.textContent = `You made it through the cafeteria and the cafe! The river walk is where your romance ends.` ;
-
-    }
-    if (player.chapters === 3) {
-
-        datesText.textContent = `Your love overcame the cafeteria, the cafe, and a walk on the river; but like so many before you, it ends at a bar.` ;
-
-    }
-    if (player.chapters === 4) {
-
-        datesText.textContent = `You successfully navigated the cafeteria, the cafe, the river walk, and the bar, but this is where your adventure ends.` ;
-
-    }
-    if (player.chapters === 5) {
-
-        datesText.textContent = `You made it through all five dates, you're a real survior and a lot smarter than you look!` ;
-
-    }
-
-
+    datesText.textContent = dialogue[player.chapters];
 }
-
 
 

@@ -10,6 +10,7 @@ export function renderCharacter(char, id) {
 
     characterDiv.id = `${id}-div`;
     // character image will zoom in during beat
+    // super, super cool use of metadata!
     if (char.resize) {
         characterDiv.classList.add('resize');
     }

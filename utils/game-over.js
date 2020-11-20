@@ -1,17 +1,20 @@
 import { setInLocalStorage, getFromLocalStorage } from './manage-local-storage.js';
 
+function sendHome() {
+    window.location.href = '../results';
+}
 export function gameOverYouDied(){
     const player = getFromLocalStorage();
     player.playerAlive = false;
     setInLocalStorage(player);
-    window.location.href = '../results';
+    sendHome();
 }
 
 export function gameOverVampireDied(){
     const player = getFromLocalStorage();
     player.vampireAlive = false;
     setInLocalStorage(player);
-    window.location.href = '../results';
+    sendHome();
 }
 
 export function gameOver(resultObject){
@@ -20,31 +23,24 @@ export function gameOver(resultObject){
     setInLocalStorage(userData);
 }
 
-export function tofu(){
-    const player = getFromLocalStorage();
-    player.tofu = true;
-    setInLocalStorage(player);
-}
-export function shallowGrave(){
-    const player = getFromLocalStorage();
-    player.shallowGrave = true;
-    setInLocalStorage(player);
-}
-export function river(){
-    const player = getFromLocalStorage();
-    player.river = true;
-    setInLocalStorage(player);
-}
-export function tea(){
-    const player = getFromLocalStorage();
-    player.tea = true;
-    setInLocalStorage(player);
+function makePlayerTrueSetter(key) {
+    return function() {
+        const player = getFromLocalStorage();
+        player[key] = true;
+        setInLocalStorage(player);    
+    };
 }
 
-export function coffee(){
-    const player = getFromLocalStorage();
-    player.coffee = true;
-    setInLocalStorage(player);
+export function gameOverMothMan() {
+    const mothMan = makePlayerTrueSetter('mothMan');
+    mothMan();
+    sendHome();
+}
+
+export function youWin() {
+    const setWin = makePlayerTrueSetter('win');
+    setWin();
+    sendHome();
 }
 
 export function nextChapter() {
@@ -53,34 +49,11 @@ export function nextChapter() {
     setInLocalStorage(player);
 }
 
-export function gameOverMothMan(){
-    const player = getFromLocalStorage();
-    player.mothMan = true;
-    setInLocalStorage(player);
-    window.location.href = '../results';
-}
-
-export function youWin(){
-    const player = getFromLocalStorage();
-    player.win = true;
-    setInLocalStorage(player);
-    window.location.href = '../results';
-
-}
-export function isVampire(){
-    const player = getFromLocalStorage();
-    player.isVampire = true;
-    setInLocalStorage(player);
-}
-
-export function muchTeeth() {
-    const player = getFromLocalStorage();
-    player.muchTeeth = true;
-    setInLocalStorage(player);
-}
-
-export function vampireHunter() {
-    const player = getFromLocalStorage();
-    player.vampireHunter = true;
-    setInLocalStorage(player);
-}
+export const tofu = makePlayerTrueSetter('tofu');
+export const shallowGrave = makePlayerTrueSetter('shallowGrave');
+export const river = makePlayerTrueSetter('river');
+export const tea = makePlayerTrueSetter('tea');
+export const coffee = makePlayerTrueSetter('coffee');
+export const isVampire = makePlayerTrueSetter('isVampire');
+export const muchTeeth = makePlayerTrueSetter('muchTeeth');
+export const vampireHunter = makePlayerTrueSetter('vampireHunter');
