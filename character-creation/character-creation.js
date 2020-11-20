@@ -2,10 +2,7 @@ import { renderVolumeSlider } from '../utils/game-audio.js';
 import { setInLocalStorage } from '../utils/manage-local-storage.js';
 import { renderTextSpeedSlider } from '../utils/text-speed-slider.js';
 
-
 const form = document.querySelector('form');
-
-//const USER = 'USER';
 
 renderVolumeSlider();
 renderTextSpeedSlider();

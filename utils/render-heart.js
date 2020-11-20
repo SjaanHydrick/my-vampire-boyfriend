@@ -12,44 +12,9 @@ function heart(section){
 
 export function renderHeart(section) {
     const player = getFromLocalStorage(storageKey);
-    
 
-    if (player.chapters === 5) {
-
+    for (let i = 0; i < player.chapters; i++) {
         heart(section);
-        heart(section);
-        heart(section);
-        heart(section);
-        heart(section);
-
-    }
-
-    if (player.chapters === 4) {
-
-        heart(section);
-        heart(section);
-        heart(section);
-        heart(section);
-
-    }
-
-    if (player.chapters === 3) {
-      
-        heart(section);
-        heart(section);
-        heart(section);
-
-    }
-    if (player.chapters === 2) {
-
-        heart(section);
-        heart(section);
-
-    }
-    if (player.chapters === 1) {
-    
-        heart(section);
-
     }
 }
     

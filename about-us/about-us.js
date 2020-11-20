@@ -1,4 +1,8 @@
-import { createGameAudio, playGameAudio, renderVolumeSlider } from "../utils/game-audio.js";
+import { 
+    createGameAudio, 
+    playGameAudio, 
+    renderVolumeSlider,
+} from '../utils/game-audio.js';
 
 const button = document.querySelector('#dial-button');
 

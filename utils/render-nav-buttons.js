@@ -9,7 +9,10 @@ export function renderNavButtons(object) {
         if (object.choices[i]) {
             // applies function passed from JSON
             buttons[i].onclick = function() {
-                object.choices[i].responseFunction();
+                if (object.choices[i].responseFunction) {
+                    // SO SO COOL!
+                    object.choices[i].responseFunction();
+                }
             };
             // grabs connected response element to add 'button-hover' class
             // 'button-hover' class causes background of both button and response box to change color
@@ -48,6 +51,7 @@ export function resetNavButtons() {
 }
 // disables individual nav buttons
 function resetNavButton(button) {
+    // might be better to use `removeEventListener` here
     button.onclick = '';
     button.onmouseenter = '';
     button.onmouseleave = '';
